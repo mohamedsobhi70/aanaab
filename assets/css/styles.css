@@ -784,8 +784,23 @@ video {
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
 
+.from-\[\#00F5A0\]{
+  --tw-gradient-from: #00F5A0;
+  --tw-gradient-to: rgb(0 245 160 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
 .to-secondary{
   --tw-gradient-to: #AE47FF;
+}
+
+.to-\[\#00D9F5\]{
+  --tw-gradient-to: #00D9F5;
+}
+
+.bg-clip-text{
+  -webkit-background-clip: text;
+          background-clip: text;
 }
 
 .px-1{
@@ -971,6 +986,10 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.text-transparent{
+  color: transparent;
+}
+
 .shadow-featuredJob{
   --tw-shadow:  0px 1px 1px rgba(0, 0, 0, 0.16);
   --tw-shadow-colored: 0px 1px 1px var(--tw-shadow-color);
@@ -986,6 +1005,31 @@ video {
 .focus\:outline-none:focus{
   outline: 2px solid transparent;
   outline-offset: 2px;
+}
+
+@media (prefers-color-scheme: dark){
+  .dark\:bg-gradient-to-r{
+    background-image: linear-gradient(to right, var(--tw-gradient-stops));
+  }
+
+  .dark\:from-\[\#00F5A0\]{
+    --tw-gradient-from: #00F5A0;
+    --tw-gradient-to: rgb(0 245 160 / 0);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+  }
+
+  .dark\:to-\[\#00D9F5\]{
+    --tw-gradient-to: #00D9F5;
+  }
+
+  .dark\:bg-clip-text{
+    -webkit-background-clip: text;
+            background-clip: text;
+  }
+
+  .dark\:text-transparent{
+    color: transparent;
+  }
 }
 
 @media (min-width: 768px){
