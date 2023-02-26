@@ -13,7 +13,7 @@
 
 <body class="font-Almarai">
     <!-- start Aanab header  -->
-    <header class=" flex items-center h-20 shadow-headerShadow">
+    <header aria-label="page-header" class=" flex items-center h-20 shadow-headerShadow">
         <div class="container">
             <div class="flex items-center gap-10">
                 <!-- aanaab logo  -->
@@ -66,11 +66,11 @@
     <!-- start Aanab main page content   -->
     <main>
 
-        <div class="pt-12 pb-24 flex flex-col gap-32 bg-[#F7FAFA] items-center ">
+        <section class="pt-12 pb-24 flex flex-col gap-32 bg-[#F7FAFA] items-center ">
             <!-- hero section  -->
-            <div class="container">
-                <section class="flex justify-between items-center gap-[15px]">
-                    <div class="">
+            <section class="container">
+                <div class="flex justify-between items-center gap-[15px]">
+                    <section class="">
                         <h1
                             class="text-text-3xl font-bold text-transparent bg-clip-text from-primary to-secondary bg-gradient-to-r ">
                             الوظيفة اللي تتمناها صار لها مكان</h1>
@@ -85,47 +85,47 @@
                                 class="text-[#6B7280] text-text-lg font-bold px-10 py-5 border border-[#D1D5DB] rounded-[40px]">اعناب
                                 للمدراس</button>
                         </div>
-                    </div>
-                    <div class="relative">
+                    </section>
+                    <section class="relative">
                         <img class="absolute  left-[150px] top-[-40px]" src="assets/images/Visitor/hero-abs.png"
                             alt="apple">
                         <img class="absolute left-[-81px] top-0" src="assets/images/Visitor/hero-abs2.png"
                             alt="Education">
                         <img class="relative z-10" src="assets/images/Visitor/hero-woman.png" alt="woman">
-                    </div>
-                </section>
-            </div>
+                    </section>
+                </div>
+            </section>
             <!-- end hero section  -->
             <!-- ========================================= -->
             <!-- Browse jobs section  -->
-            <div class="container">
-                <section class="flex flex-col items-center gap-10 ">
+            <section class="container">
+                <div class="flex flex-col items-center gap-10 ">
                     <h2 class="text-2xl font-bold">تصفح مئات الوظائف من اكبر المدارس الاهلية والدولية</h2>
-                    <div class="flex gap-6 flex-wrap">
-                        <img src="assets/images/Visitor/Ellipse-3.png" alt="ellipse">
-                        <img src="assets/images/Visitor/Ellipse-4.png" alt="ellipse">
-                        <img src="assets/images/Visitor/Ellipse-5.png" alt="ellipse">
-                        <img src="assets/images/Visitor/Ellipse-6.png" alt="ellipse">
-                        <img src="assets/images/Visitor/Ellipse-7.png" alt="ellipse">
-                        <img src="assets/images/Visitor/Ellipse-8.png" alt="ellipse">
-                        <img src="assets/images/Visitor/Ellipse-9.png" alt="ellipse">
-                        <img src="assets/images/Visitor/Ellipse-11.png" alt="ellipse">
-                        <img src="assets/images/Visitor/Ellipse-12.png" alt="ellipse">
-                    </div>
-                </section>
-            </div>
+                    <section class="flex gap-6 flex-wrap">
+                        <a href="#"><img src="assets/images/Visitor/Ellipse-3.png" alt="ellipse"></a>
+                        <a href="#"><img src="assets/images/Visitor/Ellipse-4.png" alt="ellipse"></a>
+                        <a href="#"><img src="assets/images/Visitor/Ellipse-5.png" alt="ellipse"></a>
+                        <a href="#"><img src="assets/images/Visitor/Ellipse-6.png" alt="ellipse"></a>
+                        <a href="#"><img src="assets/images/Visitor/Ellipse-7.png" alt="ellipse"></a>
+                        <a href="#"><img src="assets/images/Visitor/Ellipse-8.png" alt="ellipse"></a>
+                        <a href="#"><img src="assets/images/Visitor/Ellipse-9.png" alt="ellipse"></a>
+                        <a href="#"><img src="assets/images/Visitor/Ellipse-11.png" alt="ellipse"></a>
+                        <a href="#"><img src="assets/images/Visitor/Ellipse-12.png" alt="ellipse"></a>
+                    </section>
+                </div>
+            </section>
             <!-- End Browse jobs section  -->
             <!-- Featured  jobs section  -->
-            <div class="container">
-                <section class=" flex flex-col gap-8">
-                    <div class="flex justify-between items-center">
+            <section class="container">
+                <div class=" flex flex-col gap-8">
+                    <header aria-label="featured-jobs" class="flex justify-between items-center">
                         <h2 class="text-30-45 font-bold">⚡ الوظائف المميزة</h2>
                         <a href="#" class="text-primary font-extrabold	">المزيد من الوظائف ←</a>
-                    </div>
+                    </header>
                     <!-- start  featured jobs cards -->
-                    <div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-[30px] flex-wrap">
+                    <section class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-[30px] flex-wrap">
                         <!-- card item  -->
-                        <div class="rounded-2xl bg-white shadow-featuredJob py-[25px] px-5 flex flex-col gap-4">
+                        <article class="rounded-2xl bg-white shadow-featuredJob py-[25px] px-5 flex flex-col gap-4">
                             <div class="flex items-center gap-4">
                                 <div
                                     class="overflow-hidden rounded-full flex items-center justify-center h-20 w-20 bg-[#F0F6F6]">
@@ -133,10 +133,13 @@
                                 </div>
                                 <div class="flex flex-col gap-1 flex-1">
                                     <span
-                                        class="text-11-16 font-bold w-[61px] text-[#6B7280] py-0.5 px-1.5 bg-[#F0F6F6]  rounded-[5px]">دوام
-                                        كامل</span>
-                                    <h2 class="font-bold text-16-21 text-[#333745 ]">مدرس انشطة تفاعلية للمرحلة
-                                        الابتدائية</h2>
+                                        class="text-11-16 font-bold w-[61px] text-[#6B7280] py-0.5 px-1.5 bg-[#F0F6F6]  rounded-[5px]">
+                                        دوام كامل
+                                    </span>
+                                    <h2 class="font-bold text-16-21 text-[#333745 ]">
+                                        مدرس انشطة تفاعلية للمرحلة
+                                        الابتدائية
+                                    </h2>
                                 </div>
                             </div>
                             <div class="flex flex-col gap-5">
@@ -165,11 +168,11 @@
                                     </span>
                                 </div>
                             </div>
-                        </div>
+                        </article>
                         <!--end card item  -->
 
                         <!-- card item  -->
-                        <div class="rounded-2xl bg-white shadow-featuredJob py-[25px] px-5 flex flex-col gap-4">
+                        <article class="rounded-2xl bg-white shadow-featuredJob py-[25px] px-5 flex flex-col gap-4">
                             <div class="flex items-center gap-4">
                                 <div
                                     class="overflow-hidden rounded-full flex items-center justify-center h-20 w-20 bg-[#F0F6F6]">
@@ -209,11 +212,11 @@
                                     </span>
                                 </div>
                             </div>
-                        </div>
+                        </article>
                         <!--end card item  -->
 
                         <!-- card item  -->
-                        <div class="rounded-2xl bg-white shadow-featuredJob py-[25px] px-5 flex flex-col gap-4">
+                        <article class="rounded-2xl bg-white shadow-featuredJob py-[25px] px-5 flex flex-col gap-4">
                             <div class="flex items-center gap-4">
                                 <div
                                     class="overflow-hidden rounded-full flex items-center justify-center h-20 w-20 bg-[#F0F6F6]">
@@ -253,11 +256,11 @@
                                     </span>
                                 </div>
                             </div>
-                        </div>
+                        </article>
                         <!--end card item  -->
 
                         <!-- card item  -->
-                        <div class="rounded-2xl bg-white shadow-featuredJob py-[25px] px-5 flex flex-col gap-4">
+                        <article class="rounded-2xl bg-white shadow-featuredJob py-[25px] px-5 flex flex-col gap-4">
                             <div class="flex items-center gap-4">
                                 <div
                                     class="overflow-hidden rounded-full flex items-center justify-center h-20 w-20 bg-[#F0F6F6]">
@@ -297,11 +300,11 @@
                                     </span>
                                 </div>
                             </div>
-                        </div>
+                        </article>
                         <!--end card item  -->
 
                         <!-- card item  -->
-                        <div class="rounded-2xl bg-white shadow-featuredJob py-[25px] px-5 flex flex-col gap-4">
+                        <article class="rounded-2xl bg-white shadow-featuredJob py-[25px] px-5 flex flex-col gap-4">
                             <div class="flex items-center gap-4">
                                 <div
                                     class="overflow-hidden rounded-full flex items-center justify-center h-20 w-20 bg-[#F0F6F6]">
@@ -341,11 +344,11 @@
                                     </span>
                                 </div>
                             </div>
-                        </div>
+                        </article>
                         <!--end card item  -->
 
                         <!-- card item  -->
-                        <div class="rounded-2xl bg-white shadow-featuredJob py-[25px] px-5 flex flex-col gap-4">
+                        <article class="rounded-2xl bg-white shadow-featuredJob py-[25px] px-5 flex flex-col gap-4">
                             <div class="flex items-center gap-4">
                                 <div
                                     class="overflow-hidden rounded-full flex items-center justify-center h-20 w-20 bg-[#F0F6F6]">
@@ -385,107 +388,106 @@
                                     </span>
                                 </div>
                             </div>
-                        </div>
+                        </article>
                         <!--end card item  -->
 
-                    </div>
-
-                </section>
-            </div>
+                    </section>
+                </div>
+            </section>
             <!-- End Featured  jobs section  -->
 
-        </div>
-        <div class="bg-white flex flex-col gap-32 pt-32">
-            <div class="container">
+        </section>
+        <section class="bg-white flex flex-col gap-32 pt-32">
+            <section class="container">
                 <!-- ⚡ التخصصات -->
-                <section class="flex flex-col gap-8">
+                <div class="flex flex-col gap-8">
                     <h2 class="text-center text-30-45 font-bold">⚡ التخصصات</h2>
-                    <div class="flex gap-[30px] flex-wrap justify-center">
+                    <section class="flex gap-[30px] flex-wrap justify-center">
                         <!-- item  -->
-                        <div
+                        <figure
                             class="w-40 h-[136px] flex flex-col justify-center items-center gap-2.5  rounded-2xl border border-[#D1D5DB]">
                             <img src="assets/images/Visitor/maj-5.png" alt="major">
-                            <h3 class="text-16-21 text-[#333745] font-bold">العلوم</h3>
-                        </div>
+                            <figcaption class="text-16-21 text-[#333745] font-bold">العلوم</figcaption>
+                        </figure>
                         <!-- item  -->
-                        <div
+                        <figure
                             class="w-40 h-[136px] flex flex-col justify-center items-center gap-2.5  rounded-2xl border border-[#D1D5DB]">
                             <img src="assets/images/Visitor/maj-1.png" alt="major">
-                            <h3 class="text-16-21 text-[#333745] font-bold">الرياضيات</h3>
-                        </div>
+                            <figcaption class="text-16-21 text-[#333745] font-bold">الرياضيات</figcaption>
+                        </figure>
                         <!-- item  -->
-                        <div
+                        <figure
                             class="w-40 h-[136px] flex flex-col justify-center items-center gap-2.5  rounded-2xl border border-[#D1D5DB]">
                             <img src="assets/images/Visitor/maj-2.png" alt="major">
-                            <h3 class="text-16-21 text-[#333745] font-bold">التاريخ</h3>
-                        </div>
+                            <figcaption class="text-16-21 text-[#333745] font-bold">التاريخ</figcaption>
+                        </figure>
                         <!-- item  -->
-                        <div
+                        <figure
                             class="w-40 h-[136px] flex flex-col justify-center items-center gap-2.5  rounded-2xl border border-[#D1D5DB]">
                             <img src="assets/images/Visitor/maj-3.png" alt="major">
-                            <h3 class="text-16-21 text-[#333745] font-bold">الجرافيا</h3>
-                        </div>
+                            <figcaption class="text-16-21 text-[#333745] font-bold">الجرافيا</figcaption>
+                        </figure>
                         <!-- item  -->
-                        <div
+                        <figure
                             class="w-40 h-[136px] flex flex-col justify-center items-center gap-2.5  rounded-2xl border border-[#D1D5DB]">
                             <img src="assets/images/Visitor/maj-4.png" alt="major">
-                            <h3 class="text-16-21 text-[#333745] font-bold">اللغات</h3>
-                        </div>
+                            <figcaption class="text-16-21 text-[#333745] font-bold">اللغات</figcaption>
+                        </figure>
 
                         <!-- item  -->
-                        <div
+                        <figure
                             class="w-40 h-[136px] flex flex-col justify-center items-center gap-2.5  rounded-2xl border border-[#D1D5DB]">
                             <img src="assets/images/Visitor/maj-2.png" alt="major">
-                            <h3 class="text-16-21 text-[#333745] font-bold">التاريخ</h3>
-                        </div>
+                            <figcaption class="text-16-21 text-[#333745] font-bold">التاريخ</figcaption>
+                        </figure>
                         <!-- item  -->
-                        <div
+                        <figure
                             class="w-40 h-[136px] flex flex-col justify-center items-center gap-2.5  rounded-2xl border border-[#D1D5DB]">
                             <img src="assets/images/Visitor/maj-5.png" alt="major">
-                            <h3 class="text-16-21 text-[#333745] font-bold">العلوم</h3>
-                        </div>
+                            <figcaption class="text-16-21 text-[#333745] font-bold">العلوم</figcaption>
+                        </figure>
                         <!-- item  -->
-                        <div
+                        <figure
                             class="w-40 h-[136px] flex flex-col justify-center items-center gap-2.5  rounded-2xl border border-[#D1D5DB]">
                             <img src="assets/images/Visitor/maj-1.png" alt="major">
-                            <h3 class="text-16-21 text-[#333745] font-bold">الرياضيات</h3>
-                        </div>
+                            <figcaption class="text-16-21 text-[#333745] font-bold">الرياضيات</figcaption>
+                        </figure>
 
                         <!-- item  -->
-                        <div
+                        <figure
                             class="w-40 h-[136px] flex flex-col justify-center items-center gap-2.5  rounded-2xl border border-[#D1D5DB]">
                             <img src="assets/images/Visitor/maj-3.png" alt="major">
-                            <h3 class="text-16-21 text-[#333745] font-bold">الجرافيا</h3>
-                        </div>
+                            <figcaption class="text-16-21 text-[#333745] font-bold">الجرافيا</figcaption>
+                        </figure>
                         <!-- item  -->
-                        <div
+                        <figure
                             class="w-40 h-[136px] flex flex-col justify-center items-center gap-2.5  rounded-2xl border border-[#D1D5DB]">
                             <img src="assets/images/Visitor/maj-4.png" alt="major">
-                            <h3 class="text-16-21 text-[#333745] font-bold">اللغات</h3>
-                        </div>
+                            <figcaption class="text-16-21 text-[#333745] font-bold">اللغات</figcaption>
+                        </figure>
                         <!-- item  -->
-                        <div
+                        <figure
                             class="w-40 h-[136px] flex flex-col justify-center items-center gap-2.5  rounded-2xl border border-[#D1D5DB]">
                             <img src="assets/images/Visitor/maj-2.png" alt="major">
-                            <h3 class="text-16-21 text-[#333745] font-bold">التاريخ</h3>
-                        </div>
-                    </div>
-                </section>
+                            <figcaption class="text-16-21 text-[#333745] font-bold">التاريخ</figcaption>
+                        </figure>
+                    </section>
+                </div>
                 <!-- ⚡ التخصصات -->
 
-            </div>
+            </section>
 
             <!-- Featured  jobs section  -->
-            <div class="container">
-                <section class=" flex flex-col gap-8">
-                    <div class="flex justify-between items-center">
+            <section class="container">
+                <div class=" flex flex-col gap-8">
+                    <header aria-label="featured-job2" class="flex justify-between items-center">
                         <h2 class="text-30-45 font-bold">⚡ الوظائف المميزة</h2>
                         <a href="#" class="text-primary font-extrabold	">المزيد من الوظائف ←</a>
-                    </div>
+                    </header>
                     <!-- start  featured jobs cards -->
-                    <div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-[30px] flex-wrap">
+                    <section class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-[30px] flex-wrap">
                         <!-- card item  -->
-                        <div
+                        <article
                             class="rounded-2xl  bg-white border border-[#D1D5DB] shadow-featuredJob py-[25px] px-5 flex flex-col gap-4">
                             <div class="flex items-center gap-4">
                                 <div
@@ -526,11 +528,11 @@
                                     </span>
                                 </div>
                             </div>
-                        </div>
+                        </article>
                         <!--end card item  -->
 
                         <!-- card item  -->
-                        <div
+                        <article
                             class="rounded-2xl  bg-white border border-[#D1D5DB] shadow-featuredJob py-[25px] px-5 flex flex-col gap-4">
                             <div class="flex items-center gap-4">
                                 <div
@@ -571,11 +573,11 @@
                                     </span>
                                 </div>
                             </div>
-                        </div>
+                        </article>
                         <!--end card item  -->
 
                         <!-- card item  -->
-                        <div
+                        <article
                             class="rounded-2xl  bg-white border border-[#D1D5DB] shadow-featuredJob py-[25px] px-5 flex flex-col gap-4">
                             <div class="flex items-center gap-4">
                                 <div
@@ -616,11 +618,11 @@
                                     </span>
                                 </div>
                             </div>
-                        </div>
+                        </article>
                         <!--end card item  -->
 
                         <!-- card item  -->
-                        <div
+                        <article
                             class="rounded-2xl  bg-white border border-[#D1D5DB] shadow-featuredJob py-[25px] px-5 flex flex-col gap-4">
                             <div class="flex items-center gap-4">
                                 <div
@@ -661,11 +663,11 @@
                                     </span>
                                 </div>
                             </div>
-                        </div>
+                        </article>
                         <!--end card item  -->
 
                         <!-- card item  -->
-                        <div
+                        <article
                             class="rounded-2xl  bg-white border border-[#D1D5DB] shadow-featuredJob py-[25px] px-5 flex flex-col gap-4">
                             <div class="flex items-center gap-4">
                                 <div
@@ -706,11 +708,11 @@
                                     </span>
                                 </div>
                             </div>
-                        </div>
+                        </article>
                         <!--end card item  -->
 
                         <!-- card item  -->
-                        <div
+                        <article
                             class="rounded-2xl  bg-white border border-[#D1D5DB] shadow-featuredJob py-[25px] px-5 flex flex-col gap-4">
                             <div class="flex items-center gap-4">
                                 <div
@@ -751,91 +753,89 @@
                                     </span>
                                 </div>
                             </div>
-                        </div>
+                        </article>
                         <!--end card item  -->
 
+                    </section>
 
-
-                    </div>
-
-                </section>
-            </div>
+                </div>
+            </section>
             <!-- End Featured  jobs section  -->
 
             <!-- search jobs section  -->
-            <div class="container">
-                <section class=" flex flex-col gap-8">
-                    <div class="flex gap-[30px]">
-                        <div class=" flex flex-1 flex-col gap-8">
+            <section class="container">
+                <div class=" flex flex-col gap-8">
+                    <section class="flex gap-[30px]">
+                        <section class=" flex flex-1 flex-col gap-8">
                             <h2 class="text-24-36 font-bold text-center">🎖️ تصفح الوظائف بالمستوي الوظيفي</h2>
                             <div class="flex flex-col gap-[30px]">
                                 <!-- item  -->
-                                <div
+                                <figure
                                     class="py-[25px] flex flex-col justify-center items-center gap-2.5  rounded-2xl border border-[#D1D5DB]">
                                     <img src="assets/images/Visitor/maj-3.png" alt="major">
-                                    <h3 class="text-16-21 text-[#333745] font-bold">الجرافيا</h3>
-                                </div>
+                                    <figcaption class="text-16-21 text-[#333745] font-bold">الجرافيا</figcaption>
+                                </figure>
                                 <!-- item  -->
-                                <div
+                                <figure
                                     class="py-[25px] flex flex-col justify-center items-center gap-2.5  rounded-2xl border border-[#D1D5DB]">
                                     <img src="assets/images/Visitor/maj-2.png" alt="major">
-                                    <h3 class="text-16-21 text-[#333745] font-bold">التاريخ</h3>
-                                </div>
+                                    <figcaption class="text-16-21 text-[#333745] font-bold">التاريخ</figcaption>
+                                </figure>
                                 <!-- item  -->
-                                <div
+                                <figure
                                     class="py-[25px] flex flex-col justify-center items-center gap-2.5  rounded-2xl border border-[#D1D5DB]">
                                     <img src="assets/images/Visitor/maj-1.png" alt="major">
-                                    <h3 class="text-16-21 text-[#333745] font-bold">الرياضيات</h3>
-                                </div>
+                                    <figcaption class="text-16-21 text-[#333745] font-bold">الرياضيات</figcaption>
+                                </figure>
                                 <!-- item  -->
-                                <div
+                                <figure
                                     class="py-[25px] flex flex-col justify-center items-center gap-2.5  rounded-2xl border border-[#D1D5DB]">
                                     <img src="assets/images/Visitor/maj-1.png" alt="major">
-                                    <h3 class="text-16-21 text-[#333745] font-bold">الرياضيات</h3>
-                                </div>
+                                    <figcaption class="text-16-21 text-[#333745] font-bold">الرياضيات</figcaption>
+                                </figure>
                             </div>
-                        </div>
-                        <div class=" flex flex-1 flex-col gap-8">
+                        </section>
+                        <section class=" flex flex-1 flex-col gap-8">
                             <h2 class="text-24-36 font-bold text-center">🎒 تصفح الوظائف بالمراحلة التعليمية</h2>
                             <div class="flex flex-col gap-[30px]">
                                 <!-- item  -->
-                                <div
+                                <figure
                                     class="py-[25px] flex flex-col justify-center items-center gap-2.5  rounded-2xl border border-[#D1D5DB]">
                                     <img src="assets/images/Visitor/maj-2.png" alt="major">
-                                    <h3 class="text-16-21 text-[#333745] font-bold">رياض الاطفال</h3>
-                                </div>
+                                    <figcaption class="text-16-21 text-[#333745] font-bold">رياض الاطفال</figcaption>
+                                </figure>
                                 <!-- item  -->
-                                <div
+                                <figure
                                     class="py-[25px] flex flex-col justify-center items-center gap-2.5  rounded-2xl border border-[#D1D5DB]">
                                     <img src="assets/images/Visitor/maj-1.png" alt="major">
-                                    <h3 class="text-16-21 text-[#333745] font-bold">الابتدائي</h3>
-                                </div>
+                                    <figcaption class="text-16-21 text-[#333745] font-bold">الابتدائي</figcaption>
+                                </figure>
                                 <!-- item  -->
-                                <div
+                                <figure
                                     class="py-[25px] flex flex-col justify-center items-center gap-2.5  rounded-2xl border border-[#D1D5DB]">
                                     <img src="assets/images/Visitor/maj-5.png" alt="major">
-                                    <h3 class="text-16-21 text-[#333745] font-bold">الاعدادي</h3>
-                                </div>
+                                    <figcaption class="text-16-21 text-[#333745] font-bold">الاعدادي</figcaption>
+                                </figure>
                                 <!-- item  -->
-                                <div
+                                <figure
                                     class="py-[25px] flex flex-col justify-center items-center gap-2.5  rounded-2xl border border-[#D1D5DB]">
                                     <img src="assets/images/Visitor/maj-5.png" alt="major">
-                                    <h3 class="text-16-21 text-[#333745] font-bold">الثانوي</h3>
-                                </div>
+                                    <figcaption class="text-16-21 text-[#333745] font-bold">الثانوي</figcaption>
+                                </figure>
                             </div>
-                        </div>
-                    </div>
-                </section>
-            </div>
+                        </section>
+                    </section>
+                </div>
+            </section>
             <!-- End search jobs section  -->
 
             <!-- start testimonials section  -->
-            <div class="container">
-                <section class=" flex flex-col gap-10 relative">
+            <section class="container">
+                <div class=" flex flex-col gap-10 relative">
                     <h2 class="text-24-36 font-bold text-center">ما يقولوه عنا</h2>
                     <div class="testimonials">
                         <!-- testimonial item  -->
-                        <div
+                        <article
                             class="carousel-cell w-full  py-8 px-10 md:w-[350px] mx-[15px] border rounded-xl border-[#D1D5DB]">
                             <div class="flex flex-col justify-between items-center gap-[39px]">
                                 <div class="flex flex-col gap-6 items-center justify-center">
@@ -856,9 +856,9 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </article>
                         <!-- testimonial item  -->
-                        <div
+                        <article
                             class="carousel-cell w-full  py-8 px-10 md:w-[350px] mx-[15px] border rounded-xl	 border-[#D1D5DB]">
                             <div class="flex flex-col justify-between items-center gap-[39px]">
                                 <div class="flex flex-col gap-6 items-center justify-center">
@@ -878,9 +878,9 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </article>
                         <!-- testimonial item  -->
-                        <div
+                        <article
                             class="carousel-cell w-full  py-8 px-10 md:w-[350px] mx-[15px] border rounded-xl	 border-[#D1D5DB]">
                             <div class="flex flex-col justify-between items-center gap-[39px]">
                                 <div class="flex flex-col gap-6 items-center justify-center">
@@ -900,9 +900,9 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </article>
                         <!-- testimonial item  -->
-                        <div
+                        <article
                             class="carousel-cell w-full  py-8 px-10 md:w-[350px] mx-[15px] border rounded-xl border-[#D1D5DB]">
                             <div class="flex flex-col justify-between items-center gap-[39px]">
                                 <div class="flex flex-col gap-6 items-center justify-center">
@@ -922,11 +922,11 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </article>
                     </div>
 
                     <!-- custom prev buttons  -->
-                    <button class="group aanaab-slide-prev absolute top-1/2 -left-[92px] cursor-pointer">
+                    <button aria-label="prev-btn" class="group aanaab-slide-prev absolute top-1/2 -left-[92px] cursor-pointer">
                         <svg width="45" height="84" viewBox="0 0 45 84" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path class="group-hover:stroke-primary transition duration-300 stroke-[#D1D5DB]"
                                 d="M43 2.00049L3 42.0005L43 82.0005" stroke-width="4" stroke-linecap="round" />
@@ -934,18 +934,18 @@
                     </button>
 
                     <!-- custom next buttons  -->
-                    <button class="group aanaab-slide-next absolute top-1/2 -right-[92px] cursor-pointer">
+                    <button aria-label="next-btn" class="group aanaab-slide-next absolute top-1/2 -right-[92px] cursor-pointer">
                         <svg width="45" height="84" viewBox="0 0 45 84" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path class="group-hover:stroke-primary transition duration-300 stroke-[#D1D5DB]"
                                 d="M2 82.0005L42 42.0005L2 2.00049" stroke-width="4" stroke-linecap="round" />
                         </svg>
                     </button>
-                </section>
-            </div>
+                </div>
+            </section>
             <!-- end testimonials section  -->
 
             <!-- start join aanaab section  -->
-            <div class="container">
+            <section class="container">
                 <div
                     class="-mx-[90px] relative bg-gradient-to-r from-primary to-secondary rounded-[18px] py-16 px-[103px] flex justify-between items-center">
                     <h2 class="text-36-54 text-white">الوظيفة اللي تتمناها علي بعد نقرة</h2>
@@ -955,26 +955,28 @@
                     <div class="absolute blur-[24px] bg-[#2E1C55] opacity-20 left-[9.77%] right-[9.77%] top-[110%] h-6">
                     </div>
                 </div>
-            </div>
+            </section>
             <!-- end join aanaab section  -->
 
-            <div class="container flex flex-col gap-24">
+            <section class="container flex flex-col gap-24">
                 <!-- Employment services section  -->
                 <section class="flex flex-col gap-12">
-                    <div class="flex flex-col gap-[13px]">
+                    <header aria-label="employment-services" class="flex flex-col gap-[13px]">
                         <h2 class="text-30-45 text-[#333745] font-bold text-center">خدمات التوظيف</h2>
-                        <p class="text-[#6B7280] text-18-21 text-center">انضم لاكثر من ٢٠٠ مدرسة خاصة وحكومية تعتمد علي
-                            اعناب لايجاد امهر المعلمين والتربويين</p>
-                    </div>
-                    <div class="flex gap-6 justify-center flex-wrap">
+                        <p class="text-[#6B7280] text-18-21 text-center">
+                            انضم لاكثر من ٢٠٠ مدرسة خاصة وحكومية تعتمد علي
+                            اعناب لايجاد امهر المعلمين والتربويين
+                        </p>
+                    </header>
+                    <section class="flex gap-6 justify-center flex-wrap">
                         <img src="assets/images/Visitor/Ellipse-3.png" alt="ellipse">
                         <img src="assets/images/Visitor/Ellipse-4.png" alt="ellipse">
                         <img src="assets/images/Visitor/Ellipse-5.png" alt="ellipse">
                         <img src="assets/images/Visitor/Ellipse-6.png" alt="ellipse">
                         <img src="assets/images/Visitor/Ellipse-7.png" alt="ellipse">
                         <img src="assets/images/Visitor/Ellipse-8.png" alt="ellipse">
-                    </div>
-                    <div class="flex flex-col gap-10 justify-center">
+                    </section>
+                    <section class="flex flex-col gap-10 justify-center">
                         <div class="flex gap-[31px] ">
                             <p
                                 class="flex-1 py-4 px-[18px] rounded-lg border border-[#D1D5DB] font-bold text-[#6B7280]">
@@ -992,14 +994,14 @@
                                 اعرف المزيد عن خدمات اعناب للتوظيف
                             </div>
                         </button>
-                    </div>
+                    </section>
                 </section>
                 <!-- End Employment services section  -->
                 <!-- aanaab Blog section  -->
                 <section class="flex flex-col gap-10">
                     <h2 class="text-30-45 text-[#333745] font-bold text-center">مدونة اعناب </h2>
                     <div class="flex gap-[31px]">
-                        <div
+                        <article
                             class="flex flex-1 flex-col gap-4 rounded-2xl overflow-hidden pb-4 justify-between border border-[#D1D5DB]">
                             <div class="flex flex-col gap-4">
                                 <div class="">
@@ -1016,8 +1018,8 @@
                                 class="bg-[#F8F7FB] text-primary text-14-21 font-bold rounded-[40px] py-2.5 text-center mx-4">
                                 المزيد ...
                             </button>
-                        </div>
-                        <div
+                        </article>
+                        <article
                             class="flex flex-1 flex-col gap-4 rounded-2xl overflow-hidden pb-4 justify-between border border-[#D1D5DB]">
                             <div class="flex flex-col gap-4">
                                 <div class="">
@@ -1026,7 +1028,7 @@
                                 <div class="flex flex-col gap-2 px-4">
                                     <p class="text-16-24 t-[#333745] font-bold ">
                                         رواندا بوندى:من قطف الخضروات بالمزرعة إلى تدريس منهجيات التعليمالمتمايز ...
-                                     </p>
+                                    </p>
                                     <span class="text-[#6B7280] text-13-19 mx-[7px]">May 27, 2021 3:16:15 PM</span>
                                 </div>
                             </div>
@@ -1034,8 +1036,8 @@
                                 class="bg-[#F8F7FB] text-primary text-14-21 font-bold rounded-[40px] py-2.5 text-center mx-4">
                                 المزيد ...
                             </button>
-                        </div>
-                        <div
+                        </article>
+                        <article
                             class="flex flex-1 flex-col gap-4 rounded-2xl overflow-hidden pb-4 justify-between border border-[#D1D5DB]">
                             <div class="flex flex-col gap-4">
                                 <div class="">
@@ -1052,8 +1054,8 @@
                                 class="bg-[#F8F7FB] text-primary text-14-21 font-bold rounded-[40px] py-2.5 text-center mx-4">
                                 المزيد ...
                             </button>
-                        </div>
-                        <div
+                        </article>
+                        <article
                             class="flex flex-1 flex-col gap-4 rounded-2xl overflow-hidden pb-4 justify-between border border-[#D1D5DB]">
                             <div class="flex flex-col gap-4">
                                 <div class="">
@@ -1069,7 +1071,7 @@
                                 class="bg-[#F8F7FB] text-primary text-14-21 font-bold rounded-[40px] py-2.5 text-center mx-4">
                                 المزيد ...
                             </button>
-                        </div>
+                        </article>
 
                     </div>
                     <div class="flex justify-center">
@@ -1086,15 +1088,13 @@
 
                 </footer>
                 <!-- end Aanab Footer  -->
-            </div>
+            </section>
 
 
-        </div>
+        </section>
 
     </main>
     <!-- end Aanab main page content  -->
-
-
 
     <!-- scripts   -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
