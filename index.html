@@ -15,52 +15,62 @@
     <!-- start Aanab header  -->
     <header aria-label="page-header" class=" flex items-center h-20 shadow-headerShadow">
         <div class="container">
-            <div class="flex items-center gap-10">
+            <div class="flex justify-between items-center gap-10  mx-[34px] lg:mx-0">
+                <button class="mobile-menu-btn flex items-center gap-1.5 lg:hidden">
+                    <svg width="19" height="20" viewBox="0 0 19 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M18.0312 16.6875H0.96875C0.599609 16.6875 0.3125 17.0156 0.3125 17.3438V18.6562C0.3125 19.0254 0.599609 19.3125 0.96875 19.3125H18.0312C18.3594 19.3125 18.6875 19.0254 18.6875 18.6562V17.3438C18.6875 17.0156 18.3594 16.6875 18.0312 16.6875ZM18.0312 11.4375H0.96875C0.599609 11.4375 0.3125 11.7656 0.3125 12.0938V13.4062C0.3125 13.7754 0.599609 14.0625 0.96875 14.0625H18.0312C18.3594 14.0625 18.6875 13.7754 18.6875 13.4062V12.0938C18.6875 11.7656 18.3594 11.4375 18.0312 11.4375ZM18.0312 6.1875H0.96875C0.599609 6.1875 0.3125 6.51562 0.3125 6.84375V8.15625C0.3125 8.52539 0.599609 8.8125 0.96875 8.8125H18.0312C18.3594 8.8125 18.6875 8.52539 18.6875 8.15625V6.84375C18.6875 6.51562 18.3594 6.1875 18.0312 6.1875ZM18.0312 0.9375H0.96875C0.599609 0.9375 0.3125 1.26562 0.3125 1.59375V2.90625C0.3125 3.27539 0.599609 3.5625 0.96875 3.5625H18.0312C18.3594 3.5625 18.6875 3.27539 18.6875 2.90625V1.59375C18.6875 1.26562 18.3594 0.9375 18.0312 0.9375Z"
+                            fill="#6B7280" />
+                    </svg>
+                    <span class="text-13-19 text-[#6B7280]">القائمة</span>
+                </button>
                 <!-- aanaab logo  -->
                 <div class="aanaab-logo">
                     <img src="assets/images/Visitor/logo.svg" alt="logo">
                 </div>
                 <!-- aanaab navbar  -->
-                <div class="flex items-center w-full justify-between">
-                   <div class="flex items-center">
-                    <div class="flex gap-6">
-                        <div class="flex items-center gap-1 cursor-pointer">
-                            <span class="font-bold text-text-base">تصفح الوظائف</span>
-                            <svg width="10" height="8" viewBox="0 0 10 8" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path d="M5.00387 7.49731L9.02387 0.527314H0.973867L5.00387 7.49731Z" fill="#333745" />
-                            </svg>
+                <div class="flex items-center lg:w-full justify-between">
+                    <div class="hidden lg:flex items-center">
+                        <div class="flex gap-6">
+                            <div class="flex items-center gap-1 cursor-pointer">
+                                <span class="font-bold text-text-base">تصفح الوظائف</span>
+                                <svg width="10" height="8" viewBox="0 0 10 8" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M5.00387 7.49731L9.02387 0.527314H0.973867L5.00387 7.49731Z"
+                                        fill="#333745" />
+                                </svg>
+                            </div>
+                            <a href="#" class="text-text-base text-[#6B7280] font-bold">المنصة التعليمية</a>
                         </div>
-                        <a href="#" class="text-text-base text-[#6B7280] font-bold">المنصة التعليمية</a>
+                        <!-- search btn  -->
+                        <div class="mr-8 ml-24 w-60 h-10 text-text-sm relative">
+                            <img class="absolute top-[12px] left-[16px] cursor-pointer"
+                                src="assets/images/Visitor/search-icon.svg" alt="search icon">
+                            <form action="">
+                                <input type="search" placeholder="بحث في الوظائف"
+                                    class="w-60 h-10 rounded-[40px] border border-[#D1D5DB] focus:outline-none px-4"
+                                    name="" id="">
+                            </form>
+                        </div>
                     </div>
-                    <!-- search btn  -->
-                    <div class="mr-8 ml-24 w-60 h-10 text-text-sm relative">
-                        <img class="absolute top-[12px] left-[16px] cursor-pointer"
-                            src="assets/images/Visitor/search-icon.svg" alt="search icon">
-                        <form action="">
-                            <input type="search" placeholder="بحث في الوظائف"
-                                class="w-60 h-10 rounded-[40px] border border-[#D1D5DB] focus:outline-none px-4" name=""
-                                id="">
-                        </form>
-                    </div>
-                   </div>
-                   <div class="flex items-center">
-                     <!-- schools  -->
-                     <a href="#" class="flex items-center gap-1 ml-[19px]">
-                        <img src="assets/images/Visitor/school.svg" alt="school icon">
-                        <span class="text-text-sm text-[#6B7280]">المدراس</span>
-                    </a>
-                    <div class=" flex items-center gap-3">
-                        <a href="#"
-                            class="inline-block py-2 px-4 text-text-sm rounded-[40px] text-primary font-bold bg-[#F8F4FF]">انضم
-                            الى اعناب
+                    <div class="flex items-center">
+                        <!-- schools  -->
+                        <a href="#" class="hidden lg:flex lg:items-center lg:gap-1 ml-[19px]">
+                            <img src="assets/images/Visitor/school.svg" alt="school icon">
+                            <span class="text-text-sm text-[#6B7280]">المدراس</span>
                         </a>
-                        <a href="#" class="flex items-center gap-1">
-                            <img src="assets/images/Visitor/user-icon.svg" alt="user icon">
-                            <span class="text-text-sm text-[#6B7280]">دخول</span>
-                        </a>
+                        <div class=" flex items-center gap-3">
+                            <a href="#"
+                                class="hidden lg:inline-block py-2 px-4 text-text-sm rounded-[40px] text-primary font-bold bg-[#F8F4FF]">انضم
+                                الى اعناب
+                            </a>
+                            <a href="#" class="flex items-center gap-1">
+                                <img class="block" src="assets/images/Visitor/user-icon.svg" width="16px" height="17px"
+                                    alt="user icon">
+                                <span class="hidden lg:inline-block text-text-sm text-[#6B7280]">دخول</span>
+                            </a>
+                        </div>
                     </div>
-                   </div>
                 </div>
             </div>
         </div>
@@ -73,28 +83,29 @@
         <section class="pt-12 pb-24 flex flex-col gap-32 bg-[#F7FAFA] items-center ">
             <!-- hero section  -->
             <section class="container">
-                <div class="flex justify-between items-center gap-[15px]">
+                <div class="grid grid-cols-2 lg:flex justify-between flex-1 items-center gap-[62px] lg:gap-[15px]">
                     <section class="">
                         <h1
-                            class="text-text-3xl font-bold text-transparent bg-clip-text from-primary to-secondary bg-gradient-to-r ">
+                            class="text-20-30 lg:text-text-3xl text-center lg:text-right font-bold text-transparent bg-clip-text from-primary to-secondary bg-gradient-to-r ">
                             الوظيفة اللي تتمناها صار لها مكان</h1>
-                        <p class="mt-4 mb-8 text-text-xl text-[#6B7280]">اول واكبر منصة توظيف للمعلمين والتربويين، مئات
+                        <p class="mt-4 mb-8 text-14-25 lg:text-text-xl text-[#6B7280] text-center lg:text-right">اول
+                            واكبر منصة توظيف للمعلمين والتربويين، مئات
                             الوظائف في كل التخصصات
                             والمراحل المهنية المختلفة.</p>
-                        <div class="flex gap-6">
+                        <div class="flex flex-col lg:flex-row gap-2 lg:gap-6">
                             <button
-                                class="text-white text-text-lg font-bold bg-gradient-to-r from-primary to-secondary px-14  py-5 rounded-[40px]">انضم
+                                class="text-white text-16-24 lg:text-text-lg font-bold bg-gradient-to-r from-primary to-secondary px-14 py-3 lg:py-5 rounded-[40px]">انضم
                                 لمنصه اعناب الآن</button>
                             <button
-                                class="text-[#6B7280] text-text-lg font-bold px-10 py-5 border border-[#D1D5DB] rounded-[40px]">اعناب
+                                class="text-[#6B7280] text-16-24 lg:text-text-lg font-bold px-10 py-3 lg:py-5 border border-[#D1D5DB] rounded-[40px]">اعناب
                                 للمدراس</button>
                         </div>
                     </section>
-                    <section class="relative">
-                        <img class="absolute  left-[150px] top-[-40px]" src="assets/images/Visitor/hero-abs.png"
-                            alt="apple">
-                        <img class="absolute left-[-81px] top-0" src="assets/images/Visitor/hero-abs2.png"
-                            alt="Education">
+                    <section class="relative ">
+                        <img class="absolute sm:w-[250px] lg:w-auto sm:right-[-60px] lg:right-[-90px] lg:top-[-40px]"
+                            src="assets/images/Visitor/hero-abs.png" alt="apple">
+                        <img class="absolute w-[170px] lg:w-[291px]  left-[-81px] lg:left-[-80px] top-0"
+                            src="assets/images/Visitor/hero-abs2.png" alt="Education">
                         <img class="relative z-10" width="431px" src="assets/images/Visitor/hero-woman.png" alt="woman">
                     </section>
                 </div>
@@ -127,7 +138,7 @@
                         <a href="#" class="text-primary font-extrabold	">المزيد من الوظائف ←</a>
                     </header>
                     <!-- start  featured jobs cards -->
-                    <section class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-[30px] flex-wrap">
+                    <section class="grid lg:grid-cols-3 lg:grid-cols-2 grid-cols-1 gap-[30px] flex-wrap">
                         <!-- card item  -->
                         <article class="rounded-2xl bg-white shadow-featuredJob py-[25px] px-5 flex flex-col gap-4">
                             <div class="flex items-center gap-4">
@@ -489,7 +500,7 @@
                         <a href="#" class="text-primary font-extrabold	">المزيد من الوظائف ←</a>
                     </header>
                     <!-- start  featured jobs cards -->
-                    <section class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-[30px] flex-wrap">
+                    <section class="grid lg:grid-cols-3 lg:grid-cols-2 grid-cols-1 gap-[30px] flex-wrap">
                         <!-- card item  -->
                         <article
                             class="rounded-2xl  bg-white border border-[#D1D5DB] shadow-featuredJob py-[25px] px-5 flex flex-col gap-4">
@@ -840,7 +851,7 @@
                     <div class="testimonials">
                         <!-- testimonial item  -->
                         <article
-                            class="carousel-cell w-full  py-8 px-10 md:w-[350px] mx-[15px] border rounded-xl border-[#D1D5DB]">
+                            class="carousel-cell w-full  py-8 px-10 lg:w-[350px] mx-[15px] border rounded-xl border-[#D1D5DB]">
                             <div class="flex flex-col justify-between items-center gap-[39px]">
                                 <div class="flex flex-col gap-6 items-center justify-center">
                                     <img src="assets/images/Visitor/star.png" alt="stars">
@@ -863,7 +874,7 @@
                         </article>
                         <!-- testimonial item  -->
                         <article
-                            class="carousel-cell w-full  py-8 px-10 md:w-[350px] mx-[15px] border rounded-xl	 border-[#D1D5DB]">
+                            class="carousel-cell w-full  py-8 px-10 lg:w-[350px] mx-[15px] border rounded-xl	 border-[#D1D5DB]">
                             <div class="flex flex-col justify-between items-center gap-[39px]">
                                 <div class="flex flex-col gap-6 items-center justify-center">
                                     <img src="assets/images/Visitor/star.png" alt="stars">
@@ -885,7 +896,7 @@
                         </article>
                         <!-- testimonial item  -->
                         <article
-                            class="carousel-cell w-full  py-8 px-10 md:w-[350px] mx-[15px] border rounded-xl	 border-[#D1D5DB]">
+                            class="carousel-cell w-full  py-8 px-10 lg:w-[350px] mx-[15px] border rounded-xl	 border-[#D1D5DB]">
                             <div class="flex flex-col justify-between items-center gap-[39px]">
                                 <div class="flex flex-col gap-6 items-center justify-center">
                                     <img src="assets/images/Visitor/star.png" alt="stars">
@@ -907,7 +918,7 @@
                         </article>
                         <!-- testimonial item  -->
                         <article
-                            class="carousel-cell w-full  py-8 px-10 md:w-[350px] mx-[15px] border rounded-xl border-[#D1D5DB]">
+                            class="carousel-cell w-full  py-8 px-10 lg:w-[350px] mx-[15px] border rounded-xl border-[#D1D5DB]">
                             <div class="flex flex-col justify-between items-center gap-[39px]">
                                 <div class="flex flex-col gap-6 items-center justify-center">
                                     <img src="assets/images/Visitor/star.png" alt="stars">
@@ -983,7 +994,7 @@
                         <img src="assets/images/Visitor/Ellipse-8.png" alt="ellipse">
                     </section>
                     <section class="flex flex-col gap-10 justify-center">
-                        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3  gap-[31px] ">
+                        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3  gap-[31px] ">
                             <p
                                 class="flex-1 py-4 px-[18px] rounded-lg border border-[#D1D5DB] font-bold text-[#6B7280]">
                                 اشتراك سنوى يمنح بمعلمى المدرسة الانضمام الى الدورات المقدمة على المنصة</p>
@@ -1006,7 +1017,7 @@
                 <!-- aanaab Blog section  -->
                 <section class="flex flex-col gap-10">
                     <h2 class="text-30-45 text-[#333745] font-bold text-center">مدونة اعناب </h2>
-                    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-[31px]">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 lg:grid-cols-4 gap-[31px]">
                         <article
                             class="flex flex-1 flex-col gap-4 rounded-2xl overflow-hidden pb-4 justify-between border border-[#D1D5DB]">
                             <div class="flex flex-col gap-4">
@@ -1100,7 +1111,7 @@
                                 التدريس : أرجاء العالم العربي , ومتحمسون لتوسيع دائرة المستفيدسن والتربويين, يقدمها
                                 أكاديميون ومعلمون متميزون من مختلف دورات تدريبيه متخصصة فى مجال التطوير المهنى للمعلمين
                                 منصه تعليميه إلكترونية تهتم بتقديم
-                                <a class="text-primary font-bold text-14-17 mr-2" href="#"> ... المزيد  ←</a>
+                                <a class="text-primary font-bold text-14-17 mr-2" href="#"> ... المزيد ←</a>
                             </p>
                         </div>
                         <div class="col-span-5  flex flex-col gap-6  items-start">
