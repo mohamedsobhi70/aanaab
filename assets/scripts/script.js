@@ -31,3 +31,14 @@ $carousel.on('change.flickity', () => {
     $(".testimonials .carousel-cell:not(.is-selected) .content ").css({ "color": "#6B7280" });
     $(".testimonials .carousel-cell:not(.is-selected)").css({ "border": "1px solid #D1D5DB", "box-shadow": "none" });
 });
+
+
+let $carousel2 = $(".explore-jobs").flickity({
+    autoPlay: true,
+    wrapAround: true,
+    pageDots: false,
+    prevNextButtons: false,
+    imagesLoaded: true,
+    setGallerySize: true,
+    fullscreen: true,
+});
