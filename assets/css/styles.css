@@ -688,6 +688,10 @@ video {
   margin-top: 30px;
 }
 
+.mt-12{
+  margin-top: 3rem;
+}
+
 .block{
   display: block;
 }
@@ -938,6 +942,10 @@ video {
 
 .gap-\[70px\]{
   gap: 70px;
+}
+
+.gap-16{
+  gap: 4rem;
 }
 
 .overflow-hidden{
@@ -1243,6 +1251,10 @@ video {
   padding-top: 8rem;
 }
 
+.pt-16{
+  padding-top: 4rem;
+}
+
 .text-center{
   text-align: center;
 }
@@ -1384,6 +1396,11 @@ video {
 .text-xl{
   font-size: 1.25rem;
   line-height: 1.75rem;
+}
+
+.text-xs{
+  font-size: 0.75rem;
+  line-height: 1rem;
 }
 
 .font-bold{
@@ -1590,9 +1607,18 @@ video {
     border-width: 1px;
   }
 
+  .sm\:border-t{
+    border-top-width: 1px;
+  }
+
   .sm\:border-\[\#D1D5DB\]{
     --tw-border-opacity: 1;
     border-color: rgb(209 213 219 / var(--tw-border-opacity));
+  }
+
+  .sm\:border-t-\[\#D1D5DB\]{
+    --tw-border-opacity: 1;
+    border-top-color: rgb(209 213 219 / var(--tw-border-opacity));
   }
 
   .sm\:px-12{
@@ -1794,6 +1820,18 @@ video {
     gap: 30px;
   }
 
+  .lg\:gap-\[31px\]{
+    gap: 31px;
+  }
+
+  .lg\:gap-12{
+    gap: 3rem;
+  }
+
+  .lg\:gap-24{
+    gap: 6rem;
+  }
+
   .lg\:overflow-visible{
     overflow: visible;
   }
@@ -1834,6 +1872,10 @@ video {
     padding-bottom: 1.25rem;
   }
 
+  .lg\:pt-32{
+    padding-top: 8rem;
+  }
+
   .lg\:text-right{
     text-align: right;
   }
@@ -1871,5 +1913,25 @@ video {
   .lg\:text-text-xl{
     font-size: 21px;
     line-height: 31.5px;
+  }
+
+  .lg\:text-16-24{
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .lg\:text-14-27{
+    font-size: 14px;
+    line-height: 27px;
+  }
+
+  .lg\:text-sm{
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+
+  .lg\:text-13-19{
+    font-size: 13px;
+    line-height: 19.5px;
   }
 }
