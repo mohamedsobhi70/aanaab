@@ -1000,6 +1000,10 @@ video {
   border-top-width: 1px;
 }
 
+.border-none{
+  border-style: none;
+}
+
 .border-\[\#D1D5DB\]{
   --tw-border-opacity: 1;
   border-color: rgb(209 213 219 / var(--tw-border-opacity));
@@ -1554,6 +1558,10 @@ video {
     display: block;
   }
 
+  .sm\:hidden{
+    display: none;
+  }
+
   .sm\:grid-cols-2{
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -1798,8 +1806,17 @@ video {
     border-radius: 0px;
   }
 
+  .lg\:border-b{
+    border-bottom-width: 1px;
+  }
+
   .lg\:border-none{
     border-style: none;
+  }
+
+  .lg\:border-b-\[\#D9DADC\]{
+    --tw-border-opacity: 1;
+    border-bottom-color: rgb(217 218 220 / var(--tw-border-opacity));
   }
 
   .lg\:px-0{
