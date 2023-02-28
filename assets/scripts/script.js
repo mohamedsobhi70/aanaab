@@ -36,9 +36,18 @@ $carousel.on('change.flickity', () => {
 let $carousel2 = $(".explore-jobs").flickity({
     autoPlay: true,
     wrapAround: true,
-    pageDots: false,
     prevNextButtons: false,
     imagesLoaded: true,
     setGallerySize: true,
     fullscreen: true,
+    pageDots: true,groupCells: true,
+});
+let $carousel3 = $(".explore-jobs-2").flickity({
+    autoPlay: true,
+    wrapAround: true,
+    prevNextButtons: false,
+    imagesLoaded: true,
+    setGallerySize: true,
+    fullscreen: true,
+    pageDots: true,groupCells: true,
 });
