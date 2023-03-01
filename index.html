@@ -46,10 +46,10 @@
                         <div class="mr-8 ml-24 w-60 h-10 text-text-sm relative">
                             <img class="absolute top-[12px] ltr:right-[16px] rtl:left-[16px] cursor-pointer"
                                 src="assets/images/Visitor/search-icon.svg" alt="search icon">
-                            <form action="">
+                            <form >
                                 <input type="search" placeholder="بحث في الوظائف"
                                     class="w-60 h-10 rounded-[40px] border border-[#D1D5DB] focus:outline-none px-4"
-                                    name="" id="">
+                                 >
                             </form>
                         </div>
                     </div>
@@ -114,7 +114,7 @@
 
                 <section class="search py-8 px-[8px] lg:hidden">
                     <div class="flex flex-col gap-3 items-end relative">
-                        <button
+                        <div
                             class="w-full cursor-pointer border border-[#D9DADC] rounded-[48px] bg-white overflow-hidden focus-visible:outline-primary">
                             <span
                                 class="absolute w-10 h-10 inline-flex justify-center items-center rtl:left-2 ltr:right-2 top-2 rounded-full bg-primary">
@@ -125,9 +125,8 @@
                                         fill="#F7FAFA" />
                                 </svg>
                             </span>
-                            <input class="p-4 w-full rounded-[48px]" type="text" placeholder="بحث في الوظائف" name=""
-                                id="">
-                        </button>
+                            <input class="p-4 w-full rounded-[48px]" type="text" placeholder="بحث في الوظائف">
+                        </div>
                         <button class="flex gap-2.5 items-center">
                             <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
@@ -1071,7 +1070,7 @@
                             </div>
                         </section>
                         <section class=" flex flex-1 flex-col gap-8">
-                            <h2 class="text-16-24 lg:text-30-45 font-bold text-center text-[#333745] hidden lg:block"">🎒 تصفح الوظائف بالمراحلة
+                            <h2 class="text-16-24 lg:text-30-45 font-bold text-center text-[#333745] hidden lg:block">🎒 تصفح الوظائف بالمراحلة
                                 التعليمية</h2>
                             <div class=" flex flex-col gap-[30px]">
 
@@ -1135,8 +1134,8 @@
                                 <div class="bg-cover w-12 h-12"
                                     style="background-image: url(assets/images/Visitor/testimonials-1.png);"></div>
                                 <div class="flex flex-col gap-[5px]">
-                                    <h3 class="text-text-base text-[#333745]">فيصل رابح</h4>
-                                        <p class="text-text-sm text-[#6B7280]">خبير تربوى وتعليمى</p>
+                                    <h3 class="text-text-base text-[#333745]">فيصل رابح</h3>
+                                    <p class="text-text-sm text-[#6B7280]">خبير تربوى وتعليمى</p>
                                 </div>
                             </div>
                         </div>
@@ -1157,8 +1156,8 @@
                                 <div class="bg-cover w-12 h-12"
                                     style="background-image: url(assets/images/Visitor/testimonials-2.png);"></div>
                                 <div class="flex flex-col gap-[5px]">
-                                    <h3 class="text-text-base text-[#333745]">رزانا البنوى</h4>
-                                        <p class="text-text-sm text-[#6B7280]">خبير تربوى وتعليمى</p>
+                                    <h3 class="text-text-base text-[#333745]">رزانا البنوى</h3>
+                                    <p class="text-text-sm text-[#6B7280]">خبير تربوى وتعليمى</p>
                                 </div>
                             </div>
                         </div>
@@ -1179,8 +1178,8 @@
                                 <div class="bg-cover w-12 h-12"
                                     style="background-image: url(assets/images/Visitor/testimonials-3.png);"></div>
                                 <div class="flex flex-col gap-[5px]">
-                                    <h3 class="text-text-base text-[#333745]">شهد الشريف</h4>
-                                        <p class="text-text-sm text-[#6B7280]">خبير تربوى وتعليمى</p>
+                                    <h3 class="text-text-base text-[#333745]">شهد الشريف</h3>
+                                    <p class="text-text-sm text-[#6B7280]">خبير تربوى وتعليمى</p>
                                 </div>
                             </div>
                         </div>
@@ -1201,8 +1200,8 @@
                                 <div class="bg-cover w-12 h-12"
                                     style="background-image: url(assets/images/Visitor/testimonials-3.png);"></div>
                                 <div class="flex flex-col gap-[5px]">
-                                    <h3 class="text-text-base text-[#333745]">شهد الشريف</h4>
-                                        <p class="text-text-sm text-[#6B7280]">خبير تربوى وتعليمى</p>
+                                    <h3 class="text-text-base text-[#333745]">شهد الشريف</h3>
+                                    <p class="text-text-sm text-[#6B7280]">خبير تربوى وتعليمى</p>
                                 </div>
                             </div>
                         </div>
@@ -1319,9 +1318,9 @@
                     </div>
                     <button
                         class="rounded-[48px] w-full lg:w-auto bg-[#333745] px-10 py-[11px] text-white font-extrabold text-center mx-auto">
-                        <div class="lg:text-16-24 text-14-21">
+                        <span class="lg:text-16-24 text-14-21">
                             اعرف المزيد عن خدمات اعناب للتوظيف
-                        </div>
+                        </span>
                     </button>
                 </section>
             </section>
@@ -1334,7 +1333,7 @@
                     <article
                         class="flex flex-1 flex-col gap-4 rounded-2xl overflow-hidden pb-4 justify-between sm:border sm:border-[#D1D5DB]">
                         <div class="flex flex-col gap-4">
-                            <div class="">
+                            <div >
                                 <img class="w-full block" src="assets/images/Visitor/blog-1.png" alt="Blog 1">
                             </div>
                             <div class="flex flex-col gap-2 px-4">
@@ -1352,7 +1351,7 @@
                     <article
                         class="flex flex-1 flex-col gap-4 rounded-2xl overflow-hidden pb-4 justify-between sm:border sm:border-[#D1D5DB]">
                         <div class="flex flex-col gap-4">
-                            <div class="">
+                            <div >
                                 <img class="w-full block" src="assets/images/Visitor/blog-2.png" alt="Blog 1">
                             </div>
                             <div class="flex flex-col gap-2 px-4">
@@ -1370,7 +1369,7 @@
                     <article
                         class="flex flex-1 flex-col gap-4 rounded-2xl overflow-hidden pb-4 justify-between sm:border sm:border-[#D1D5DB]">
                         <div class="flex flex-col gap-4">
-                            <div class="">
+                            <div >
                                 <img class="w-full block" src="assets/images/Visitor/blog-3.png" alt="Blog 1">
                             </div>
                             <div class="flex flex-col gap-2 px-4">
@@ -1388,7 +1387,7 @@
                     <article
                         class="flex flex-1 flex-col gap-4 rounded-2xl overflow-hidden pb-4 justify-between sm:border sm:border-[#D1D5DB]">
                         <div class="flex flex-col gap-4">
-                            <div class="">
+                            <div >
                                 <img class="w-full block" src="assets/images/Visitor/blog-4.png" alt="Blog 1">
                             </div>
                             <div class="flex flex-col gap-2 px-4">
@@ -1525,15 +1524,15 @@
                 <section class="py-8 flex flex-col gap-2 lg:flex-row items-center justify-between">
                     <p class="text-[#6B7280]text-14-27">جميع الحقوق محفوظة © منصة أعناب</p>
                     <nav class="flex leading-[8px] ">
-                        <a href=""
+                        <a href="#"
                             class="text-[#6B7280]  text-13-19 lg:text-sm border-l  border-[#D1D5DB] px-4">الرئيسية</a>
-                        <a href="" class="text-[#6B7280]  text-13-19 lg:text-sm border-l  border-[#D1D5DB] px-4">تصفح
+                        <a href="#" class="text-[#6B7280]  text-13-19 lg:text-sm border-l  border-[#D1D5DB] px-4">تصفح
                             الدورات</a>
-                        <a href=""
+                        <a href="#"
                             class="text-[#6B7280]  text-13-19 lg:text-sm border-l  border-[#D1D5DB] px-4 hidden md:block">عن
                             منصة
                             أعناب</a>
-                        <a href="" class="text-[#6B7280]  text-13-19 lg:text-sm px-4">سياسة الخصوصية</a>
+                        <a href="#" class="text-[#6B7280]  text-13-19 lg:text-sm px-4">سياسة الخصوصية</a>
                     </nav>
                 </section>
             </footer>
