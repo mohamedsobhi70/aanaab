@@ -59,8 +59,21 @@ if ($(".filt-item")) {
     $(".filt-item .check-btn").click(function () {
         let th = $(this);
         th.find(" svg").toggleClass("hidden");
-        
+
     })
 }
 
+if ($(".open-filters")) {
+    let filterBtn = $(".open-filters"),
+        closeFilters = $(".close-filters"),
+        filtersection = $(".filters-section-container");
+    filtersection.css({ "top": "100%", "transform": "translateY(100%)" })
+    filterBtn.click(function () {
+        filtersection.removeClass("top-full").css({ "top": "0", "transform": "translateY(0%)" })
+    });
+    closeFilters.click(function () {
+        filtersection.css({ "top": "100%", "transform": "translateY(100%)" })
+
+    })
+}
 
