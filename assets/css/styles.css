@@ -989,14 +989,6 @@ video {
   border-left-width: 1px;
 }
 
-.border-t{
-  border-top-width: 1px;
-}
-
-.border-t-0{
-  border-top-width: 0px;
-}
-
 .border-\[\#D1D5DB\]{
   --tw-border-opacity: 1;
   border-color: rgb(209 213 219 / var(--tw-border-opacity));
@@ -1042,6 +1034,11 @@ video {
   background-color: rgb(240 246 246 / var(--tw-bg-opacity));
 }
 
+.bg-\[\#F3EDFF\]{
+  --tw-bg-opacity: 1;
+  background-color: rgb(243 237 255 / var(--tw-bg-opacity));
+}
+
 .bg-\[\#F7FAFA\]{
   --tw-bg-opacity: 1;
   background-color: rgb(247 250 250 / var(--tw-bg-opacity));
@@ -1067,21 +1064,6 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.bg-purple-100{
-  --tw-bg-opacity: 1;
-  background-color: rgb(243 232 255 / var(--tw-bg-opacity));
-}
-
-.bg-blue-50{
-  --tw-bg-opacity: 1;
-  background-color: rgb(239 246 255 / var(--tw-bg-opacity));
-}
-
-.bg-\[\#F3EDFF\]{
-  --tw-bg-opacity: 1;
-  background-color: rgb(243 237 255 / var(--tw-bg-opacity));
-}
-
 .bg-gradient-to-r{
   background-image: linear-gradient(to right, var(--tw-gradient-stops));
 }
@@ -1094,10 +1076,6 @@ video {
 
 .to-secondary{
   --tw-gradient-to: #AE47FF;
-}
-
-.to-primary{
-  --tw-gradient-to: #8447FF;
 }
 
 .bg-cover{
@@ -1447,8 +1425,8 @@ video {
   color: #0105138c;
 }
 
-.text-\[\#010513b3\]{
-  color: #010513b3;
+.text-\[\#010513E5\]{
+  color: #010513E5;
 }
 
 .text-\[\#010513e6\]{
@@ -1486,14 +1464,6 @@ video {
 .text-white{
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.text-current{
-  color: currentColor;
-}
-
-.text-\[\#010513E5\]{
-  color: #010513E5;
 }
 
 .opacity-20{
@@ -1736,6 +1706,11 @@ video {
     border-top-color: rgb(209 213 219 / var(--tw-border-opacity));
   }
 
+  .sm\:px-0{
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
   .sm\:px-12{
     padding-left: 3rem;
     padding-right: 3rem;
@@ -1749,11 +1724,6 @@ video {
   .sm\:px-\[38px\]{
     padding-left: 38px;
     padding-right: 38px;
-  }
-
-  .sm\:px-0{
-    padding-left: 0px;
-    padding-right: 0px;
   }
 
   .sm\:text-30-45{
@@ -1994,6 +1964,10 @@ video {
     border-style: none;
   }
 
+  .lg\:bg-transparent{
+    background-color: transparent;
+  }
+
   .lg\:bg-white{
     --tw-bg-opacity: 1;
     background-color: rgb(255 255 255 / var(--tw-bg-opacity));
@@ -2112,6 +2086,12 @@ video {
   .lg\:text-text-xl{
     font-size: 21px;
     line-height: 31.5px;
+  }
+
+  .lg\:shadow-featuredJob{
+    --tw-shadow:  0px 1px 1px rgba(0, 0, 0, 0.16);
+    --tw-shadow-colored: 0px 1px 1px var(--tw-shadow-color);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
   }
 
   .lg\:shadow-none{
