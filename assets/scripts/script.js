@@ -40,7 +40,7 @@ let $carousel2 = $(".explore-jobs").flickity({
     imagesLoaded: true,
     setGallerySize: true,
     fullscreen: true,
-    pageDots: true,groupCells: true,
+    pageDots: true, groupCells: true,
 });
 let $carousel3 = $(".explore-jobs-2").flickity({
     autoPlay: true,
@@ -49,5 +49,18 @@ let $carousel3 = $(".explore-jobs-2").flickity({
     imagesLoaded: true,
     setGallerySize: true,
     fullscreen: true,
-    pageDots: true,groupCells: true,
+    pageDots: true, groupCells: true,
 });
+
+
+// filters 
+
+if ($(".filt-item")) {
+    $(".filt-item .check-btn").click(function () {
+        let th = $(this);
+        th.find(" svg").toggleClass("hidden");
+        
+    })
+}
+
+
