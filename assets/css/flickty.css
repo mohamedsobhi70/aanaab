@@ -149,6 +149,7 @@ https://flickity.metafizzy.co
     display: none;
   }
 }
-.explore-jobs-2 .flickity-page-dots {
+.explore-jobs-2 .flickity-page-dots,
+.dashboared .flickity-page-dots {
   display: none;
 }
