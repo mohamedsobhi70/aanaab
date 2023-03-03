@@ -62,17 +62,16 @@ if ($(".filt-item")) {
 
     })
 }
-
 if ($(".open-filters")) {
     let filterBtn = $(".open-filters"),
         closeFilters = $(".close-filters"),
         filtersection = $(".filters-section-container");
-    filtersection.css({ "top": "100%", "transform": "translateY(100%)" })
+    filtersection.css({ "top": "100%" })
     filterBtn.click(function () {
-        filtersection.removeClass("top-full").css({ "top": "0", "transform": "translateY(0%)" })
+        filtersection.removeClass("top-full").removeClass("translate-y-full").css({ "top": "0" })
     });
     closeFilters.click(function () {
-        filtersection.css({ "top": "100%", "transform": "translateY(100%)" })
+        filtersection.addClass("translate-y-full")
 
     })
 }
