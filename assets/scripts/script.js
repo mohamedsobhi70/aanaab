@@ -69,16 +69,7 @@ let $carousel4 = $(".dashboared").flickity({
 });
 
 
-// filters 
-
-if ($(".filt-item")) {
-    $(".filt-item .check-btn").click(function () {
-        let th = $(this);
-        th.find(" svg").toggleClass("hidden");
-
-    })
-}
-
+// filrer mobile aside 
 if ($(".open-filters")) {
     let filterBtn = $(".open-filters"),
         closeFilters = $(".close-filters"),
