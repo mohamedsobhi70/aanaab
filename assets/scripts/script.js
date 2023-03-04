@@ -90,3 +90,14 @@ if ($(".closebtn")) {
         $(this).parent().css("display", "none")
     })
 }
+
+// =================================================
+
+
+
+if (document.getElementById("personal-img")) {
+    var loadFile = function (event) {
+        var image = document.getElementById("personal-img");
+        image.src = URL.createObjectURL(event.target.files[0]);
+    };
+}
