@@ -16,7 +16,7 @@
     <header aria-label="page-header" class="flex items-center h-20 shadow-headerShadow">
         <div class="container">
             <div class="flex justify-between items-center gap-10  px-[30px] sm:px-[34px] lg:px-0">
-                <button class="mobile-menu-btn flex items-center gap-1.5 lg:hidden">
+                <button class="mobile-menu-btn basis-1/4 lg:basis-auto flex items-center gap-1.5 lg:hidden">
                     <svg width="19" height="20" viewBox="0 0 19 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
                             d="M18.0312 16.6875H0.96875C0.599609 16.6875 0.3125 17.0156 0.3125 17.3438V18.6562C0.3125 19.0254 0.599609 19.3125 0.96875 19.3125H18.0312C18.3594 19.3125 18.6875 19.0254 18.6875 18.6562V17.3438C18.6875 17.0156 18.3594 16.6875 18.0312 16.6875ZM18.0312 11.4375H0.96875C0.599609 11.4375 0.3125 11.7656 0.3125 12.0938V13.4062C0.3125 13.7754 0.599609 14.0625 0.96875 14.0625H18.0312C18.3594 14.0625 18.6875 13.7754 18.6875 13.4062V12.0938C18.6875 11.7656 18.3594 11.4375 18.0312 11.4375ZM18.0312 6.1875H0.96875C0.599609 6.1875 0.3125 6.51562 0.3125 6.84375V8.15625C0.3125 8.52539 0.599609 8.8125 0.96875 8.8125H18.0312C18.3594 8.8125 18.6875 8.52539 18.6875 8.15625V6.84375C18.6875 6.51562 18.3594 6.1875 18.0312 6.1875ZM18.0312 0.9375H0.96875C0.599609 0.9375 0.3125 1.26562 0.3125 1.59375V2.90625C0.3125 3.27539 0.599609 3.5625 0.96875 3.5625H18.0312C18.3594 3.5625 18.6875 3.27539 18.6875 2.90625V1.59375C18.6875 1.26562 18.3594 0.9375 18.0312 0.9375Z"
@@ -25,11 +25,12 @@
                     <span class="text-13-19 text-[#6B7280]">القائمة</span>
                 </button>
                 <!-- aanaab logo  -->
-                <a href="index.html" class="aanaab-logo">
-                    <img src="assets/images/Visitor/logo.svg" alt="logo">
+                <a href="index.html" class="aanaab-logo basis-2/4 lg:basis-auto flex justify-center">
+                    <img src="assets/images/Visitor/logo.svg" class="w-[120px] lg:w-[180px]" alt="logo">
                 </a>
                 <!-- aanaab navbar  -->
-                <div class="flex items-center min-w-[16px] lg:w-full justify-between">
+                <div
+                    class="flex items-center min-w-[16px] lg:w-full justify-end lg:justify-between basis-1/4 lg:basis-auto">
                     <div class="hidden lg:flex items-center">
                         <div class="flex gap-6">
                             <div class="flex items-center gap-1 cursor-pointer">
@@ -84,7 +85,7 @@
             <section class="container px-[30px] sm:px-[38px] lg:px-0">
                 <div class="flex flex-col sm:flex-row  justify-between items-center gap-3 sm:gap-4 lg:gap-[15px]">
                     <section
-                        class="order-2 basis-1/2 lg:basis-auto sm:order-1 flex items-start flex-col gap-6 sm:gap-3">
+                        class="order-2 basis-1/2 lg:basis-auto sm:order-1 flex lg:items-start flex-col gap-6 sm:gap-3">
                         <div class="flex items-start flex-col gap-3 sm:gap-3">
                             <h1
                                 class="text-20-30 lg:text-text-3xl text-center font-bold text-transparent bg-clip-text from-primary to-secondary bg-gradient-to-r ">
@@ -223,8 +224,8 @@
                                 <img src="assets/images/Visitor/Ellipse-7.png" class="object-cover h-full"
                                     alt="ellipse"></a>
                         </div>
-                      
-                        
+
+
                     </section>
                 </div>
             </section>
@@ -241,7 +242,7 @@
                     <section
                         class="grid border-b border-b-[#D9DADC] sm:border sm:border-[#D9DADC] lg:border-none rounded-none sm:rounded-2xl lg:rounded-none overflow-hidden lg:overflow-visible  lg:grid-cols-3 grid-cols-1 lg:gap-[30px] flex-wrap">
                         <!-- card item  -->
-                        <article
+                        <a href="#"
                             class="lg:rounded-2xl border-b border-b-[#D9DADC] lg:border-none bg-white shadow-featuredJob py-[25px] px-[30px] sm:px-8 lg:px-5 flex flex-col gap-4">
                             <div class="flex items-center gap-4">
                                 <div
@@ -298,10 +299,10 @@
                                     </span>
                                 </div>
                             </div>
-                        </article>
+                        </a>
 
                         <!-- card item  -->
-                        <article
+                        <a href="#"
                             class="lg:rounded-2xl border-b border-b-[#D9DADC] lg:border-none bg-white shadow-featuredJob py-[25px]   px-[30px] sm:px-8 lg:px-5 flex flex-col gap-4">
                             <div class="flex items-center gap-4">
                                 <div
@@ -358,10 +359,10 @@
                                     </span>
                                 </div>
                             </div>
-                        </article>
+                        </a>
 
                         <!-- card item  -->
-                        <article
+                        <a href="#"
                             class="lg:rounded-2xl border-b border-b-[#D9DADC] lg:border-none bg-white shadow-featuredJob py-[25px]  px-[30px] sm:px-8 lg:px-5 flex flex-col gap-4">
                             <div class="flex items-center gap-4">
                                 <div
@@ -418,10 +419,10 @@
                                     </span>
                                 </div>
                             </div>
-                        </article>
+                        </a>
 
                         <!-- card item  -->
-                        <article
+                        <a href="#" cle
                             class="lg:rounded-2xl border-b border-b-[#D9DADC] lg:border-none bg-white shadow-featuredJob py-[25px]  px-[30px] sm:px-8 lg:px-5 flex flex-col gap-4">
                             <div class="flex items-center gap-4">
                                 <div
@@ -478,10 +479,10 @@
                                     </span>
                                 </div>
                             </div>
-                        </article>
+                        </a>
 
                         <!-- card item  -->
-                        <article
+                        <a href="#" 
                             class="lg:rounded-2xl border-b border-b-[#D9DADC] lg:border-none bg-white shadow-featuredJob py-[25px]  px-[30px] sm:px-8 lg:px-5 flex flex-col gap-4">
                             <div class="flex items-center gap-4">
                                 <div
@@ -538,10 +539,10 @@
                                     </span>
                                 </div>
                             </div>
-                        </article>
+                        </a>
 
                         <!-- card item  -->
-                        <article
+                        <a href="#"
                             class="lg:rounded-2xl border-b border-b-[#D9DADC] lg:border-none bg-white shadow-featuredJob py-[25px]  px-[30px] sm:px-8 lg:px-5 flex flex-col gap-4">
                             <div class="flex items-center gap-4">
                                 <div
@@ -598,7 +599,7 @@
                                     </span>
                                 </div>
                             </div>
-                        </article>
+                        </a>
 
                     </section>
                     <a href="#" class="text-center text-16-21 text-[#01051366]  font-bold sm:hidden">أظهار الكل</a>
@@ -614,73 +615,95 @@
                     <h2 class="text-center text-24-36 lg:text-30-45 text-[#333745]  font-bold">⚡ التخصصات</h2>
                     <section class="grid grid-cols-2 lg:flex gap-4 lg:gap-[30px] flex-wrap justify-center">
                         <!-- item  -->
-                        <figure
-                            class="lg:w-40 lg:h-[136px] px-5 py-[25px] flex flex-col justify-center items-center gap-2.5  rounded-2xl border border-[#D1D5DB]">
+                        <a href="#"
+                            class="lg:w-40 lg:h-[136px] px-5 py-[25px] flex flex-col justify-center items-center gap-2.5  rounded-2xl border border-[#D1D5DB] group hover:border-primary transition-all duration-300">
                             <img src="assets/images/Visitor/maj-5.png" alt="major">
-                            <figcaption class="text-16-21 text-[#333745] font-bold">العلوم</figcaption>
-                        </figure>
+                            <figcaption
+                                class="text-16-21 text-[#333745] font-bold group-hover:text-primary transition-all duration-300">
+                                العلوم</figcaption>
+                        </a>
                         <!-- item  -->
-                        <figure
-                            class="lg:w-40 lg:h-[136px] px-5 py-[25px] flex flex-col justify-center items-center gap-2.5  rounded-2xl border border-[#D1D5DB]">
+                        <a href="#"
+                            class="lg:w-40 lg:h-[136px] px-5 py-[25px] flex flex-col justify-center items-center gap-2.5  rounded-2xl border border-[#D1D5DB] group hover:border-primary transition-all duration-300">
                             <img src="assets/images/Visitor/maj-1.png" alt="major">
-                            <figcaption class="text-16-21 text-[#333745] font-bold">الرياضيات</figcaption>
-                        </figure>
+                            <figcaption
+                                class="text-16-21 text-[#333745] font-bold group-hover:text-primary transition-all duration-300">
+                                الرياضيات</figcaption>
+                        </a>
                         <!-- item  -->
-                        <figure
-                            class="lg:w-40 lg:h-[136px] px-5 py-[25px] flex flex-col justify-center items-center gap-2.5  rounded-2xl border border-[#D1D5DB]">
+                        <a href="#"
+                            class="lg:w-40 lg:h-[136px] px-5 py-[25px] flex flex-col justify-center items-center gap-2.5  rounded-2xl border border-[#D1D5DB] group hover:border-primary transition-all duration-300">
                             <img src="assets/images/Visitor/maj-2.png" alt="major">
-                            <figcaption class="text-16-21 text-[#333745] font-bold">التاريخ</figcaption>
-                        </figure>
+                            <figcaption
+                                class="text-16-21 text-[#333745] font-bold group-hover:text-primary transition-all duration-300">
+                                التاريخ</figcaption>
+                        </a>
                         <!-- item  -->
-                        <figure
-                            class="lg:w-40 lg:h-[136px] px-5 py-[25px] flex flex-col justify-center items-center gap-2.5  rounded-2xl border border-[#D1D5DB]">
+                        <a href="#"
+                            class="lg:w-40 lg:h-[136px] px-5 py-[25px] flex flex-col justify-center items-center gap-2.5  rounded-2xl border border-[#D1D5DB] group hover:border-primary transition-all duration-300">
                             <img src="assets/images/Visitor/maj-3.png" alt="major">
-                            <figcaption class="text-16-21 text-[#333745] font-bold">الجرافيا</figcaption>
-                        </figure>
+                            <figcaption
+                                class="text-16-21 text-[#333745] font-bold group-hover:text-primary transition-all duration-300">
+                                الجرافيا</figcaption>
+                        </a>
                         <!-- item  -->
-                        <figure
-                            class="lg:w-40 lg:h-[136px] px-5 py-[25px] flex flex-col justify-center items-center gap-2.5  rounded-2xl border border-[#D1D5DB]">
+                        <a href="#"
+                            class="lg:w-40 lg:h-[136px] px-5 py-[25px] flex flex-col justify-center items-center gap-2.5  rounded-2xl border border-[#D1D5DB] group hover:border-primary transition-all duration-300">
                             <img src="assets/images/Visitor/maj-4.png" alt="major">
-                            <figcaption class="text-16-21 text-[#333745] font-bold">اللغات</figcaption>
-                        </figure>
+                            <figcaption
+                                class="text-16-21 text-[#333745] font-bold group-hover:text-primary transition-all duration-300">
+                                اللغات</figcaption>
+                        </a>
 
                         <!-- item  -->
-                        <figure
-                            class="lg:w-40 lg:h-[136px] px-5 py-[25px] flex flex-col justify-center items-center gap-2.5  rounded-2xl border border-[#D1D5DB]">
+                        <a href="#"
+                            class="lg:w-40 lg:h-[136px] px-5 py-[25px] flex flex-col justify-center items-center gap-2.5  rounded-2xl border border-[#D1D5DB] group hover:border-primary transition-all duration-300">
                             <img src="assets/images/Visitor/maj-2.png" alt="major">
-                            <figcaption class="text-16-21 text-[#333745] font-bold">التاريخ</figcaption>
-                        </figure>
+                            <figcaption
+                                class="text-16-21 text-[#333745] font-bold group-hover:text-primary transition-all duration-300">
+                                التاريخ</figcaption>
+                        </a>
                         <!-- item  -->
-                        <figure
-                            class="lg:w-40 lg:h-[136px] px-5 py-[25px] flex flex-col justify-center items-center gap-2.5  rounded-2xl border border-[#D1D5DB]">
+                        <a href="#"
+                            class="lg:w-40 lg:h-[136px] px-5 py-[25px] flex flex-col justify-center items-center gap-2.5  rounded-2xl border border-[#D1D5DB] group hover:border-primary transition-all duration-300">
                             <img src="assets/images/Visitor/maj-5.png" alt="major">
-                            <figcaption class="text-16-21 text-[#333745] font-bold">العلوم</figcaption>
-                        </figure>
+                            <figcaption
+                                class="text-16-21 text-[#333745] font-bold group-hover:text-primary transition-all duration-300">
+                                العلوم</figcaption>
+                        </a>
                         <!-- item  -->
-                        <figure
-                            class="lg:w-40 lg:h-[136px] px-5 py-[25px] flex flex-col justify-center items-center gap-2.5  rounded-2xl border border-[#D1D5DB]">
+                        <a href="#"
+                            class="lg:w-40 lg:h-[136px] px-5 py-[25px] flex flex-col justify-center items-center gap-2.5  rounded-2xl border border-[#D1D5DB] group hover:border-primary transition-all duration-300">
                             <img src="assets/images/Visitor/maj-1.png" alt="major">
-                            <figcaption class="text-16-21 text-[#333745] font-bold">الرياضيات</figcaption>
-                        </figure>
+                            <figcaption
+                                class="text-16-21 text-[#333745] font-bold group-hover:text-primary transition-all duration-300">
+                                الرياضيات</figcaption>
+                        </a>
 
                         <!-- item  -->
-                        <figure
-                            class="lg:w-40 lg:h-[136px] px-5 py-[25px] flex flex-col justify-center items-center gap-2.5  rounded-2xl border border-[#D1D5DB]">
+                        <a href="#"
+                            class="lg:w-40 lg:h-[136px] px-5 py-[25px] flex flex-col justify-center items-center gap-2.5  rounded-2xl border border-[#D1D5DB] group hover:border-primary transition-all duration-300">
                             <img src="assets/images/Visitor/maj-3.png" alt="major">
-                            <figcaption class="text-16-21 text-[#333745] font-bold">الجرافيا</figcaption>
-                        </figure>
+                            <figcaption
+                                class="text-16-21 text-[#333745] font-bold group-hover:text-primary transition-all duration-300">
+                                الجرافيا</figcaption>
+                        </a>
                         <!-- item  -->
-                        <figure
-                            class="lg:w-40 lg:h-[136px] px-5 py-[25px] flex flex-col justify-center items-center gap-2.5  rounded-2xl border border-[#D1D5DB]">
+                        <a href="#"
+                            class="lg:w-40 lg:h-[136px] px-5 py-[25px] flex flex-col justify-center items-center gap-2.5  rounded-2xl border border-[#D1D5DB] group hover:border-primary transition-all duration-300">
                             <img src="assets/images/Visitor/maj-4.png" alt="major">
-                            <figcaption class="text-16-21 text-[#333745] font-bold">اللغات</figcaption>
-                        </figure>
+                            <figcaption
+                                class="text-16-21 text-[#333745] font-bold group-hover:text-primary transition-all duration-300">
+                                اللغات</figcaption>
+                        </a>
                         <!-- item  -->
-                        <figure
-                            class="lg:w-40 lg:h-[136px] px-5 py-[25px] flex flex-col justify-center items-center gap-2.5  rounded-2xl border border-[#D1D5DB]">
+                        <a href="#"
+                            class="lg:w-40 lg:h-[136px] px-5 py-[25px] flex flex-col justify-center items-center gap-2.5  rounded-2xl border border-[#D1D5DB] group hover:border-primary transition-all duration-300">
                             <img src="assets/images/Visitor/maj-2.png" alt="major">
-                            <figcaption class="text-16-21 text-[#333745] font-bold">التاريخ</figcaption>
-                        </figure>
+                            <figcaption
+                                class="text-16-21 text-[#333745] font-bold group-hover:text-primary transition-all duration-300">
+                                التاريخ</figcaption>
+                        </a>
                     </section>
                 </div>
                 <!-- ⚡ التخصصات -->
@@ -688,7 +711,7 @@
             </section>
 
             <!-- Featured  jobs section  -->
-            <section class="container">
+            <section class="container sm:px-[38px] lg:px-0">
                 <div class=" flex flex-col gap-6 lg:gap-8">
                     <header aria-label="featured-jobs" class="flex justify-center sm:justify-between items-center">
                         <h2 class="text-24-36 lg:text-30-45 text-[#333745]  font-bold">⚡ الوظائف المميزة</h2>
@@ -699,8 +722,8 @@
                     <section
                         class="grid border-b border-b-[#D9DADC] lg:border-none  rounded-none sm:rounded-2xl lg:rounded-none overflow-hidden lg:overflow-visible  lg:grid-cols-3 grid-cols-1 lg:gap-[30px] flex-wrap">
                         <!-- card item  -->
-                        <article
-                            class="lg:rounded-2xl border border-[#D9DADC]  bg-white shadow-featuredJob py-[25px] px-5 flex flex-col gap-4">
+                        <a href="#"
+                            class="lg:rounded-2xl border border-[#D9DADC] hover:bg-[#F7FAFA] hover:border-[#B6AFAF] transition-all duration-300  bg-white shadow-featuredJob py-[25px] px-5 flex flex-col gap-4">
                             <div class="flex items-center gap-4">
                                 <div
                                     class="overflow-hidden rounded-full flex items-center justify-center h-20 w-20 bg-[#F0F6F6]">
@@ -756,11 +779,11 @@
                                     </span>
                                 </div>
                             </div>
-                        </article>
+                        </a>
 
                         <!-- card item  -->
-                        <article
-                            class="lg:rounded-2xl border border-[#D9DADC]  bg-white shadow-featuredJob py-[25px] px-5 flex flex-col gap-4">
+                        <a href="#"
+                            class="lg:rounded-2xl border border-[#D9DADC] hover:bg-[#F7FAFA] hover:border-[#B6AFAF] transition-all duration-300  bg-white shadow-featuredJob py-[25px] px-5 flex flex-col gap-4">
                             <div class="flex items-center gap-4">
                                 <div
                                     class="overflow-hidden rounded-full flex items-center justify-center h-20 w-20 bg-[#F0F6F6]">
@@ -816,11 +839,11 @@
                                     </span>
                                 </div>
                             </div>
-                        </article>
+                        </a>
 
                         <!-- card item  -->
-                        <article
-                            class="lg:rounded-2xl border border-[#D9DADC] bg-white shadow-featuredJob py-[25px] px-5 flex flex-col gap-4">
+                        <a href="#"
+                            class="lg:rounded-2xl border border-[#D9DADC] hover:bg-[#F7FAFA] hover:border-[#B6AFAF] transition-all duration-300 bg-white shadow-featuredJob py-[25px] px-5 flex flex-col gap-4">
                             <div class="flex items-center gap-4">
                                 <div
                                     class="overflow-hidden rounded-full flex items-center justify-center h-20 w-20 bg-[#F0F6F6]">
@@ -876,11 +899,11 @@
                                     </span>
                                 </div>
                             </div>
-                        </article>
+                        </a>
 
                         <!-- card item  -->
-                        <article
-                            class="lg:rounded-2xl border border-[#D9DADC]  bg-white shadow-featuredJob py-[25px] px-5 flex flex-col gap-4">
+                        <a href="#"
+                            class="lg:rounded-2xl border border-[#D9DADC] hover:bg-[#F7FAFA] hover:border-[#B6AFAF] transition-all duration-300  bg-white shadow-featuredJob py-[25px] px-5 flex flex-col gap-4">
                             <div class="flex items-center gap-4">
                                 <div
                                     class="overflow-hidden rounded-full flex items-center justify-center h-20 w-20 bg-[#F0F6F6]">
@@ -936,11 +959,11 @@
                                     </span>
                                 </div>
                             </div>
-                        </article>
+                        </a>
 
                         <!-- card item  -->
-                        <article
-                            class="lg:rounded-2xl border border-[#D9DADC]  bg-white shadow-featuredJob py-[25px] px-5 flex flex-col gap-4">
+                        <a href="#"
+                            class="lg:rounded-2xl border border-[#D9DADC] hover:bg-[#F7FAFA] hover:border-[#B6AFAF] transition-all duration-300  bg-white shadow-featuredJob py-[25px] px-5 flex flex-col gap-4">
                             <div class="flex items-center gap-4">
                                 <div
                                     class="overflow-hidden rounded-full flex items-center justify-center h-20 w-20 bg-[#F0F6F6]">
@@ -996,11 +1019,11 @@
                                     </span>
                                 </div>
                             </div>
-                        </article>
+                        </a>
 
                         <!-- card item  -->
-                        <article
-                            class="lg:rounded-2xl border border-[#D9DADC] bg-white shadow-featuredJob py-[25px] px-5 flex flex-col gap-4">
+                        <a href="#"
+                            class="lg:rounded-2xl border border-[#D9DADC] hover:bg-[#F7FAFA] hover:border-[#B6AFAF] transition-all duration-300 bg-white shadow-featuredJob py-[25px] px-5 flex flex-col gap-4">
                             <div class="flex items-center gap-4">
                                 <div
                                     class="overflow-hidden rounded-full flex items-center justify-center h-20 w-20 bg-[#F0F6F6]">
@@ -1056,7 +1079,7 @@
                                     </span>
                                 </div>
                             </div>
-                        </article>
+                        </a>
 
                     </section>
                     <a href="#" class="text-center text-16-21 text-[#01051366]  font-bold sm:hidden">أظهار الكل</a>
@@ -1080,29 +1103,37 @@
                                 الوظيفي</h2>
                             <div class="flex flex-col gap-[30px]">
                                 <!-- item  -->
-                                <figure
-                                    class="py-[25px] flex flex-col justify-center items-center gap-2.5  rounded-2xl border border-[#D1D5DB]">
+                                <a href="#"
+                                    class="py-[25px] flex flex-col justify-center items-center gap-2.5  rounded-2xl border border-[#D1D5DB] group hover:border-primary transition-all duration-300">
                                     <img src="assets/images/Visitor/maj-3.png" alt="major">
-                                    <figcaption class="text-16-21 text-[#333745] font-bold">الجرافيا</figcaption>
-                                </figure>
+                                    <figcaption
+                                        class="text-16-21 text-[#333745] font-bold group-hover:text-primary transition-all duration-300">
+                                        الجرافيا</figcaption>
+                                </a>
                                 <!-- item  -->
-                                <figure
-                                    class="py-[25px] flex flex-col justify-center items-center gap-2.5  rounded-2xl border border-[#D1D5DB]">
+                                <a href="#"
+                                    class="py-[25px] flex flex-col justify-center items-center gap-2.5  rounded-2xl border border-[#D1D5DB] group hover:border-primary transition-all duration-300">
                                     <img src="assets/images/Visitor/maj-2.png" alt="major">
-                                    <figcaption class="text-16-21 text-[#333745] font-bold">التاريخ</figcaption>
-                                </figure>
+                                    <figcaption
+                                        class="text-16-21 text-[#333745] font-bold group-hover:text-primary transition-all duration-300">
+                                        التاريخ</figcaption>
+                                </a>
                                 <!-- item  -->
-                                <figure
-                                    class="py-[25px] flex flex-col justify-center items-center gap-2.5  rounded-2xl border border-[#D1D5DB]">
+                                <a href="#"
+                                    class="py-[25px] flex flex-col justify-center items-center gap-2.5  rounded-2xl border border-[#D1D5DB] group hover:border-primary transition-all duration-300">
                                     <img src="assets/images/Visitor/maj-1.png" alt="major">
-                                    <figcaption class="text-16-21 text-[#333745] font-bold">الرياضيات</figcaption>
-                                </figure>
+                                    <figcaption
+                                        class="text-16-21 text-[#333745] font-bold group-hover:text-primary transition-all duration-300">
+                                        الرياضيات</figcaption>
+                                </a>
                                 <!-- item  -->
-                                <figure
-                                    class="py-[25px] flex flex-col justify-center items-center gap-2.5  rounded-2xl border border-[#D1D5DB]">
+                                <a href="#"
+                                    class="py-[25px] flex flex-col justify-center items-center gap-2.5  rounded-2xl border border-[#D1D5DB] group hover:border-primary transition-all duration-300">
                                     <img src="assets/images/Visitor/maj-1.png" alt="major">
-                                    <figcaption class="text-16-21 text-[#333745] font-bold">الرياضيات</figcaption>
-                                </figure>
+                                    <figcaption
+                                        class="text-16-21 text-[#333745] font-bold group-hover:text-primary transition-all duration-300">
+                                        الرياضيات</figcaption>
+                                </a>
                             </div>
                         </section>
                         <section class=" flex flex-1 flex-col gap-8">
@@ -1113,35 +1144,43 @@
 
                                 <!-- item  -->
 
-                                <figure
-                                    class="py-[25px] flex flex-col justify-center items-center gap-2.5  rounded-2xl border border-[#D1D5DB]">
+                                <a href="#"
+                                    class="py-[25px] flex flex-col justify-center items-center gap-2.5  rounded-2xl border border-[#D1D5DB] group hover:border-primary transition-all duration-300">
                                     <img src="assets/images/Visitor/maj-2.png" alt="major">
-                                    <figcaption class="text-16-21 text-[#333745] font-bold">رياض الاطفال</figcaption>
-                                </figure>
+                                    <figcaption
+                                        class="text-16-21 text-[#333745] font-bold group-hover:text-primary transition-all duration-300">
+                                        رياض الاطفال</figcaption>
+                                </a>
 
                                 <!-- item  -->
 
-                                <figure
-                                    class="py-[25px] flex flex-col justify-center items-center gap-2.5  rounded-2xl border border-[#D1D5DB]">
+                                <a href="#"
+                                    class="py-[25px] flex flex-col justify-center items-center gap-2.5  rounded-2xl border border-[#D1D5DB] group hover:border-primary transition-all duration-300">
                                     <img src="assets/images/Visitor/maj-1.png" alt="major">
-                                    <figcaption class="text-16-21 text-[#333745] font-bold">الابتدائي</figcaption>
-                                </figure>
+                                    <figcaption
+                                        class="text-16-21 text-[#333745] font-bold group-hover:text-primary transition-all duration-300">
+                                        الابتدائي</figcaption>
+                                </a>
 
                                 <!-- item  -->
 
-                                <figure
-                                    class="py-[25px] flex flex-col justify-center items-center gap-2.5  rounded-2xl border border-[#D1D5DB]">
+                                <a href="#"
+                                    class="py-[25px] flex flex-col justify-center items-center gap-2.5  rounded-2xl border border-[#D1D5DB] group hover:border-primary transition-all duration-300">
                                     <img src="assets/images/Visitor/maj-5.png" alt="major">
-                                    <figcaption class="text-16-21 text-[#333745] font-bold">الاعدادي</figcaption>
-                                </figure>
+                                    <figcaption
+                                        class="text-16-21 text-[#333745] font-bold group-hover:text-primary transition-all duration-300">
+                                        الاعدادي</figcaption>
+                                </a>
 
                                 <!-- item  -->
 
-                                <figure
-                                    class="py-[25px] flex flex-col justify-center items-center gap-2.5  rounded-2xl border border-[#D1D5DB]">
+                                <a href="#"
+                                    class="py-[25px] flex flex-col justify-center items-center gap-2.5  rounded-2xl border border-[#D1D5DB] group hover:border-primary transition-all duration-300">
                                     <img src="assets/images/Visitor/maj-5.png" alt="major">
-                                    <figcaption class="text-16-21 text-[#333745] font-bold">الثانوي</figcaption>
-                                </figure>
+                                    <figcaption
+                                        class="text-16-21 text-[#333745] font-bold group-hover:text-primary transition-all duration-300">
+                                        الثانوي</figcaption>
+                                </a>
                             </div>
                         </section>
                     </section>
