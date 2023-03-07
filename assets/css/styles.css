@@ -979,6 +979,10 @@ video {
   flex-basis: 50%;
 }
 
+.basis-6\/12{
+  flex-basis: 50%;
+}
+
 .translate-y-full{
   --tw-translate-y: 100%;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -1132,6 +1136,10 @@ video {
 
 .gap-\[70px\]{
   gap: 70px;
+}
+
+.gap-20{
+  gap: 5rem;
 }
 
 .overflow-hidden{
@@ -2274,6 +2282,14 @@ video {
     position: static;
   }
 
+  .sm\:left-\[46\%\]{
+    left: 46%;
+  }
+
+  .sm\:left-\[54\%\]{
+    left: 54%;
+  }
+
   .sm\:order-1{
     order: 1;
   }
@@ -2299,6 +2315,11 @@ video {
   .sm\:mx-6{
     margin-left: 1.5rem;
     margin-right: 1.5rem;
+  }
+
+  .sm\:mx-9{
+    margin-left: 2.25rem;
+    margin-right: 2.25rem;
   }
 
   .sm\:mt-0{
@@ -2462,6 +2483,22 @@ video {
     padding-top: 3rem;
   }
 
+  .sm\:pb-12{
+    padding-bottom: 3rem;
+  }
+
+  .sm\:pt-20{
+    padding-top: 5rem;
+  }
+
+  .sm\:pt-28{
+    padding-top: 7rem;
+  }
+
+  .sm\:pt-32{
+    padding-top: 8rem;
+  }
+
   .sm\:text-16-24{
     font-size: 16px;
     line-height: 24px;
@@ -2526,8 +2563,16 @@ video {
     display: block;
   }
 
+  .md\:flex{
+    display: flex;
+  }
+
   .md\:grid{
     display: grid;
+  }
+
+  .md\:hidden{
+    display: none;
   }
 
   .md\:w-\[30\.5\%\]{
@@ -2538,12 +2583,40 @@ video {
     width: 350px;
   }
 
+  .md\:w-\[12\]{
+    width: 12;
+  }
+
+  .md\:w-1\/2{
+    width: 50%;
+  }
+
+  .md\:basis-6\/12{
+    flex-basis: 50%;
+  }
+
   .md\:grid-cols-2{
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+  .md\:flex-row{
+    flex-direction: row;
+  }
+
+  .md\:gap-4{
+    gap: 1rem;
+  }
+
   .md\:rounded-2xl{
     border-radius: 1rem;
+  }
+
+  .md\:pb-12{
+    padding-bottom: 3rem;
+  }
+
+  .md\:pt-24{
+    padding-top: 6rem;
   }
 
   [dir="ltr"] .ltr\:md\:right-\[-81px\]{
@@ -2837,6 +2910,14 @@ video {
     gap: 31px;
   }
 
+  .lg\:gap-\[45px\]{
+    gap: 45px;
+  }
+
+  .lg\:gap-20{
+    gap: 5rem;
+  }
+
   .lg\:overflow-visible{
     overflow: visible;
   }
@@ -2988,6 +3069,10 @@ video {
     padding-top: 8rem;
   }
 
+  .lg\:pb-0{
+    padding-bottom: 0px;
+  }
+
   .lg\:text-14-21{
     font-size: 14px;
     line-height: 21px;
@@ -3068,8 +3153,17 @@ video {
     line-height: 1rem;
   }
 
+  .lg\:text-16-36{
+    font-size: 16px;
+    line-height: 36px;
+  }
+
   .lg\:font-normal{
     font-weight: 400;
+  }
+
+  .lg\:font-bold{
+    font-weight: 700;
   }
 
   .lg\:text-\[\#6B7280\]{
