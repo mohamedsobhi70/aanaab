@@ -1,3 +1,19 @@
+// header 
+if ($(".jobs-btn")) {
+    $(".jobs-btn").on("click", function () {
+        $(".aanaab-jobs-menu").toggleClass("active");
+    })
+}
+if ($(".mobile-menu-btn")) {
+    $(".mobile-menu-btn").on("click", function () {
+        $(".aannab-mobile-menu").toggleClass("active");
+    })
+    $(".close-mobile-menu").on("click", function () {
+        $(".aannab-mobile-menu").removeClass("active");
+    })
+}
+
+
 // start testimonial carousel 
 
 let $carousel = $(".testimonials ").flickity({
@@ -101,3 +117,4 @@ if (document.getElementById("personal-img")) {
         image.src = URL.createObjectURL(event.target.files[0]);
     };
 }
+
