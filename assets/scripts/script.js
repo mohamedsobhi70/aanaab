@@ -1,8 +1,17 @@
 // header 
 if ($(".jobs-btn")) {
-    $(".jobs-btn").on("click", function () {
-        $(".aanaab-jobs-menu").toggleClass("active");
+    $(".aanaab-jobs-menu").on("mouseenter", function () {
+        $(".aanaab-jobs-menu").addClass("active");
+    }).on("mouseleave", function () {
+        $(".aanaab-jobs-menu").removeClass("active");
     })
+    $(".jobs-btn").on("mouseenter", function () {
+        $(".aanaab-jobs-menu").addClass("active");
+    }).on("mouseleave", function () {
+        $(".aanaab-jobs-menu").removeClass("active");
+
+    })
+
 }
 if ($(".mobile-menu-btn")) {
     $(".mobile-menu-btn").on("click", function () {
