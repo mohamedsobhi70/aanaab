@@ -132,5 +132,6 @@ if (document.getElementById("personal-img")) {
 if ($(".drop-down")) {
     $(".drop-down").on("click", function () {
         $(this).parent().find(".drop-down-items").slideToggle(300);
+        $(this).parent().find(".drop-down-icon").toggleClass("open");
     })
 }
