@@ -645,10 +645,6 @@ video {
   top: 75px;
 }
 
-.top-\[80px\]{
-  top: 80px;
-}
-
 .top-\[90px\]{
   top: 90px;
 }
@@ -686,6 +682,11 @@ video {
 .mx-4{
   margin-left: 1rem;
   margin-right: 1rem;
+}
+
+.mx-8{
+  margin-left: 2rem;
+  margin-right: 2rem;
 }
 
 .mx-\[-30px\]{
@@ -940,10 +941,6 @@ video {
 
 .w-\[30px\]{
   width: 30px;
-}
-
-.w-\[328px\]{
-  width: 328px;
 }
 
 .w-\[42\%\]{
@@ -1237,6 +1234,11 @@ video {
   border-radius: 0.75rem;
 }
 
+.rounded-t-2xl{
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+
 .border{
   border-width: 1px;
 }
@@ -1444,10 +1446,6 @@ video {
   stroke: #6B7280;
 }
 
-.stroke-\[\#D1D5DB\]{
-  stroke: #D1D5DB;
-}
-
 .stroke-\[6px\]{
   stroke-width: 6px;
 }
@@ -1552,11 +1550,6 @@ video {
   padding-right: 30px;
 }
 
-.px-\[38px\]{
-  padding-left: 38px;
-  padding-right: 38px;
-}
-
 .px-\[8px\]{
   padding-left: 8px;
   padding-right: 8px;
@@ -1655,10 +1648,6 @@ video {
 
 .pt-20{
   padding-top: 5rem;
-}
-
-.pt-28{
-  padding-top: 7rem;
 }
 
 .pt-3{
@@ -2208,10 +2197,6 @@ video {
   stroke: none;
 }
 
-.group:hover .group-hover\:stroke-primary{
-  stroke: #8447FF;
-}
-
 .group:hover .group-hover\:text-primary{
   --tw-text-opacity: 1;
   color: rgb(132 71 255 / var(--tw-text-opacity));
@@ -2326,10 +2311,6 @@ video {
     left: 54%;
   }
 
-  .sm\:top-\[58px\]{
-    top: 58px;
-  }
-
   .sm\:top-\[68px\]{
     top: 68px;
   }
@@ -2402,12 +2383,12 @@ video {
     width: 311px;
   }
 
-  .sm\:w-auto{
-    width: auto;
-  }
-
   .sm\:w-\[328px\]{
     width: 328px;
+  }
+
+  .sm\:w-auto{
+    width: auto;
   }
 
   .sm\:basis-4\/12{
@@ -2585,11 +2566,6 @@ video {
     grid-column: span 6 / span 6;
   }
 
-  .md\:mx-9{
-    margin-left: 2.25rem;
-    margin-right: 2.25rem;
-  }
-
   .md\:block{
     display: block;
   }
@@ -2624,6 +2600,24 @@ video {
 
   .md\:rounded-2xl{
     border-radius: 1rem;
+  }
+
+  .md\:px-0{
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .md\:px-\[38px\]{
+    padding-left: 38px;
+    padding-right: 38px;
+  }
+
+  .md\:pt-8{
+    padding-top: 2rem;
+  }
+
+  .md\:font-normal{
+    font-weight: 400;
   }
 
   [dir="ltr"] .ltr\:md\:right-\[-81px\]{
