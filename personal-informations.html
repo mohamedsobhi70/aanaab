@@ -95,7 +95,7 @@
                         <h1 class="basis-9/12 text-16-24 lg:text-30-45 font-bold text-[#333745] ">المعلومات الشخصية</h1>
                         <p class="text-xs text-[#0105138C] lg:hidden ">الخطوة 7/1</p>
                     </div>
-                    <a href="#" class="font-bold text-16-24 text-[#0105138C] lg:hidden">رجوع</a>
+                    <a href="#" class="font-bold text-16-24 text-[#0105138C] lg:hidden">التالي</a>
                 </div>
                 <div class="h-1.5 bg-[#EFEFF0] lg:hidden relative">
                     <span
@@ -156,17 +156,17 @@
                 <section class="lg:basis-9/12 w-full lg:w-auto flex flex-col sm:gap-[30px]">
                     <section class=" sm:bg-white sm:rounded-2xl px-8 py-8  sm:border sm:border-[#D1D5DB]">
                         <div class="flex items-center flex-col lg:flex-row gap-6 lg:gap-8">
-                            <div class="personal-img ">
+                            <div class="personal-img  w-[140px] h-[140px]  rounded-full overflow-hidden border border-[#D1D5DB] ">
                                 <img id="personal-img"
-                                    class="block w-[140px] h-[140px] bg-cover rounded-full overflow-hidden border border-[#D1D5DB]"
-                                    src="assets/images/Visitor/dashboardman.png" alt="im">
+                                    class="block object-cover w-full h-full"
+                                    src="assets/images/Visitor/dashboardman.png" width="140" height="140" alt="im">
                             </div>
                             <div class="flex flex-col items-center lg:items-start gap-3 lg:gap-1 ">
                                 <h2 class="text-18-27 text-[#333745] font-bold ">صورة الملف الشخصي</h2>
                                 <p class="text-16-28 hidden lg:block text-[#6B7280]">يمكنك تحميل صورة بتنسيق .jpg أو
                                     .png أو .gif بحجم
                                     أقصى يبلغ 5 ميغابايت.</p>
-                                <div class=" lg:py-4">
+                                <div class="lg:my-4 lg:py-4">
                                     <input type="file" class="hidden" name="chang-photo" id="chang-photo"
                                         onchange="loadFile(event)">
                                     <label for="chang-photo"
