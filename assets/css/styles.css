@@ -578,6 +578,17 @@ video {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
+.dashboared{
+  margin-left: -30px;
+  margin-right: 0px;
+}
+
+@media (min-width: 768px){
+  .dashboared{
+    margin-left: 0px;
+  }
+}
+
 .invisible{
   visibility: hidden;
 }
@@ -654,6 +665,10 @@ video {
   top: 90px;
 }
 
+.bottom-\[30px\]{
+  bottom: 30px;
+}
+
 .z-10{
   z-index: 10;
 }
@@ -724,11 +739,6 @@ video {
   margin-right: auto;
 }
 
-.my-12{
-  margin-top: 3rem;
-  margin-bottom: 3rem;
-}
-
 .my-4{
   margin-top: 1rem;
   margin-bottom: 1rem;
@@ -768,6 +778,10 @@ video {
   margin-bottom: 1.5rem;
 }
 
+.mb-8{
+  margin-bottom: 2rem;
+}
+
 .ml-24{
   margin-left: 6rem;
 }
@@ -778,6 +792,10 @@ video {
 
 .mr-8{
   margin-right: 2rem;
+}
+
+.mt-12{
+  margin-top: 3rem;
 }
 
 .mt-16{
@@ -1300,6 +1318,10 @@ video {
   border-color: rgb(132 71 255 / var(--tw-border-opacity));
 }
 
+.border-\[\]{
+  border-color: ;
+}
+
 .border-b-\[\#D1D5DB\]{
   --tw-border-opacity: 1;
   border-bottom-color: rgb(209 213 219 / var(--tw-border-opacity));
@@ -1633,6 +1655,11 @@ video {
 .py-\[25px\]{
   padding-top: 25px;
   padding-bottom: 25px;
+}
+
+.px-\[30xp\]{
+  padding-left: 30xp;
+  padding-right: 30xp;
 }
 
 .pb-4{
@@ -2571,8 +2598,17 @@ video {
     grid-column: span 6 / span 6;
   }
 
+  .md\:my-8{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
   .md\:block{
     display: block;
+  }
+
+  .md\:flex{
+    display: flex;
   }
 
   .md\:grid{
@@ -2615,6 +2651,16 @@ video {
   .md\:px-\[38px\]{
     padding-left: 38px;
     padding-right: 38px;
+  }
+
+  .md\:py-8{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  .md\:px-8{
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
 
   .md\:pt-8{
@@ -2688,6 +2734,10 @@ video {
 
   .lg\:my-0{
     margin-top: 0px;
+    margin-bottom: 0px;
+  }
+
+  .lg\:mb-0{
     margin-bottom: 0px;
   }
 
@@ -3047,6 +3097,11 @@ video {
   .lg\:py-8{
     padding-top: 2rem;
     padding-bottom: 2rem;
+  }
+
+  .lg\:py-12{
+    padding-top: 3rem;
+    padding-bottom: 3rem;
   }
 
   .lg\:pb-0{
