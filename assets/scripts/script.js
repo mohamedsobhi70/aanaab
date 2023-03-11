@@ -99,9 +99,9 @@ if ($(".open-filters")) {
     let filterBtn = $(".open-filters"),
         closeFilters = $(".close-filters"),
         filtersection = $(".filters-section-container");
-    filtersection.css({ "top": "100%" })
+    filtersection.css({ "bottom": "-100%" })
     filterBtn.click(function () {
-        filtersection.removeClass("top-full").removeClass("translate-y-full").css({ "top": "0" })
+        filtersection.removeClass("top-full").removeClass("translate-y-full").css({ "bottom": "0" })
     });
     closeFilters.click(function () {
         filtersection.addClass("translate-y-full")
