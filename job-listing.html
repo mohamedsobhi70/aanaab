@@ -281,7 +281,7 @@
                             </span>
                             <input class="p-4 w-full rounded-[48px]" type="text" placeholder="بحث في الوظائف">
                         </div>
-                        <button class="flex gap-2.5 items-center">
+                        <a href="#" class="flex gap-2.5 items-center">
                             <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path
@@ -289,7 +289,7 @@
                                     fill="#010513" fill-opacity="0.55" />
                             </svg>
                             <span class="text-14-21 text-[#0105138c]">بحث متقدم</span>
-                        </button>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -995,7 +995,7 @@
                                 <div class="hidden lg:flex gap-6 items-center ">
                                     <span class="text-16-24 text-[#010513E5 ]">فرز:</span>
                                     <div
-                                        class="flex gap-3.5 items-center rounded-[64px] border border-[#D9DADC] px-4 py-2 bg-white">
+                                        class="drop-down cursor-pointer relative flex gap-3.5 items-center rounded-[64px] border border-[#D9DADC] px-4 py-2 bg-white">
                                         <span class="text-16-24 text-[#010513B2]">الاحدث</span>
                                         <svg width="14" height="8" viewBox="0 0 14 8" fill="none"
                                             xmlns="http://www.w3.org/2000/svg">
@@ -1004,6 +1004,15 @@
                                                 stroke="#010513" stroke-opacity="0.7" stroke-width="1.5"
                                                 stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
                                         </svg>
+                                        <div
+                                            class="drop-down-items hidden absolute top-[110%] left-0 w-full py-3 px-2 rounded-xl bg-white  border border-[#D9DADC]">
+                                            <ul class="text-center flex flex-col gap-2">
+                                                <li><a href="#">الاحدث </a></li>
+                                                <li><a href="#">الاقدم</a></li>
+                                                <li><a href="#">دوام كامل</a></li>
+                                                <li><a href="#">دوام جزئي</a></li>
+                                            </ul>
+                                        </div>
                                     </div>
                                 </div>
                                 <button title="filters" class="lg:hidden open-filters">
@@ -1018,18 +1027,21 @@
                             <div
                                 class="grid sm:border sm:border-[#D9DADC] rounded-none sm:rounded-2xl overflow-hidden ">
                                 <!-- card item  -->
-                                <article
+
+                                <a href="single-job.html"
                                     class="border-b border-b-[#D9DADC]  bg-white shadow-featuredJob py-[25px] px-5 flex flex-col ">
                                     <div class="flex items-start gap-4">
                                         <div
                                             class="overflow-hidden rounded-full hidden lg:flex items-center justify-center w-16 h-16 lg:h-20 lg:w-20 bg-[#F0F6F6]  ">
-                                            <img src="assets/images/Visitor/Ellipse-6.png" width="80" height="80"  class="object-cover w-full" alt="featured job">
+                                            <img src="assets/images/Visitor/Ellipse-6.png" width="80" height="80"
+                                                class="object-cover w-full" alt="featured job">
                                         </div>
                                         <div class="flex justify-center flex-col gap-5 flex-1">
                                             <div class=" flex gap-4 items-center">
                                                 <div
                                                     class="overflow-hidden lg:hidden rounded-full flex items-center justify-center w-16 h-16 lg:h-20 lg:w-20 bg-[#F0F6F6]">
-                                                    <img src="assets/images/Visitor/Ellipse-6.png" width="80" height="80"  class="object-cover w-full" alt="featured job">
+                                                    <img src="assets/images/Visitor/Ellipse-6.png" width="80"
+                                                        height="80" class="object-cover w-full" alt="featured job">
                                                 </div>
                                                 <div class="flex flex-col lg:flex-row gap-1 flex-1">
                                                     <div class=" flex justify-between gap-5 items-center">
@@ -1118,20 +1130,127 @@
                                     </div>
 
 
-                                </article>
+                                </a>
+
                                 <!-- card item  -->
-                                <article
+
+                                <a href="single-job.html"
+                                    class="border-b border-b-[#D9DADC] bg-white shadow-featuredJob py-[25px] px-5 flex flex-col ">
+                                    <div class="flex items-start gap-4">
+                                        <div
+                                            class="overflow-hidden rounded-full hidden lg:flex items-center justify-center w-16 h-16 lg:h-20 lg:w-20 bg-[#F0F6F6]  ">
+                                            <img src="assets/images/Visitor/Ellipse-6.png" width="80" height="80"
+                                                class="object-cover w-full" alt="featured job">
+                                        </div>
+                                        <div class="flex justify-center flex-col gap-5 flex-1">
+                                            <div class=" flex gap-4 items-center">
+                                                <div
+                                                    class="overflow-hidden lg:hidden rounded-full flex items-center justify-center w-16 h-16 lg:h-20 lg:w-20 bg-[#F0F6F6]">
+                                                    <img src="assets/images/Visitor/Ellipse-6.png" width="80"
+                                                        height="80" class="object-cover w-full" alt="featured job">
+                                                </div>
+                                                <div class="flex flex-col lg:flex-row gap-1 flex-1">
+                                                    <div class=" flex justify-between gap-5 items-center">
+                                                        <h2 class="font-bold text-16-21 text-[#333745 ]">
+                                                            مدرس انشطة تفاعلية للمرحلة
+                                                            الابتدائية
+                                                        </h2>
+                                                        <svg class="lg:hidden" width="24" height="24"
+                                                            viewBox="0 0 24 24" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path
+                                                                d="M9.25 9.05005C11.03 9.70005 12.97 9.70005 14.75 9.05005"
+                                                                stroke="#010513" stroke-opacity="0.9" stroke-width="1.5"
+                                                                stroke-linecap="round" stroke-linejoin="round" />
+                                                            <path
+                                                                d="M16.8203 2H7.18031C5.05031 2 3.32031 3.74 3.32031 5.86V19.95C3.32031 21.75 4.61031 22.51 6.19031 21.64L11.0703 18.93C11.5903 18.64 12.4303 18.64 12.9403 18.93L17.8203 21.64C19.4003 22.52 20.6903 21.76 20.6903 19.95V5.86C20.6803 3.74 18.9503 2 16.8203 2Z"
+                                                                stroke="#010513" stroke-opacity="0.9" stroke-width="1.5"
+                                                                stroke-linecap="round" stroke-linejoin="round" />
+                                                        </svg>
+                                                    </div>
+                                                    <span
+                                                        class="text-11-16 font-bold w-[61px] text-[#6B7280] py-0.5 px-1.5 bg-[#F0F6F6]  rounded-[5px]">
+                                                        دوام كامل
+                                                    </span>
+
+                                                </div>
+                                            </div>
+                                            <div class="flex flex-col gap-4">
+                                                <div class="flex flex-col gap-3 flex-1">
+                                                    <div class="flex gap-1 items-center text-xs text-[#010513B2]">
+                                                        <span>من ذوي الخبرة</span>
+                                                        <span>-</span>
+                                                        <span>5 سنوات من الخبرة</span>
+                                                        <span>-</span>
+                                                        <span>تم النشر منذ 53 دقيقة</span>
+                                                    </div>
+                                                    <p class="text-[#010513E5] text-13-23 ">
+                                                        نعتنى بأدق التفاصيل وقت التسجيل مع
+                                                        المدربين لتكون الدورات المصورة ذات جودة عالية تشجعك على المشاهدة
+                                                    </p>
+
+                                                </div>
+                                                <div class="flex justify-between items-center">
+                                                    <span class="text-[#6B7280] text-xs flex items-center gap-2">
+                                                        <svg width="16" height="17" viewBox="0 0 16 17" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path
+                                                                d="M7.99992 9.71835C9.14867 9.71835 10.0799 8.7871 10.0799 7.63835C10.0799 6.4896 9.14867 5.55835 7.99992 5.55835C6.85117 5.55835 5.91992 6.4896 5.91992 7.63835C5.91992 8.7871 6.85117 9.71835 7.99992 9.71835Z"
+                                                                stroke="#010513" stroke-opacity="0.55" />
+                                                            <path
+                                                                d="M2.41379 6.42506C3.72712 0.651724 12.2805 0.65839 13.5871 6.43172C14.3538 9.81839 12.2471 12.6851 10.4005 14.4584C9.06046 15.7517 6.94046 15.7517 5.59379 14.4584C3.75379 12.6851 1.64712 9.81172 2.41379 6.42506Z"
+                                                                stroke="#010513" stroke-opacity="0.55" />
+                                                        </svg>
+                                                        مدارس المكتشف العالمية - العزيزية، جدة
+                                                    </span>
+                                                    <span
+                                                        class="text-[#6B7280] text-xs hidden lg:flex items-center gap-2">
+                                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path
+                                                                d="M6.10671 7.24671C6.04004 7.24004 5.96004 7.24004 5.88671 7.24671C4.30004 7.19337 3.04004 5.89337 3.04004 4.29337C3.04004 2.66004 4.36004 1.33337 6.00004 1.33337C7.63337 1.33337 8.96004 2.66004 8.96004 4.29337C8.95337 5.89337 7.69337 7.19337 6.10671 7.24671Z"
+                                                                stroke="#010513" stroke-opacity="0.55"
+                                                                stroke-linecap="round" stroke-linejoin="round" />
+                                                            <path
+                                                                d="M10.9402 2.66663C12.2335 2.66663 13.2735 3.71329 13.2735 4.99996C13.2735 6.25996 12.2735 7.28663 11.0268 7.33329C10.9735 7.32663 10.9135 7.32663 10.8535 7.33329"
+                                                                stroke="#010513" stroke-opacity="0.55"
+                                                                stroke-linecap="round" stroke-linejoin="round" />
+                                                            <path
+                                                                d="M2.77348 9.70663C1.16014 10.7866 1.16014 12.5466 2.77348 13.62C4.60681 14.8466 7.61348 14.8466 9.44681 13.62C11.0601 12.54 11.0601 10.78 9.44681 9.70663C7.62014 8.48663 4.61348 8.48663 2.77348 9.70663Z"
+                                                                stroke="#010513" stroke-opacity="0.55"
+                                                                stroke-linecap="round" stroke-linejoin="round" />
+                                                            <path
+                                                                d="M12.2266 13.3334C12.7066 13.2334 13.1599 13.04 13.5332 12.7534C14.5732 11.9734 14.5732 10.6867 13.5332 9.90671C13.1666 9.62671 12.7199 9.44004 12.2466 9.33337"
+                                                                stroke="#010513" stroke-opacity="0.55"
+                                                                stroke-linecap="round" stroke-linejoin="round" />
+                                                        </svg>
+
+                                                        142 متقدمًا
+                                                    </span>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                </a>
+                                <!-- card item  -->
+
+                                <a href="single-job.html"
                                     class="border-b border-b-[#D9DADC]  bg-white shadow-featuredJob py-[25px] px-5 flex flex-col ">
                                     <div class="flex items-start gap-4">
                                         <div
                                             class="overflow-hidden rounded-full hidden lg:flex items-center justify-center w-16 h-16 lg:h-20 lg:w-20 bg-[#F0F6F6]  ">
-                                            <img src="assets/images/Visitor/Ellipse-6.png" width="80" height="80"  class="object-cover w-full" alt="featured job">
+                                            <img src="assets/images/Visitor/Ellipse-6.png" width="80" height="80"
+                                                class="object-cover w-full" alt="featured job">
                                         </div>
                                         <div class="flex justify-center flex-col gap-5 flex-1">
                                             <div class=" flex gap-4 items-center">
                                                 <div
                                                     class="overflow-hidden lg:hidden rounded-full flex items-center justify-center w-16 h-16 lg:h-20 lg:w-20 bg-[#F0F6F6]">
-                                                    <img src="assets/images/Visitor/Ellipse-6.png" width="80" height="80"  class="object-cover w-full" alt="featured job">
+                                                    <img src="assets/images/Visitor/Ellipse-6.png" width="80"
+                                                        height="80" class="object-cover w-full" alt="featured job">
                                                 </div>
                                                 <div class="flex flex-col lg:flex-row gap-1 flex-1">
                                                     <div class=" flex justify-between gap-5 items-center">
@@ -1220,20 +1339,24 @@
                                     </div>
 
 
-                                </article>
+                                </a>
+
                                 <!-- card item  -->
-                                <article
+
+                                <a href="single-job.html"
                                     class="border-b border-b-[#D9DADC]  bg-white shadow-featuredJob py-[25px] px-5 flex flex-col ">
                                     <div class="flex items-start gap-4">
                                         <div
                                             class="overflow-hidden rounded-full hidden lg:flex items-center justify-center w-16 h-16 lg:h-20 lg:w-20 bg-[#F0F6F6]  ">
-                                            <img src="assets/images/Visitor/Ellipse-6.png" width="80" height="80" class="object-cover w-full" alt="featured job">
+                                            <img src="assets/images/Visitor/Ellipse-6.png" width="80" height="80"
+                                                class="object-cover w-full" alt="featured job">
                                         </div>
                                         <div class="flex justify-center flex-col gap-5 flex-1">
                                             <div class=" flex gap-4 items-center">
                                                 <div
                                                     class="overflow-hidden lg:hidden rounded-full flex items-center justify-center w-16 h-16 lg:h-20 lg:w-20 bg-[#F0F6F6]">
-                                                    <img src="assets/images/Visitor/Ellipse-6.png" width="80" height="80"  class="object-cover w-full" alt="featured job">
+                                                    <img src="assets/images/Visitor/Ellipse-6.png" width="80"
+                                                        height="80" class="object-cover w-full" alt="featured job">
                                                 </div>
                                                 <div class="flex flex-col lg:flex-row gap-1 flex-1">
                                                     <div class=" flex justify-between gap-5 items-center">
@@ -1318,24 +1441,28 @@
                                                 </div>
                                             </div>
 
-                                        </div>s
+                                        </div>
                                     </div>
 
 
-                                </article>
+                                </a>
+
                                 <!-- card item  -->
-                                <article
+
+                                <a href="single-job.html"
                                     class="border-b border-b-[#D9DADC]  bg-white shadow-featuredJob py-[25px] px-5 flex flex-col ">
                                     <div class="flex items-start gap-4">
                                         <div
                                             class="overflow-hidden rounded-full hidden lg:flex items-center justify-center w-16 h-16 lg:h-20 lg:w-20 bg-[#F0F6F6]  ">
-                                            <img src="assets/images/Visitor/Ellipse-6.png" width="80" height="80"  class="object-cover w-full" alt="featured job">
+                                            <img src="assets/images/Visitor/Ellipse-6.png" width="80" height="80"
+                                                class="object-cover w-full" alt="featured job">
                                         </div>
                                         <div class="flex justify-center flex-col gap-5 flex-1">
                                             <div class=" flex gap-4 items-center">
                                                 <div
                                                     class="overflow-hidden lg:hidden rounded-full flex items-center justify-center w-16 h-16 lg:h-20 lg:w-20 bg-[#F0F6F6]">
-                                                    <img src="assets/images/Visitor/Ellipse-6.png" width="80" height="80"  class="object-cover w-full" alt="featured job">
+                                                    <img src="assets/images/Visitor/Ellipse-6.png" width="80"
+                                                        height="80" class="object-cover w-full" alt="featured job">
                                                 </div>
                                                 <div class="flex flex-col lg:flex-row gap-1 flex-1">
                                                     <div class=" flex justify-between gap-5 items-center">
@@ -1424,20 +1551,24 @@
                                     </div>
 
 
-                                </article>
+                                </a>
+
                                 <!-- card item  -->
-                                <article
+
+                                <a href="single-job.html"
                                     class="border-b border-b-[#D9DADC]  bg-white shadow-featuredJob py-[25px] px-5 flex flex-col ">
                                     <div class="flex items-start gap-4">
                                         <div
                                             class="overflow-hidden rounded-full hidden lg:flex items-center justify-center w-16 h-16 lg:h-20 lg:w-20 bg-[#F0F6F6]  ">
-                                            <img src="assets/images/Visitor/Ellipse-6.png" width="80" height="80"  class="object-cover w-full" alt="featured job">
+                                            <img src="assets/images/Visitor/Ellipse-6.png" width="80" height="80"
+                                                class="object-cover w-full" alt="featured job">
                                         </div>
                                         <div class="flex justify-center flex-col gap-5 flex-1">
                                             <div class=" flex gap-4 items-center">
                                                 <div
                                                     class="overflow-hidden lg:hidden rounded-full flex items-center justify-center w-16 h-16 lg:h-20 lg:w-20 bg-[#F0F6F6]">
-                                                    <img src="assets/images/Visitor/Ellipse-6.png" width="80" height="80"  class="object-cover w-full" alt="featured job">
+                                                    <img src="assets/images/Visitor/Ellipse-6.png" width="80"
+                                                        height="80" class="object-cover w-full" alt="featured job">
                                                 </div>
                                                 <div class="flex flex-col lg:flex-row gap-1 flex-1">
                                                     <div class=" flex justify-between gap-5 items-center">
@@ -1526,20 +1657,23 @@
                                     </div>
 
 
-                                </article>
+                                </a>
+
                                 <!-- card item  -->
-                                <article
-                                    class="border-b border-b-[#D9DADC]  bg-white shadow-featuredJob py-[25px] px-5 flex flex-col ">
+
+                                <a href="single-job.html" class="bg-white shadow-featuredJob py-[25px] px-5 flex flex-col ">
                                     <div class="flex items-start gap-4">
                                         <div
                                             class="overflow-hidden rounded-full hidden lg:flex items-center justify-center w-16 h-16 lg:h-20 lg:w-20 bg-[#F0F6F6]  ">
-                                            <img src="assets/images/Visitor/Ellipse-6.png" width="80" height="80"  class="object-cover w-full" alt="featured job">
+                                            <img src="assets/images/Visitor/Ellipse-6.png" width="80" height="80"
+                                                class="object-cover w-full" alt="featured job">
                                         </div>
                                         <div class="flex justify-center flex-col gap-5 flex-1">
                                             <div class=" flex gap-4 items-center">
                                                 <div
                                                     class="overflow-hidden lg:hidden rounded-full flex items-center justify-center w-16 h-16 lg:h-20 lg:w-20 bg-[#F0F6F6]">
-                                                    <img src="assets/images/Visitor/Ellipse-6.png" width="80" height="80"  class="object-cover w-full" alt="featured job">
+                                                    <img src="assets/images/Visitor/Ellipse-6.png" width="80"
+                                                        height="80" class="object-cover w-full" alt="featured job">
                                                 </div>
                                                 <div class="flex flex-col lg:flex-row gap-1 flex-1">
                                                     <div class=" flex justify-between gap-5 items-center">
@@ -1628,108 +1762,7 @@
                                     </div>
 
 
-                                </article>
-                                <!-- card item  -->
-                                <article class="bg-white shadow-featuredJob py-[25px] px-5 flex flex-col ">
-                                    <div class="flex items-start gap-4">
-                                        <div
-                                            class="overflow-hidden rounded-full hidden lg:flex items-center justify-center w-16 h-16 lg:h-20 lg:w-20 bg-[#F0F6F6]  ">
-                                            <img src="assets/images/Visitor/Ellipse-6.png" width="80" height="80"  class="object-cover w-full" alt="featured job">
-                                        </div>
-                                        <div class="flex justify-center flex-col gap-5 flex-1">
-                                            <div class=" flex gap-4 items-center">
-                                                <div
-                                                    class="overflow-hidden lg:hidden rounded-full flex items-center justify-center w-16 h-16 lg:h-20 lg:w-20 bg-[#F0F6F6]">
-                                                    <img src="assets/images/Visitor/Ellipse-6.png" width="80" height="80"  class="object-cover w-full" alt="featured job">
-                                                </div>
-                                                <div class="flex flex-col lg:flex-row gap-1 flex-1">
-                                                    <div class=" flex justify-between gap-5 items-center">
-                                                        <h2 class="font-bold text-16-21 text-[#333745 ]">
-                                                            مدرس انشطة تفاعلية للمرحلة
-                                                            الابتدائية
-                                                        </h2>
-                                                        <svg class="lg:hidden" width="24" height="24"
-                                                            viewBox="0 0 24 24" fill="none"
-                                                            xmlns="http://www.w3.org/2000/svg">
-                                                            <path
-                                                                d="M9.25 9.05005C11.03 9.70005 12.97 9.70005 14.75 9.05005"
-                                                                stroke="#010513" stroke-opacity="0.9" stroke-width="1.5"
-                                                                stroke-linecap="round" stroke-linejoin="round" />
-                                                            <path
-                                                                d="M16.8203 2H7.18031C5.05031 2 3.32031 3.74 3.32031 5.86V19.95C3.32031 21.75 4.61031 22.51 6.19031 21.64L11.0703 18.93C11.5903 18.64 12.4303 18.64 12.9403 18.93L17.8203 21.64C19.4003 22.52 20.6903 21.76 20.6903 19.95V5.86C20.6803 3.74 18.9503 2 16.8203 2Z"
-                                                                stroke="#010513" stroke-opacity="0.9" stroke-width="1.5"
-                                                                stroke-linecap="round" stroke-linejoin="round" />
-                                                        </svg>
-                                                    </div>
-                                                    <span
-                                                        class="text-11-16 font-bold w-[61px] text-[#6B7280] py-0.5 px-1.5 bg-[#F0F6F6]  rounded-[5px]">
-                                                        دوام كامل
-                                                    </span>
-
-                                                </div>
-                                            </div>
-
-                                            <div class="flex flex-col gap-4">
-                                                <div class="flex flex-col gap-3 flex-1">
-                                                    <div class="flex gap-1 items-center text-xs text-[#010513B2]">
-                                                        <span>من ذوي الخبرة</span>
-                                                        <span>-</span>
-                                                        <span>5 سنوات من الخبرة</span>
-                                                        <span>-</span>
-                                                        <span>تم النشر منذ 53 دقيقة</span>
-                                                    </div>
-                                                    <p class="text-[#010513E5] text-13-23 ">
-                                                        نعتنى بأدق التفاصيل وقت التسجيل مع
-                                                        المدربين لتكون الدورات المصورة ذات جودة عالية تشجعك على المشاهدة
-                                                    </p>
-
-                                                </div>
-                                                <div class="flex justify-between items-center">
-                                                    <span class="text-[#6B7280] text-xs flex items-center gap-2">
-                                                        <svg width="16" height="17" viewBox="0 0 16 17" fill="none"
-                                                            xmlns="http://www.w3.org/2000/svg">
-                                                            <path
-                                                                d="M7.99992 9.71835C9.14867 9.71835 10.0799 8.7871 10.0799 7.63835C10.0799 6.4896 9.14867 5.55835 7.99992 5.55835C6.85117 5.55835 5.91992 6.4896 5.91992 7.63835C5.91992 8.7871 6.85117 9.71835 7.99992 9.71835Z"
-                                                                stroke="#010513" stroke-opacity="0.55" />
-                                                            <path
-                                                                d="M2.41379 6.42506C3.72712 0.651724 12.2805 0.65839 13.5871 6.43172C14.3538 9.81839 12.2471 12.6851 10.4005 14.4584C9.06046 15.7517 6.94046 15.7517 5.59379 14.4584C3.75379 12.6851 1.64712 9.81172 2.41379 6.42506Z"
-                                                                stroke="#010513" stroke-opacity="0.55" />
-                                                        </svg>
-                                                        مدارس المكتشف العالمية - العزيزية، جدة
-                                                    </span>
-                                                    <span
-                                                        class="text-[#6B7280] text-xs hidden lg:flex items-center gap-2">
-                                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
-                                                            xmlns="http://www.w3.org/2000/svg">
-                                                            <path
-                                                                d="M6.10671 7.24671C6.04004 7.24004 5.96004 7.24004 5.88671 7.24671C4.30004 7.19337 3.04004 5.89337 3.04004 4.29337C3.04004 2.66004 4.36004 1.33337 6.00004 1.33337C7.63337 1.33337 8.96004 2.66004 8.96004 4.29337C8.95337 5.89337 7.69337 7.19337 6.10671 7.24671Z"
-                                                                stroke="#010513" stroke-opacity="0.55"
-                                                                stroke-linecap="round" stroke-linejoin="round" />
-                                                            <path
-                                                                d="M10.9402 2.66663C12.2335 2.66663 13.2735 3.71329 13.2735 4.99996C13.2735 6.25996 12.2735 7.28663 11.0268 7.33329C10.9735 7.32663 10.9135 7.32663 10.8535 7.33329"
-                                                                stroke="#010513" stroke-opacity="0.55"
-                                                                stroke-linecap="round" stroke-linejoin="round" />
-                                                            <path
-                                                                d="M2.77348 9.70663C1.16014 10.7866 1.16014 12.5466 2.77348 13.62C4.60681 14.8466 7.61348 14.8466 9.44681 13.62C11.0601 12.54 11.0601 10.78 9.44681 9.70663C7.62014 8.48663 4.61348 8.48663 2.77348 9.70663Z"
-                                                                stroke="#010513" stroke-opacity="0.55"
-                                                                stroke-linecap="round" stroke-linejoin="round" />
-                                                            <path
-                                                                d="M12.2266 13.3334C12.7066 13.2334 13.1599 13.04 13.5332 12.7534C14.5732 11.9734 14.5732 10.6867 13.5332 9.90671C13.1666 9.62671 12.7199 9.44004 12.2466 9.33337"
-                                                                stroke="#010513" stroke-opacity="0.55"
-                                                                stroke-linecap="round" stroke-linejoin="round" />
-                                                        </svg>
-
-                                                        142 متقدمًا
-                                                    </span>
-
-                                                </div>
-                                            </div>
-
-                                        </div>
-                                    </div>
-
-
-                                </article>
+                                </a>
 
 
                             </div>

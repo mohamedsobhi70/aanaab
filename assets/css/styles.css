@@ -555,6 +555,19 @@ video {
   }
 }
 
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #8447FF;
+  border-radius:20px;
+}
+
 .aanaab-jobs-menu.active{
   visibility: visible;
   top: 66px;
@@ -629,14 +642,6 @@ video {
   left: 58%;
 }
 
-.left-\[9\.77\%\]{
-  left: 9.77%;
-}
-
-.right-\[9\.77\%\]{
-  right: 9.77%;
-}
-
 .top-0{
   top: 0px;
 }
@@ -669,16 +674,20 @@ video {
   top: 90px;
 }
 
-.left-\[10\%\]{
-  left: 10%;
-}
-
 .z-10{
   z-index: 10;
 }
 
 .z-50{
   z-index: 50;
+}
+
+.-z-20{
+  z-index: -20;
+}
+
+.z-20{
+  z-index: 20;
 }
 
 .order-1{
@@ -872,10 +881,6 @@ video {
 
 .h-40{
   height: 10rem;
-}
-
-.h-6{
-  height: 1.5rem;
 }
 
 .h-8{
@@ -1345,11 +1350,6 @@ video {
 .bg-\[\#10B981\]{
   --tw-bg-opacity: 1;
   background-color: rgb(16 185 129 / var(--tw-bg-opacity));
-}
-
-.bg-\[\#2E1C55\]{
-  --tw-bg-opacity: 1;
-  background-color: rgb(46 28 85 / var(--tw-bg-opacity));
 }
 
 .bg-\[\#333745\]{
@@ -1990,10 +1990,6 @@ video {
   opacity: 0;
 }
 
-.opacity-20{
-  opacity: 0.2;
-}
-
 .shadow-featuredJob{
   --tw-shadow:  0px 1px 1px rgba(0, 0, 0, 0.16);
   --tw-shadow-colored: 0px 1px 1px var(--tw-shadow-color);
@@ -2016,11 +2012,6 @@ video {
   --tw-shadow:  0px 0px 16px rgba(0, 0, 0, 0.16);
   --tw-shadow-colored: 0px 0px 16px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-}
-
-.blur-\[24px\]{
-  --tw-blur: blur(24px);
-  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
 .backdrop-blur-\[4px\]{
@@ -2076,9 +2067,24 @@ video {
   position: absolute;
 }
 
+.after\:left-\[10\%\]::after{
+  content: var(--tw-content);
+  left: 10%;
+}
+
 .after\:left-\[50\%\]::after{
   content: var(--tw-content);
   left: 50%;
+}
+
+.after\:right-\[10\%\]::after{
+  content: var(--tw-content);
+  right: 10%;
+}
+
+.after\:top-\[110\%\]::after{
+  content: var(--tw-content);
+  top: 110%;
 }
 
 .after\:top-\[50\%\]::after{
@@ -2091,34 +2097,14 @@ video {
   top: 100%;
 }
 
-.after\:right-\[9\.77\%\]::after{
+.after\:h-6::after{
   content: var(--tw-content);
-  right: 9.77%;
-}
-
-.after\:top-\[110\%\]::after{
-  content: var(--tw-content);
-  top: 110%;
-}
-
-.after\:right-\[10\%\]::after{
-  content: var(--tw-content);
-  right: 10%;
-}
-
-.after\:left-\[10\%\]::after{
-  content: var(--tw-content);
-  left: 10%;
+  height: 1.5rem;
 }
 
 .after\:h-\[50px\]::after{
   content: var(--tw-content);
   height: 50px;
-}
-
-.after\:h-6::after{
-  content: var(--tw-content);
-  height: 1.5rem;
 }
 
 .after\:w-0::after{
@@ -2129,16 +2115,6 @@ video {
 .after\:w-0\.5::after{
   content: var(--tw-content);
   width: 0.125rem;
-}
-
-.after\:w-full::after{
-  content: var(--tw-content);
-  width: 100%;
-}
-
-.after\:w-\[90\%\]::after{
-  content: var(--tw-content);
-  width: 90%;
 }
 
 .after\:w-\[80\%\]::after{
@@ -2158,16 +2134,16 @@ video {
   background-color: rgb(16 185 129 / var(--tw-bg-opacity));
 }
 
-.after\:bg-\[\#DADBDD\]::after{
-  content: var(--tw-content);
-  --tw-bg-opacity: 1;
-  background-color: rgb(218 219 221 / var(--tw-bg-opacity));
-}
-
 .after\:bg-\[\#2E1C55\]::after{
   content: var(--tw-content);
   --tw-bg-opacity: 1;
   background-color: rgb(46 28 85 / var(--tw-bg-opacity));
+}
+
+.after\:bg-\[\#DADBDD\]::after{
+  content: var(--tw-content);
+  --tw-bg-opacity: 1;
+  background-color: rgb(218 219 221 / var(--tw-bg-opacity));
 }
 
 .after\:text-\[\#6B7280\]::after{
@@ -2194,26 +2170,6 @@ video {
 
 .after\:content-\[\'\25BE\'\]::after{
   --tw-content: '▾';
-  content: var(--tw-content);
-}
-
-.after\:content-\[\]::after{
-  --tw-content: ;
-  content: var(--tw-content);
-}
-
-.after\:content-\[\"\"\]::after{
-  --tw-content: "";
-  content: var(--tw-content);
-}
-
-.after\:content-\[\'dffd\'\]::after{
-  --tw-content: 'dffd';
-  content: var(--tw-content);
-}
-
-.after\:content-\[\'dfghfghfgfd\'\]::after{
-  --tw-content: 'dfghfghfgfd';
   content: var(--tw-content);
 }
 
