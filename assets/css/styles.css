@@ -669,6 +669,10 @@ video {
   top: 90px;
 }
 
+.left-\[10\%\]{
+  left: 10%;
+}
+
 .z-10{
   z-index: 10;
 }
@@ -2087,9 +2091,34 @@ video {
   top: 100%;
 }
 
+.after\:right-\[9\.77\%\]::after{
+  content: var(--tw-content);
+  right: 9.77%;
+}
+
+.after\:top-\[110\%\]::after{
+  content: var(--tw-content);
+  top: 110%;
+}
+
+.after\:right-\[10\%\]::after{
+  content: var(--tw-content);
+  right: 10%;
+}
+
+.after\:left-\[10\%\]::after{
+  content: var(--tw-content);
+  left: 10%;
+}
+
 .after\:h-\[50px\]::after{
   content: var(--tw-content);
   height: 50px;
+}
+
+.after\:h-6::after{
+  content: var(--tw-content);
+  height: 1.5rem;
 }
 
 .after\:w-0::after{
@@ -2100,6 +2129,21 @@ video {
 .after\:w-0\.5::after{
   content: var(--tw-content);
   width: 0.125rem;
+}
+
+.after\:w-full::after{
+  content: var(--tw-content);
+  width: 100%;
+}
+
+.after\:w-\[90\%\]::after{
+  content: var(--tw-content);
+  width: 90%;
+}
+
+.after\:w-\[80\%\]::after{
+  content: var(--tw-content);
+  width: 80%;
 }
 
 .after\:-translate-y-1\/2::after{
@@ -2120,10 +2164,27 @@ video {
   background-color: rgb(218 219 221 / var(--tw-bg-opacity));
 }
 
+.after\:bg-\[\#2E1C55\]::after{
+  content: var(--tw-content);
+  --tw-bg-opacity: 1;
+  background-color: rgb(46 28 85 / var(--tw-bg-opacity));
+}
+
 .after\:text-\[\#6B7280\]::after{
   content: var(--tw-content);
   --tw-text-opacity: 1;
   color: rgb(107 114 128 / var(--tw-text-opacity));
+}
+
+.after\:opacity-20::after{
+  content: var(--tw-content);
+  opacity: 0.2;
+}
+
+.after\:blur-\[24px\]::after{
+  content: var(--tw-content);
+  --tw-blur: blur(24px);
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
 .after\:content-\[\'\'\]::after{
@@ -2133,6 +2194,26 @@ video {
 
 .after\:content-\[\'\25BE\'\]::after{
   --tw-content: '▾';
+  content: var(--tw-content);
+}
+
+.after\:content-\[\]::after{
+  --tw-content: ;
+  content: var(--tw-content);
+}
+
+.after\:content-\[\"\"\]::after{
+  --tw-content: "";
+  content: var(--tw-content);
+}
+
+.after\:content-\[\'dffd\'\]::after{
+  --tw-content: 'dffd';
+  content: var(--tw-content);
+}
+
+.after\:content-\[\'dfghfghfgfd\'\]::after{
+  --tw-content: 'dfghfghfgfd';
   content: var(--tw-content);
 }
 
