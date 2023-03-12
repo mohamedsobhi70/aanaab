@@ -557,7 +557,7 @@ video {
 
 .aanaab-jobs-menu.active{
   visibility: visible;
-  top: 62px;
+  top: 66px;
   opacity: 1;
 }
 
@@ -607,6 +607,10 @@ video {
 
 .sticky{
   position: sticky;
+}
+
+.bottom-0{
+  bottom: 0px;
 }
 
 .bottom-\[30px\]{
@@ -663,10 +667,6 @@ video {
 
 .top-\[90px\]{
   top: 90px;
-}
-
-.bottom-0{
-  bottom: 0px;
 }
 
 .z-10{
@@ -890,22 +890,6 @@ video {
   height: 100%;
 }
 
-.h-\[53\]{
-  height: 53;
-}
-
-.h-\[53px\]{
-  height: 53px;
-}
-
-.h-80{
-  height: 20rem;
-}
-
-.h-\[80\%\]{
-  height: 80%;
-}
-
 .w-1\/6{
   width: 16.666667%;
 }
@@ -1020,18 +1004,6 @@ video {
 
 .flex-1{
   flex: 1 1 0%;
-}
-
-.flex-auto{
-  flex: 1 1 auto;
-}
-
-.grow-0{
-  flex-grow: 0;
-}
-
-.grow{
-  flex-grow: 1;
 }
 
 .basis-1\/2{
@@ -2815,10 +2787,6 @@ video {
 
   .lg\:h-auto{
     height: auto;
-  }
-
-  .lg\:h-full{
-    height: 100%;
   }
 
   .lg\:w-20{
