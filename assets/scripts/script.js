@@ -9,9 +9,7 @@ if ($(".jobs-btn")) {
         $(".aanaab-jobs-menu").addClass("active");
     }).on("mouseleave", function () {
         $(".aanaab-jobs-menu").removeClass("active");
-
     })
-
 }
 if ($(".mobile-menu-btn")) {
     $(".mobile-menu-btn").on("click", function () {
@@ -22,13 +20,12 @@ if ($(".mobile-menu-btn")) {
     })
 }
 
-
 // ==========================
 $(".aannab-mobile-menu").find("a").on("click", function () {
     $(".aannab-mobile-menu").removeClass("active");
 })
-// start testimonial carousel 
 
+// start testimonial carousel 
 let $carousel = $(".testimonials ").flickity({
     autoPlay: true,
     cellAlign: "center",
@@ -45,10 +42,12 @@ $(".testimonials .carousel-cell:not(.is-selected) .content ").css({ "color": "#6
 
 let prevArrow = $('.aanaab-slide-prev'),
     nextArrow = $('.aanaab-slide-next');
+
 // next button
 prevArrow.on('click', function () {
     $carousel.flickity('previous');
 });
+
 //  next button
 nextArrow.on('click', function () {
     $carousel.flickity('next');
@@ -63,7 +62,6 @@ $carousel.on('change.flickity', () => {
 
 // end testimonial carousel 
 // ==================================================
-
 let $carousel2 = $(".explore-jobs").flickity({
     autoPlay: true,
     wrapAround: true,
