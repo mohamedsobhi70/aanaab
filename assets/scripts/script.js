@@ -23,6 +23,10 @@ if ($(".mobile-menu-btn")) {
 }
 
 
+// ==========================
+$(".aannab-mobile-menu").find("a").on("click", function () {
+    $(".aannab-mobile-menu").removeClass("active");
+})
 // start testimonial carousel 
 
 let $carousel = $(".testimonials ").flickity({
@@ -118,15 +122,12 @@ if ($(".closebtn")) {
 
 // =================================================
 
-
-
 if (document.getElementById("personal-img")) {
     var loadFile = function (event) {
         var image = document.getElementById("personal-img");
         image.src = URL.createObjectURL(event.target.files[0]);
     };
 }
-
 
 // dropdown lists 
 if ($(".drop-down")) {
