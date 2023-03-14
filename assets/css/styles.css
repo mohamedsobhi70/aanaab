@@ -523,9 +523,9 @@ video {
   padding-left: 0rem;
 }
 
-@media (min-width: 640px){
+@media (min-width: 575px){
   .container{
-    max-width: 640px;
+    max-width: 575px;
     padding-right: 0rem;
     padding-left: 0rem;
   }
@@ -548,8 +548,14 @@ video {
 @media (min-width: 1137px){
   .container{
     max-width: 1137px;
-    padding-right: 10px;
-    padding-left: 10px;
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+}
+
+@media (min-width: 1536px){
+  .container{
+    max-width: 1536px;
   }
 }
 
@@ -588,7 +594,7 @@ video {
   opacity: 1;
 }
 
-@media (min-width: 640px){
+@media (min-width: 575px){
   .aannab-mobile-menu.active{
     top: 58px;
   }
@@ -2388,7 +2394,7 @@ video {
   left: 1rem;
 }
 
-@media (min-width: 640px){
+@media (min-width: 575px){
   .sm\:static{
     position: static;
   }
@@ -3200,6 +3206,11 @@ video {
   .lg\:py-8{
     padding-top: 2rem;
     padding-bottom: 2rem;
+  }
+
+  .lg\:px-14{
+    padding-left: 3.5rem;
+    padding-right: 3.5rem;
   }
 
   .lg\:pb-0{
