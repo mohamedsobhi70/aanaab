@@ -136,3 +136,19 @@ if ($(".drop-down")) {
         }
     })
 }
+
+// tabs
+$('.tab-item:first').addClass('active');
+console.log($('.tab-item:first'));
+$('.tab-content').hide();
+$('.tab-content:first').show();
+
+// Click function
+$('.tab-item').click(function () {
+    $('.tab-item').removeClass('active');
+    $(this).addClass('active');
+    $('.tab-content').hide();
+    let activeTab = $(this).find('a').attr('href');
+    $(activeTab).fadeIn();
+    return false;
+});
