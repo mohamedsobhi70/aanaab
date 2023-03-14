@@ -523,11 +523,9 @@ video {
   padding-left: 0rem;
 }
 
-@media (min-width: 575px){
+@media (min-width: 574px){
   .container{
-    max-width: 575px;
-    padding-right: 0rem;
-    padding-left: 0rem;
+    max-width: 574px;
   }
 }
 
@@ -594,7 +592,7 @@ video {
   opacity: 1;
 }
 
-@media (min-width: 575px){
+@media (min-width: 574px){
   .aannab-mobile-menu.active{
     top: 58px;
   }
@@ -1488,11 +1486,6 @@ video {
   background-size: cover;
 }
 
-.bg-clip-text{
-  -webkit-background-clip: text;
-          background-clip: text;
-}
-
 .fill-\[\#8447FF\]{
   fill: #8447FF;
 }
@@ -1547,11 +1540,6 @@ video {
 .px-10{
   padding-left: 2.5rem;
   padding-right: 2.5rem;
-}
-
-.px-14{
-  padding-left: 3.5rem;
-  padding-right: 3.5rem;
 }
 
 .px-16{
@@ -2005,10 +1993,6 @@ video {
   color: rgb(132 71 255 / var(--tw-text-opacity));
 }
 
-.text-transparent{
-  color: transparent;
-}
-
 .text-white{
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
@@ -2394,7 +2378,7 @@ video {
   left: 1rem;
 }
 
-@media (min-width: 575px){
+@media (min-width: 574px){
   .sm\:static{
     position: static;
   }
@@ -3117,6 +3101,11 @@ video {
     --tw-gradient-to: #AE47FF;
   }
 
+  .lg\:bg-clip-text{
+    -webkit-background-clip: text;
+            background-clip: text;
+  }
+
   .lg\:fill-\[\#6B7280\]{
     fill: #6B7280;
   }
@@ -3206,11 +3195,6 @@ video {
   .lg\:py-8{
     padding-top: 2rem;
     padding-bottom: 2rem;
-  }
-
-  .lg\:px-14{
-    padding-left: 3.5rem;
-    padding-right: 3.5rem;
   }
 
   .lg\:pb-0{
@@ -3346,6 +3330,10 @@ video {
   .lg\:text-\[\#6B7280\]{
     --tw-text-opacity: 1;
     color: rgb(107 114 128 / var(--tw-text-opacity));
+  }
+
+  .lg\:text-transparent{
+    color: transparent;
   }
 
   .lg\:text-white{
