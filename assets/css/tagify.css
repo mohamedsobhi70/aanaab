@@ -1,0 +1,22 @@
+.tagify__tag {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  border-radius: 64px;
+  background: #f8f4ff;
+  font-size: 12px;
+    margin: 0;
+}
+.tagify__tag-text {
+  color: rgb(132, 71, 255);
+}
+.tagify__tag__removeBtn::after {
+  font-size: 18px;
+  color: rgb(132, 71, 255);
+}
+.tagify__tag > div::before {
+  display: none;
+}
+.tagify__tag__removeBtn:hover {
+  background: none}
