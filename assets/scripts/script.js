@@ -139,7 +139,6 @@ if ($(".drop-down")) {
 
 // tabs
 $('.tab-item:first').addClass('active');
-console.log($('.tab-item:first'));
 $('.tab-content').hide();
 $('.tab-content:first').show();
 
@@ -155,37 +154,38 @@ $('.tab-item').click(function () {
 
 // tagyfy 
 
-// // let input2 = document.querySelector('.select-2'),
-//     tagify2 = new Tagify(input, {
-//         whitelist: ['الجغرافيا', 'التاريخ', 'الرياضيات', "الفيزياء", "اللغه العربية", "الاحصاء"],
-//         maxTags: 15,
-//         dropdown: {
-//             maxItems: 20,           // <- mixumum allowed rendered suggestions
-//             classname: "tags-look", // <- custom classname for this dropdown, so it could be targeted
-//             enabled: 0,             // <- show suggestions on focus
-//             closeOnSelect: false    // <- do not hide the suggestions dropdown once an item has been selected
-//         }
-//     })
-
-let input = document.querySelector('.select-1'),
-    input2 = document.querySelector('.select-2'),
-    tagify1 = new Tagify(input, {
-        whitelist: ['الجغرافيا', 'التاريخ', 'الرياضيات', "الفيزياء", "اللغه العربية", "الاحصاء"],
-        maxTags: 15,
-        dropdown: {
-            maxItems: 20,           // <- mixumum allowed rendered suggestions
-            classname: "tags-look", // <- custom classname for this dropdown, so it could be targeted
-            enabled: 0,             // <- show suggestions on focus
-            closeOnSelect: false    // <- do not hide the suggestions dropdown once an item has been selected
-        }
-    }),
-    tagify2 = new Tagify(input2, {
-        whitelist: ['الجغرافيا', 'التاريخ', 'الرياضيات', "الفيزياء", "اللغه العربية", "الاحصاء"],
-        maxTags: 15,
-        dropdown: {
-            maxItems: 20,           // <- mixumum allowed rendered suggestions
-            classname: "tags-look", // <- custom classname for this dropdown, so it could be targeted
-            enabled: 0,             // <- show suggestions on focus
-            closeOnSelect: false    // <- do not hide the suggestions dropdown once an item has been selected
-        }
-    })
+if (document.querySelector('.select-1') || document.querySelector('.select-2') || document.querySelector('.select-3')) {
+    let input1 = document.querySelector('.select-1'),
+        input2 = document.querySelector('.select-2'),
+        input3 = document.querySelector('.select-3'),
+        tagify1 = new Tagify(input1, {
+            whitelist: ['الجغرافيا', 'التاريخ', 'الرياضيات', "الفيزياء", "اللغه العربية", "الاحصاء"],
+            maxTags: 15,
+            dropdown: {
+                maxItems: 20,           // <- mixumum allowed rendered suggestions
+                classname: "tags-look", // <- custom classname for this dropdown, so it could be targeted
+                enabled: 0,             // <- show suggestions on focus
+                closeOnSelect: false    // <- do not hide the suggestions dropdown once an item has been selected
+            }
+        }),
+        tagify2 = new Tagify(input2, {
+            whitelist: ['الجغرافيا', 'التاريخ', 'الرياضيات', "الفيزياء", "اللغه العربية", "الاحصاء"],
+            maxTags: 15,
+            dropdown: {
+                maxItems: 20,           // <- mixumum allowed rendered suggestions
+                classname: "tags-look", // <- custom classname for this dropdown, so it could be targeted
+                enabled: 0,             // <- show suggestions on focus
+                closeOnSelect: false    // <- do not hide the suggestions dropdown once an item has been selected
+            }
+        }),
+        tagify3 = new Tagify(input3, {
+            whitelist: ['الجغرافيا', 'التاريخ', 'الرياضيات', "الفيزياء", "اللغه العربية", "الاحصاء"],
+            maxTags: 15,
+            dropdown: {
+                maxItems: 20,           // <- mixumum allowed rendered suggestions
+                classname: "tags-look", // <- custom classname for this dropdown, so it could be targeted
+                enabled: 0,             // <- show suggestions on focus
+                closeOnSelect: false    // <- do not hide the suggestions dropdown once an item has been selected
+            }
+        })
+}

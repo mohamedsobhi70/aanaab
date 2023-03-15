@@ -305,15 +305,712 @@
                             </span>
                             <input class="p-4 w-full rounded-[48px]" type="text" placeholder="بحث في الوظائف">
                         </div>
-                        <a href="#" class="flex gap-1 items-center">
+                        <a href="#" class="flex gap-1 items-center open-filters">
                             <svg width="18" height="17" viewBox="0 0 18 17" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path
                                     d="M16.2188 0.197266H1.75C1.0625 0.197266 0.71875 1.00977 1.21875 1.47852L7 7.25977V13.6973C7 13.9473 7.09375 14.1973 7.3125 14.3223L9.8125 16.0723C10.3125 16.416 11 16.0723 11 15.4473V7.25977L16.75 1.47852C17.25 1.00977 16.9062 0.197266 16.2188 0.197266Z"
                                     fill="#010513" fill-opacity="0.55" />
                             </svg>
-                            <span class="text-14-21 text-[#0105138c]">فلتر </span>
+                            <span class="text-14-21 text-[#0105138c] ">فلتر </span>
                         </a>
+                        <div
+                            class="filters-section-container z-50 pt-[30%] lg:pt-0 lg:overflow-visible overflow-y-scroll lg:basis-4/12 fixed lg:static w-full lg:w-auto left-0 bottom-0 h-full  translate-y-full lg:translate-y-0 backdrop-blur-[4px] transition duration-500">
+                            <div class="bg-white rounded-2xl lg:border lg:border-[#D9DADC]  overflow-y-scroll h-full">
+                                <div class="flex justify-center items-start py-4 lg:hidden">
+                                    <span class="block bg-[#EBEBEB] h-1.5 w-20 rounded-[40px] "></span>
+                                </div>
+                                <div
+                                    class="px-[30px] py-4 lg:px-6 lg:py-6 flex justify-between items-center border-b border-[#D9DADC] overflow-hidden">
+                                    <h2 class="text-[#111827] text-24-36 font-bold lg:text-16-28 lg:text-[#6B7280] ">
+                                        فلتر
+                                    </h2>
+                                    <button class="close-filters text-14-21 text-[#4B5563] ">الغاء</button>
+                                </div>
+                                <div class="px-[30px] py-4 lg:px-6 lg:py-6  border-b border-[#D9DADC] overflow-hidden">
+                                    <div class="flex  items-center gap-2 p-4 rounded-[64px] border border-[#D9DADC]">
+                                        <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M13.8086 12.8633L11.0742 10.1289C10.9375 10.0195 10.7734 9.9375 10.6094 9.9375H10.1719C10.9102 8.98047 11.375 7.77734 11.375 6.4375C11.375 3.32031 8.80469 0.75 5.6875 0.75C2.54297 0.75 0 3.32031 0 6.4375C0 9.58203 2.54297 12.125 5.6875 12.125C7 12.125 8.20312 11.6875 9.1875 10.9219V11.3867C9.1875 11.5508 9.24219 11.7148 9.37891 11.8516L12.0859 14.5586C12.3594 14.832 12.7695 14.832 13.0156 14.5586L13.7812 13.793C14.0547 13.5469 14.0547 13.1367 13.8086 12.8633ZM5.6875 9.9375C3.74609 9.9375 2.1875 8.37891 2.1875 6.4375C2.1875 4.52344 3.74609 2.9375 5.6875 2.9375C7.60156 2.9375 9.1875 4.52344 9.1875 6.4375C9.1875 8.37891 7.60156 9.9375 5.6875 9.9375Z"
+                                                fill="#010513" fill-opacity="0.55" />
+                                        </svg>
+                                        <input class="w-full focus-visible:outline-none text-14-21 placeholder:textxs"
+                                            placeholder="كلمة البحث" type="search">
+                                        <a aria-label="serch" href="#" class="cursor-pointer">
+                                            <svg width="16" height="15" viewBox="0 0 16 15" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M14.3164 0.75H1.65625C1.05469 0.75 0.753906 1.46094 1.19141 1.87109L6.25 6.92969V12.5625C6.25 12.7812 6.33203 13 6.52344 13.1094L8.71094 14.6406C9.14844 14.9414 9.75 14.6406 9.75 14.0938V6.92969L14.7812 1.87109C15.2188 1.46094 14.918 0.75 14.3164 0.75Z"
+                                                    fill="#010513" fill-opacity="0.55" />
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div
+                                    class=" border-b border-[#D9DADC] px-[30px] py-4 lg:px-6 lg:py-6 flex flex-col gap-6">
+                                    <h2>مستوى الخبرة</h2>
+                                    <div class="filter-block flex flex-col gap-3">
+                                        <div class="flex items-center gap-3">
+                                            <input type="checkbox" checked name="option1" id="option1"
+                                                class="peer hidden" />
+                                            <label for="option1" class="hidden peer-checked:block cursor-pointer ">
+                                                <img src="assets/images/Visitor/Checkyes.png" width="16" height="16"
+                                                    alt="checkboxyes">
+                                            </label>
+                                            <label for="option1"
+                                                class="peer-checked:hidden block cursor-pointer bg-red-100">
+                                                <img src="assets/images/Visitor/Checkno.png" width="16" height="16"
+                                                    alt="checkboxno">
+                                            </label>
+                                            <div class="flex justify-between w-full">
+                                                <span class="text-14-21 text-[#010513E5]">الكل</span>
+                                                <span
+                                                    class="flex justify-center items-center rounded-[40px] px-2 py-.5 text-[#010513E5] text-14-21 bg-[#F3EDFF]">
+                                                    1848
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="flex items-center gap-3">
+                                            <input type="checkbox" checked name="option2" id="option2"
+                                                class="peer hidden" />
+                                            <label for="option2" class="hidden peer-checked:block cursor-pointer">
+                                                <img src="assets/images/Visitor/Checkyes.png" width="16" height="16"
+                                                    alt="checkboxyes">
+                                            </label>
+                                            <label for="option2" class="peer-checked:hidden block cursor-pointer">
+                                                <img src="assets/images/Visitor/Checkno.png" width="16" height="16"
+                                                    alt="checkboxno">
+                                            </label>
+                                            <div class="flex justify-between w-full">
+                                                <span class="text-14-21 text-[#010513E5]">مبتدئ الخبرة </span>
+                                                <span
+                                                    class="flex justify-center items-center rounded-[40px] px-2 py-.5 text-[#010513E5] text-14-21 bg-[#F3EDFF]">
+                                                    540
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="flex items-center gap-3">
+                                            <input type="checkbox" name="option3" id="option3" class="peer hidden" />
+                                            <label for="option3" class="hidden peer-checked:block cursor-pointer">
+                                                <img src="assets/images/Visitor/Checkyes.png" width="16" height="16"
+                                                    alt="checkboxyes">
+                                            </label>
+                                            <label for="option3" class="peer-checked:hidden block cursor-pointer">
+                                                <img src="assets/images/Visitor/Checkno.png" width="16" height="16"
+                                                    alt="checkboxno">
+                                            </label>
+                                            <div class="flex justify-between w-full">
+                                                <span class="text-14-21 text-[#0105138C]">متوسط</span>
+                                                <span
+                                                    class="flex justify-center items-center rounded-[40px] px-2 py-.5 text-[#01051366] text-14-21 bg-[#F5F5F6]">
+                                                    838
+                                                </span>
+                                            </div>
+                                        </div>
+
+                                        <div class="flex items-center gap-3">
+                                            <input type="checkbox" name="option4" id="option4" class="peer hidden" />
+                                            <label for="option4" class="hidden peer-checked:block cursor-pointer">
+                                                <img src="assets/images/Visitor/Checkyes.png" width="16" height="16"
+                                                    alt="checkboxyes">
+                                            </label>
+                                            <label for="option4" class="peer-checked:hidden block cursor-pointer">
+                                                <img src="assets/images/Visitor/Checkno.png" width="16" height="16"
+                                                    alt="checkboxno">
+                                            </label>
+                                            <div class="flex justify-between w-full">
+                                                <span class="text-14-21 text-[#0105138C]">خبير</span>
+                                                <span
+                                                    class="flex justify-center items-center rounded-[40px] px-2 py-.5 text-[#01051366] text-14-21 bg-[#F5F5F6]">
+                                                    538
+                                                </span>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div
+                                    class=" border-b border-[#D9DADC] px-[30px] py-4 lg:px-6 lg:py-6 flex flex-col gap-6">
+                                    <h2>نوع الوظيفة </h2>
+                                    <div class="filter-block flex flex-col gap-3">
+                                        <div class="flex items-center gap-3">
+                                            <input type="checkbox" checked name="option5" id="option5"
+                                                class="peer hidden" />
+                                            <label for="option5" class="hidden peer-checked:block cursor-pointer ">
+                                                <img src="assets/images/Visitor/Checkyes.png" width="16" height="16"
+                                                    alt="checkboxyes">
+                                            </label>
+                                            <label for="option5"
+                                                class="peer-checked:hidden block cursor-pointer bg-red-100">
+                                                <img src="assets/images/Visitor/Checkno.png" width="16" height="16"
+                                                    alt="checkboxno">
+                                            </label>
+                                            <div class="flex justify-between w-full">
+                                                <span class="text-14-21 text-[#010513E5]">الكل</span>
+                                                <span
+                                                    class="flex justify-center items-center rounded-[40px] px-2 py-.5 text-[#010513E5] text-14-21 bg-[#F3EDFF]">
+                                                    1848
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="flex items-center gap-3">
+                                            <input type="checkbox" checked name="option6" id="option6"
+                                                class="peer hidden" />
+                                            <label for="option6" class="hidden peer-checked:block cursor-pointer">
+                                                <img src="assets/images/Visitor/Checkyes.png" width="16" height="16"
+                                                    alt="checkboxyes">
+                                            </label>
+                                            <label for="option6" class="peer-checked:hidden block cursor-pointer">
+                                                <img src="assets/images/Visitor/Checkno.png" width="16" height="16"
+                                                    alt="checkboxno">
+                                            </label>
+                                            <div class="flex justify-between w-full">
+                                                <span class="text-14-21 text-[#010513E5]">دوام كامل </span>
+                                                <span
+                                                    class="flex justify-center items-center rounded-[40px] px-2 py-.5 text-[#010513E5] text-14-21 bg-[#F3EDFF]">
+                                                    540
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="flex items-center gap-3">
+                                            <input type="checkbox" name="option7" id="option7" class="peer hidden" />
+                                            <label for="option7" class="hidden peer-checked:block cursor-pointer">
+                                                <img src="assets/images/Visitor/Checkyes.png" width="16" height="16"
+                                                    alt="checkboxyes">
+                                            </label>
+                                            <label for="option7" class="peer-checked:hidden block cursor-pointer">
+                                                <img src="assets/images/Visitor/Checkno.png" width="16" height="16"
+                                                    alt="checkboxno">
+                                            </label>
+                                            <div class="flex justify-between w-full">
+                                                <span class="text-14-21 text-[#0105138C]">دوام جزئي</span>
+                                                <span
+                                                    class="flex justify-center items-center rounded-[40px] px-2 py-.5 text-[#01051366] text-14-21 bg-[#F5F5F6]">
+                                                    838
+                                                </span>
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+                                <div
+                                    class=" border-b border-[#D9DADC] px-[30px] py-4 lg:px-6 lg:py-6 flex flex-col gap-6">
+                                    <h2>التخصص </h2>
+                                    <div>
+                                        <div
+                                            class="flex  items-center gap-2 p-4 rounded-[64px] border border-[#D9DADC]">
+
+                                            <input
+                                                class="w-full focus-visible:outline-none text-14-21 placeholder:textxs"
+                                                placeholder="كلمة البحث" type="search">
+                                            <a aria-label="serch" href="#" class="cursor-pointer">
+                                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M7.66634 14C11.1641 14 13.9997 11.1645 13.9997 7.66671C13.9997 4.1689 11.1641 1.33337 7.66634 1.33337C4.16854 1.33337 1.33301 4.1689 1.33301 7.66671C1.33301 11.1645 4.16854 14 7.66634 14Z"
+                                                        stroke="#010513" stroke-opacity="0.55" stroke-linecap="round"
+                                                        stroke-linejoin="round" />
+                                                    <path d="M14.6663 14.6667L13.333 13.3334" stroke="#010513"
+                                                        stroke-opacity="0.55" stroke-linecap="round"
+                                                        stroke-linejoin="round" />
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="filter-block flex flex-col gap-3">
+                                        <div class="flex items-center gap-3">
+                                            <input type="checkbox" checked name="option8" id="option8"
+                                                class="peer hidden" />
+                                            <label for="option8" class="hidden peer-checked:block cursor-pointer ">
+                                                <img src="assets/images/Visitor/Checkyes.png" width="16" height="16"
+                                                    alt="checkboxyes">
+                                            </label>
+                                            <label for="option8"
+                                                class="peer-checked:hidden block cursor-pointer bg-red-100">
+                                                <img src="assets/images/Visitor/Checkno.png" width="16" height="16"
+                                                    alt="checkboxno">
+                                            </label>
+                                            <div class="flex justify-between w-full">
+                                                <span class="text-14-21 text-[#010513E5]">التاريخ</span>
+                                                <span
+                                                    class="flex justify-center items-center rounded-[40px] px-2 py-.5 text-[#010513E5] text-14-21 bg-[#F3EDFF]">
+                                                    1848
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="flex items-center gap-3">
+                                            <input type="checkbox" checked name="option9" id="option9"
+                                                class="peer hidden" />
+                                            <label for="option9" class="hidden peer-checked:block cursor-pointer">
+                                                <img src="assets/images/Visitor/Checkyes.png" width="16" height="16"
+                                                    alt="checkboxyes">
+                                            </label>
+                                            <label for="option9" class="peer-checked:hidden block cursor-pointer">
+                                                <img src="assets/images/Visitor/Checkno.png" width="16" height="16"
+                                                    alt="checkboxno">
+                                            </label>
+                                            <div class="flex justify-between w-full">
+                                                <span class="text-14-21 text-[#010513E5]">اللغات </span>
+                                                <span
+                                                    class="flex justify-center items-center rounded-[40px] px-2 py-.5 text-[#010513E5] text-14-21 bg-[#F3EDFF]">
+                                                    540
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="flex items-center gap-3">
+                                            <input type="checkbox" name="option10" id="option10" class="peer hidden" />
+                                            <label for="option10" class="hidden peer-checked:block cursor-pointer">
+                                                <img src="assets/images/Visitor/Checkyes.png" width="16" height="16"
+                                                    alt="checkboxyes">
+                                            </label>
+                                            <label for="option10" class="peer-checked:hidden block cursor-pointer">
+                                                <img src="assets/images/Visitor/Checkno.png" width="16" height="16"
+                                                    alt="checkboxno">
+                                            </label>
+                                            <div class="flex justify-between w-full">
+                                                <span class="text-14-21 text-[#0105138C]">الجرافيا</span>
+                                                <span
+                                                    class="flex justify-center items-center rounded-[40px] px-2 py-.5 text-[#01051366] text-14-21 bg-[#F5F5F6]">
+                                                    838
+                                                </span>
+                                            </div>
+                                        </div>
+
+                                        <div class="flex items-center gap-3">
+                                            <input type="checkbox" name="option11" id="option11" class="peer hidden" />
+                                            <label for="option11" class="hidden peer-checked:block cursor-pointer">
+                                                <img src="assets/images/Visitor/Checkyes.png" width="16" height="16"
+                                                    alt="checkboxyes">
+                                            </label>
+                                            <label for="option11" class="peer-checked:hidden block cursor-pointer">
+                                                <img src="assets/images/Visitor/Checkno.png" width="16" height="16"
+                                                    alt="checkboxno">
+                                            </label>
+                                            <div class="flex justify-between w-full">
+                                                <span class="text-14-21 text-[#0105138C]">الرياضيات</span>
+                                                <span
+                                                    class="flex justify-center items-center rounded-[40px] px-2 py-.5 text-[#01051366] text-14-21 bg-[#F5F5F6]">
+                                                    538
+                                                </span>
+                                            </div>
+                                        </div>
+
+                                        <div class="flex items-center gap-3">
+                                            <input type="checkbox" name="option12" id="option12" class="peer hidden" />
+                                            <label for="option12" class="hidden peer-checked:block cursor-pointer">
+                                                <img src="assets/images/Visitor/Checkyes.png" width="16" height="16"
+                                                    alt="checkboxyes">
+                                            </label>
+                                            <label for="option12" class="peer-checked:hidden block cursor-pointer">
+                                                <img src="assets/images/Visitor/Checkno.png" width="16" height="16"
+                                                    alt="checkboxno">
+                                            </label>
+                                            <div class="flex justify-between w-full">
+                                                <span class="text-14-21 text-[#0105138C]">العلوم</span>
+                                                <span
+                                                    class="flex justify-center items-center rounded-[40px] px-2 py-.5 text-[#01051366] text-14-21 bg-[#F5F5F6]">
+                                                    538
+                                                </span>
+                                            </div>
+                                        </div>
+
+                                        <div class="flex items-center gap-3">
+                                            <input type="checkbox" name="option13" id="option13" class="peer hidden" />
+                                            <label for="option13" class="hidden peer-checked:block cursor-pointer">
+                                                <img src="assets/images/Visitor/Checkyes.png" width="16" height="16"
+                                                    alt="checkboxyes">
+                                            </label>
+                                            <label for="option13" class="peer-checked:hidden block cursor-pointer">
+                                                <img src="assets/images/Visitor/Checkno.png" width="16" height="16"
+                                                    alt="checkboxno">
+                                            </label>
+                                            <div class="flex justify-between w-full">
+                                                <span class="text-14-21 text-[#0105138C]">عربي</span>
+                                                <span
+                                                    class="flex justify-center items-center rounded-[40px] px-2 py-.5 text-[#01051366] text-14-21 bg-[#F5F5F6]">
+                                                    538
+                                                </span>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div
+                                    class=" border-b border-[#D9DADC] px-[30px] py-4 lg:px-6 lg:py-6 flex flex-col gap-6">
+                                    <h2>المرحلة التعليمية </h2>
+                                    <div class="filter-block flex flex-col gap-3">
+                                        <div class="flex items-center gap-3">
+                                            <input type="checkbox" checked name="option14" id="option14"
+                                                class="peer hidden" />
+                                            <label for="option14" class="hidden peer-checked:block cursor-pointer ">
+                                                <img src="assets/images/Visitor/Checkyes.png" width="16" height="16"
+                                                    alt="checkboxyes">
+                                            </label>
+                                            <label for="option14"
+                                                class="peer-checked:hidden block cursor-pointer bg-red-100">
+                                                <img src="assets/images/Visitor/Checkno.png" width="16" height="16"
+                                                    alt="checkboxno">
+                                            </label>
+                                            <div class="flex justify-between w-full">
+                                                <span class="text-14-21 text-[#010513E5]">رياضة الاطفال</span>
+                                                <span
+                                                    class="flex justify-center items-center rounded-[40px] px-2 py-.5 text-[#010513E5] text-14-21 bg-[#F3EDFF]">
+                                                    1848
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="flex items-center gap-3">
+                                            <input type="checkbox" checked name="option15" id="option15"
+                                                class="peer hidden" />
+                                            <label for="option15" class="hidden peer-checked:block cursor-pointer">
+                                                <img src="assets/images/Visitor/Checkyes.png" width="16" height="16"
+                                                    alt="checkboxyes">
+                                            </label>
+                                            <label for="option15" class="peer-checked:hidden block cursor-pointer">
+                                                <img src="assets/images/Visitor/Checkno.png" width="16" height="16"
+                                                    alt="checkboxno">
+                                            </label>
+                                            <div class="flex justify-between w-full">
+                                                <span class="text-14-21 text-[#010513E5]">صفوف أولية</span>
+                                                <span
+                                                    class="flex justify-center items-center rounded-[40px] px-2 py-.5 text-[#010513E5] text-14-21 bg-[#F3EDFF]">
+                                                    540
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="flex items-center gap-3">
+                                            <input type="checkbox" name="option16" id="option16" class="peer hidden" />
+                                            <label for="option16" class="hidden peer-checked:block cursor-pointer">
+                                                <img src="assets/images/Visitor/Checkyes.png" width="16" height="16"
+                                                    alt="checkboxyes">
+                                            </label>
+                                            <label for="option16" class="peer-checked:hidden block cursor-pointer">
+                                                <img src="assets/images/Visitor/Checkno.png" width="16" height="16"
+                                                    alt="checkboxno">
+                                            </label>
+                                            <div class="flex justify-between w-full">
+                                                <span class="text-14-21 text-[#0105138C]">صفوف عليا</span>
+                                                <span
+                                                    class="flex justify-center items-center rounded-[40px] px-2 py-.5 text-[#01051366] text-14-21 bg-[#F5F5F6]">
+                                                    838
+                                                </span>
+                                            </div>
+                                        </div>
+
+                                        <div class="flex items-center gap-3">
+                                            <input type="checkbox" name="option17" id="option17" class="peer hidden" />
+                                            <label for="option17" class="hidden peer-checked:block cursor-pointer">
+                                                <img src="assets/images/Visitor/Checkyes.png" width="16" height="16"
+                                                    alt="checkboxyes">
+                                            </label>
+                                            <label for="option17" class="peer-checked:hidden block cursor-pointer">
+                                                <img src="assets/images/Visitor/Checkno.png" width="16" height="16"
+                                                    alt="checkboxno">
+                                            </label>
+                                            <div class="flex justify-between w-full">
+                                                <span class="text-14-21 text-[#0105138C]">المرحلة المتوسطة</span>
+                                                <span
+                                                    class="flex justify-center items-center rounded-[40px] px-2 py-.5 text-[#01051366] text-14-21 bg-[#F5F5F6]">
+                                                    538
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="flex items-center gap-3">
+                                            <input type="checkbox" name="option18" id="option18" class="peer hidden" />
+                                            <label for="option18" class="hidden peer-checked:block cursor-pointer">
+                                                <img src="assets/images/Visitor/Checkyes.png" width="16" height="16"
+                                                    alt="checkboxyes">
+                                            </label>
+                                            <label for="option18" class="peer-checked:hidden block cursor-pointer">
+                                                <img src="assets/images/Visitor/Checkno.png" width="16" height="16"
+                                                    alt="checkboxno">
+                                            </label>
+                                            <div class="flex justify-between w-full">
+                                                <span class="text-14-21 text-[#0105138C]">المرحلة الثانوية</span>
+                                                <span
+                                                    class="flex justify-center items-center rounded-[40px] px-2 py-.5 text-[#01051366] text-14-21 bg-[#F5F5F6]">
+                                                    838
+                                                </span>
+                                            </div>
+                                        </div>
+
+                                        <div class="flex items-center gap-3">
+                                            <input type="checkbox" name="option19" id="option19" class="peer hidden" />
+                                            <label for="option19" class="hidden peer-checked:block cursor-pointer">
+                                                <img src="assets/images/Visitor/Checkyes.png" width="16" height="16"
+                                                    alt="checkboxyes">
+                                            </label>
+                                            <label for="option19" class="peer-checked:hidden block cursor-pointer">
+                                                <img src="assets/images/Visitor/Checkno.png" width="16" height="16"
+                                                    alt="checkboxno">
+                                            </label>
+                                            <div class="flex justify-between w-full">
+                                                <span class="text-14-21 text-[#0105138C]">المرحلة الجامعية</span>
+                                                <span
+                                                    class="flex justify-center items-center rounded-[40px] px-2 py-.5 text-[#01051366] text-14-21 bg-[#F5F5F6]">
+                                                    538
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="flex items-center gap-3">
+                                            <input type="checkbox" name="option20" id="option20" class="peer hidden" />
+                                            <label for="option20" class="hidden peer-checked:block cursor-pointer">
+                                                <img src="assets/images/Visitor/Checkyes.png" width="16" height="16"
+                                                    alt="checkboxyes">
+                                            </label>
+                                            <label for="option20" class="peer-checked:hidden block cursor-pointer">
+                                                <img src="assets/images/Visitor/Checkno.png" width="16" height="16"
+                                                    alt="checkboxno">
+                                            </label>
+                                            <div class="flex justify-between w-full">
+                                                <span class="text-14-21 text-[#0105138C]">اشراف</span>
+                                                <span
+                                                    class="flex justify-center items-center rounded-[40px] px-2 py-.5 text-[#01051366] text-14-21 bg-[#F5F5F6]">
+                                                    538
+                                                </span>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <div
+                                    class=" border-b border-[#D9DADC] px-[30px] py-4 lg:px-6 lg:py-6 flex flex-col gap-6">
+                                    <h2>المدينة </h2>
+                                    <div>
+                                        <div
+                                            class="flex  items-center gap-2 p-4 rounded-[64px] border border-[#D9DADC]">
+                                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M7.99992 8.95334C9.14867 8.95334 10.0799 8.02209 10.0799 6.87334C10.0799 5.72458 9.14867 4.79333 7.99992 4.79333C6.85117 4.79333 5.91992 5.72458 5.91992 6.87334C5.91992 8.02209 6.85117 8.95334 7.99992 8.95334Z"
+                                                    stroke="#010513" stroke-opacity="0.55" />
+                                                <path
+                                                    d="M2.41379 5.66001C3.72712 -0.113322 12.2805 -0.106655 13.5871 5.66668C14.3538 9.05335 12.2471 11.92 10.4005 13.6933C9.06046 14.9867 6.94046 14.9867 5.59379 13.6933C3.75379 11.92 1.64712 9.04668 2.41379 5.66001Z"
+                                                    stroke="#010513" stroke-opacity="0.55" />
+                                            </svg>
+
+                                            <input
+                                                class="w-full focus-visible:outline-none text-14-21 placeholder:textxs"
+                                                placeholder="كلمة البحث" type="search">
+                                            <a aria-label="search" href="#" class="cursor-pointer">
+                                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M7.66634 14C11.1641 14 13.9997 11.1645 13.9997 7.66668C13.9997 4.16887 11.1641 1.33334 7.66634 1.33334C4.16854 1.33334 1.33301 4.16887 1.33301 7.66668C1.33301 11.1645 4.16854 14 7.66634 14Z"
+                                                        stroke="#010513" stroke-opacity="0.55" stroke-linecap="round"
+                                                        stroke-linejoin="round" />
+                                                    <path d="M14.6663 14.6667L13.333 13.3333" stroke="#010513"
+                                                        stroke-opacity="0.55" stroke-linecap="round"
+                                                        stroke-linejoin="round" />
+                                                </svg>
+
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="filter-block flex flex-col gap-3">
+                                        <div class="flex items-center gap-3">
+                                            <input type="checkbox" checked name="option21" id="option21"
+                                                class="peer hidden" />
+                                            <label for="option21" class="hidden peer-checked:block cursor-pointer ">
+                                                <img src="assets/images/Visitor/Checkyes.png" width="16" height="16"
+                                                    alt="checkboxyes">
+                                            </label>
+                                            <label for="option21"
+                                                class="peer-checked:hidden block cursor-pointer bg-red-100">
+                                                <img src="assets/images/Visitor/Checkno.png" width="16" height="16"
+                                                    alt="checkboxno">
+                                            </label>
+                                            <div class="flex justify-between w-full">
+                                                <span class="text-14-21 text-[#010513E5]">الرياض</span>
+                                                <span
+                                                    class="flex justify-center items-center rounded-[40px] px-2 py-.5 text-[#010513E5] text-14-21 bg-[#F3EDFF]">
+                                                    1848
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="flex items-center gap-3">
+                                            <input type="checkbox" checked name="option22" id="option22"
+                                                class="peer hidden" />
+                                            <label for="option22" class="hidden peer-checked:block cursor-pointer">
+                                                <img src="assets/images/Visitor/Checkyes.png" width="16" height="16"
+                                                    alt="checkboxyes">
+                                            </label>
+                                            <label for="option22" class="peer-checked:hidden block cursor-pointer">
+                                                <img src="assets/images/Visitor/Checkno.png" width="16" height="16"
+                                                    alt="checkboxno">
+                                            </label>
+                                            <div class="flex justify-between w-full">
+                                                <span class="text-14-21 text-[#010513E5]">جدة</span>
+                                                <span
+                                                    class="flex justify-center items-center rounded-[40px] px-2 py-.5 text-[#010513E5] text-14-21 bg-[#F3EDFF]">
+                                                    540
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="flex items-center gap-3">
+                                            <input type="checkbox" name="option23" id="option23" class="peer hidden" />
+                                            <label for="option23" class="hidden peer-checked:block cursor-pointer">
+                                                <img src="assets/images/Visitor/Checkyes.png" width="16" height="16"
+                                                    alt="checkboxyes">
+                                            </label>
+                                            <label for="option23" class="peer-checked:hidden block cursor-pointer">
+                                                <img src="assets/images/Visitor/Checkno.png" width="16" height="16"
+                                                    alt="checkboxno">
+                                            </label>
+                                            <div class="flex justify-between w-full">
+                                                <span class="text-14-21 text-[#0105138C]">مكة</span>
+                                                <span
+                                                    class="flex justify-center items-center rounded-[40px] px-2 py-.5 text-[#01051366] text-14-21 bg-[#F5F5F6]">
+                                                    838
+                                                </span>
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+                                <div class="px-[30px] py-4 lg:px-6 lg:py-6 flex flex-col gap-6">
+                                    <h2>نوع المدرسة</h2>
+                                    <div class="filter-block flex flex-col gap-3">
+                                        <div class="flex items-center gap-3">
+                                            <input type="checkbox" checked name="option26" id="option26"
+                                                class="peer hidden" />
+                                            <label for="option26" class="hidden peer-checked:block cursor-pointer ">
+                                                <img src="assets/images/Visitor/Checkyes.png" width="16" height="16"
+                                                    alt="checkboxyes">
+                                            </label>
+                                            <label for="option26"
+                                                class="peer-checked:hidden block cursor-pointer bg-red-100">
+                                                <img src="assets/images/Visitor/Checkno.png" width="16" height="16"
+                                                    alt="checkboxno">
+                                            </label>
+                                            <div class="flex justify-between w-full">
+                                                <span class="text-14-21 text-[#010513E5]">رياضة الاطفال</span>
+                                                <span
+                                                    class="flex justify-center items-center rounded-[40px] px-2 py-.5 text-[#010513E5] text-14-21 bg-[#F3EDFF]">
+                                                    1848
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="flex items-center gap-3">
+                                            <input type="checkbox" checked name="option27" id="option27"
+                                                class="peer hidden" />
+                                            <label for="option27" class="hidden peer-checked:block cursor-pointer">
+                                                <img src="assets/images/Visitor/Checkyes.png" width="16" height="16"
+                                                    alt="checkboxyes">
+                                            </label>
+                                            <label for="option27" class="peer-checked:hidden block cursor-pointer">
+                                                <img src="assets/images/Visitor/Checkno.png" width="16" height="16"
+                                                    alt="checkboxno">
+                                            </label>
+                                            <div class="flex justify-between w-full">
+                                                <span class="text-14-21 text-[#010513E5]">صفوف أولية</span>
+                                                <span
+                                                    class="flex justify-center items-center rounded-[40px] px-2 py-.5 text-[#010513E5] text-14-21 bg-[#F3EDFF]">
+                                                    540
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="flex items-center gap-3">
+                                            <input type="checkbox" name="option28" id="option28" class="peer hidden" />
+                                            <label for="option28" class="hidden peer-checked:block cursor-pointer">
+                                                <img src="assets/images/Visitor/Checkyes.png" width="16" height="16"
+                                                    alt="checkboxyes">
+                                            </label>
+                                            <label for="option28" class="peer-checked:hidden block cursor-pointer">
+                                                <img src="assets/images/Visitor/Checkno.png" width="16" height="16"
+                                                    alt="checkboxno">
+                                            </label>
+                                            <div class="flex justify-between w-full">
+                                                <span class="text-14-21 text-[#0105138C]">صفوف عليا</span>
+                                                <span
+                                                    class="flex justify-center items-center rounded-[40px] px-2 py-.5 text-[#01051366] text-14-21 bg-[#F5F5F6]">
+                                                    838
+                                                </span>
+                                            </div>
+                                        </div>
+
+                                        <div class="flex items-center gap-3">
+                                            <input type="checkbox" name="option29" id="option29" class="peer hidden" />
+                                            <label for="option29" class="hidden peer-checked:block cursor-pointer">
+                                                <img src="assets/images/Visitor/Checkyes.png" width="16" height="16"
+                                                    alt="checkboxyes">
+                                            </label>
+                                            <label for="option29" class="peer-checked:hidden block cursor-pointer">
+                                                <img src="assets/images/Visitor/Checkno.png" width="16" height="16"
+                                                    alt="checkboxno">
+                                            </label>
+                                            <div class="flex justify-between w-full">
+                                                <span class="text-14-21 text-[#0105138C]">المرحلة المتوسطة</span>
+                                                <span
+                                                    class="flex justify-center items-center rounded-[40px] px-2 py-.5 text-[#01051366] text-14-21 bg-[#F5F5F6]">
+                                                    538
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="flex items-center gap-3">
+                                            <input type="checkbox" name="option30" id="option30" class="peer hidden" />
+                                            <label for="option30" class="hidden peer-checked:block cursor-pointer">
+                                                <img src="assets/images/Visitor/Checkyes.png" width="16" height="16"
+                                                    alt="checkboxyes">
+                                            </label>
+                                            <label for="option30" class="peer-checked:hidden block cursor-pointer">
+                                                <img src="assets/images/Visitor/Checkno.png" width="16" height="16"
+                                                    alt="checkboxno">
+                                            </label>
+                                            <div class="flex justify-between w-full">
+                                                <span class="text-14-21 text-[#0105138C]">المرحلة الثانوية</span>
+                                                <span
+                                                    class="flex justify-center items-center rounded-[40px] px-2 py-.5 text-[#01051366] text-14-21 bg-[#F5F5F6]">
+                                                    838
+                                                </span>
+                                            </div>
+                                        </div>
+
+                                        <div class="flex items-center gap-3">
+                                            <input type="checkbox" name="option31" id="option31" class="peer hidden" />
+                                            <label for="option31" class="hidden peer-checked:block cursor-pointer">
+                                                <img src="assets/images/Visitor/Checkyes.png" width="16" height="16"
+                                                    alt="checkboxyes">
+                                            </label>
+                                            <label for="option31" class="peer-checked:hidden block cursor-pointer">
+                                                <img src="assets/images/Visitor/Checkno.png" width="16" height="16"
+                                                    alt="checkboxno">
+                                            </label>
+                                            <div class="flex justify-between w-full">
+                                                <span class="text-14-21 text-[#0105138C]">المرحلة الجامعية</span>
+                                                <span
+                                                    class="flex justify-center items-center rounded-[40px] px-2 py-.5 text-[#01051366] text-14-21 bg-[#F5F5F6]">
+                                                    538
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="flex items-center gap-3">
+                                            <input type="checkbox" name="option32" id="option32" class="peer hidden" />
+                                            <label for="option32" class="hidden peer-checked:block cursor-pointer">
+                                                <img src="assets/images/Visitor/Checkyes.png" width="16" height="16"
+                                                    alt="checkboxyes">
+                                            </label>
+                                            <label for="option32" class="peer-checked:hidden block cursor-pointer">
+                                                <img src="assets/images/Visitor/Checkno.png" width="16" height="16"
+                                                    alt="checkboxno">
+                                            </label>
+                                            <div class="flex justify-between w-full">
+                                                <span class="text-14-21 text-[#0105138C]">اشراف</span>
+                                                <span
+                                                    class="flex justify-center items-center rounded-[40px] px-2 py-.5 text-[#01051366] text-14-21 bg-[#F5F5F6]">
+                                                    538
+                                                </span>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -421,8 +1118,10 @@
             <section class="mt-16 sm:mt-0 bg-white sm:bg-transparent  w-full sm:px-[38px] pb-8 lg:pb-0 lg:px-0">
                 <div class="container flex flex-col gap-6 lg:gap-8 pt-16 sm:pt-32 lg:pt-0">
                     <header aria-label="featured-jobs" class="flex justify-center sm:justify-between items-center">
-                        <h2 class="text-24-36 lg:text-30-45 text-[#010513E5] lg:text-[#333745]  font-bold flex items-center gap-1"><span
-                                class="hidden sm:block">⚡ </span>الوظائف المميزة</h2>
+                        <h2
+                            class="text-24-36 lg:text-30-45 text-[#010513E5] lg:text-[#333745]  font-bold flex items-center gap-1">
+                            <span class="hidden sm:block">⚡ </span>الوظائف المميزة
+                        </h2>
                         <a href="#" class="text-primary  font-extrabold text-16-24 hidden sm:block">المزيد من الوظائف
                             ←</a>
                     </header>
@@ -853,7 +1552,8 @@
             <section class="container">
                 <!-- ⚡ التخصصات -->
                 <div class="flex flex-col gap-6 lg:gap-8 px-[30px] sm:px-[38px] lg:px-0">
-                    <h2 class="text-center text-24-36 lg:text-30-45 text-[#010513E5] lg:text-[#333745]  font-bold">⚡ التخصصات</h2>
+                    <h2 class="text-center text-24-36 lg:text-30-45 text-[#010513E5] lg:text-[#333745]  font-bold">⚡
+                        التخصصات</h2>
                     <div class="grid grid-cols-2 lg:flex gap-4 lg:gap-[30px] flex-wrap justify-center">
                         <!-- item  -->
                         <a href="#"
@@ -955,8 +1655,10 @@
             <section class="container sm:px-[38px] lg:px-0">
                 <div class=" flex flex-col gap-6 lg:gap-8">
                     <header aria-label="featured-jobs" class="flex justify-center sm:justify-between items-center">
-                        <h2 class="text-24-36 lg:text-30-45 text-[#010513E5] lg:text-[#333745]  font-bold flex items-center gap-1"><span
-                                class="hidden sm:block">⚡ </span>الوظائف المميزة</h2>
+                        <h2
+                            class="text-24-36 lg:text-30-45 text-[#010513E5] lg:text-[#333745]  font-bold flex items-center gap-1">
+                            <span class="hidden sm:block">⚡ </span>الوظائف المميزة
+                        </h2>
                         <a href="#" class="text-primary font-extrabold text-16-24 hidden sm:block">المزيد من الوظائف
                             ←</a>
                     </header>
@@ -1382,15 +2084,15 @@
                 <div class=" flex flex-col gap-5 lg:gap-8 px-[30px] sm:px-[38px] lg:px-0">
                     <h2 class="text-24-36 font-bold text-[#333745] text-center lg:hidden">🎒 تصفح الوظائف </h2>
 
-                    <div class="border-b border-b-[#D9DADC] flex lg:hidden mx-[-30px] sm:mx-0">
+                    <div class="border-b border-b-[#D9DADC] flex lg:hidden mx-[-30px] sm:mx-0 sticky top-[80px]">
                         <h2
-                            class="tab-item  flex-1 flex justify-center items-center p-6 transition-all duration-300 text-[#0105138C]">
+                            class="tab-item  bg-white  flex-1 flex justify-center items-center p-6 transition-all duration-300 text-[#0105138C]">
                             <a href="#tab1" class="">
                                 المستوي الوظيفي
                             </a>
                         </h2>
                         <h2
-                            class="tab-item  flex-1 flex justify-center items-center p-6 transition-all duration-300 text-[#0105138C]">
+                            class="tab-item bg-white flex-1 flex justify-center items-center p-6 transition-all duration-300 text-[#0105138C]">
                             <a href="#tab2" class="">
                                 المراحل التعليمية
                             </a>
@@ -1716,7 +2418,8 @@
                 <!-- Employment services section  -->
                 <section class="flex flex-col gap-8 lg:gap-12  px-[30px] sm:px-[38px] lg:px-0">
                     <header aria-label="employment-services" class="flex flex-col gap-[13px]">
-                        <h2 class="text-30-45 text-[#010513E5] lg:text-[#333745] font-bold text-center">خدمات التوظيف</h2>
+                        <h2 class="text-30-45 text-[#010513E5] lg:text-[#333745] font-bold text-center">خدمات التوظيف
+                        </h2>
                         <p class="text-[#0105138C] lg:text-[#6B7280] text-16-24 lg:text-18-21 text-center">
                             انضم لاكثر من ٢٠٠ مدرسة خاصة وحكومية تعتمد علي
                             اعناب لايجاد امهر المعلمين والتربويين
@@ -2022,7 +2725,8 @@
                                         <path d="M19.2621 11.4999L16.0664 9.67383" stroke="#6B7280"
                                             stroke-linecap="round" stroke-linejoin="round" />
                                     </svg>
-                                    <input class=" text-[#333745] text-14-15 w-full focus-visible:outline-none bg-transparent"
+                                    <input
+                                        class=" text-[#333745] text-14-15 w-full focus-visible:outline-none bg-transparent"
                                         type="text" placeholder="او تواصل عبر البريد">
                                 </div>
                             </div>

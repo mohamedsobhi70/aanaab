@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="description">
     <title>Aanaab - Single Job Page</title>
+    <link rel="stylesheet" href="https://unpkg.com/@yaireo/tagify/dist/tagify.css">
+    <link rel="stylesheet" href="assets/css/tagify.css">
     <link rel="stylesheet" href="assets/css/flickty.css">
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
@@ -173,52 +175,10 @@
                             <h2 class="text-18-27 text-[#333745] font-bold ">
                                 ما المهارات والأدوات والتقنيات ومجالات الخبرة التي تهمك؟
                             </h2>
-                            <div
-                                class="flex flex-wrap items-center gap-2 border border-[#D1D5DB] rounded-2xl lg:rounded-[64px] py-2 px-6">
-                                <a href="#" class="py-2 px-4 rounded-[64px] bg-[#F8F4FF] flex items-center gap-2 ">
-                                    <span class="text-primary  font-bold text-xs">الفصل التفاعلي</span>
-                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M4 4L12 12" stroke="#8447FF" stroke-width="1.5" stroke-linecap="round"
-                                            stroke-linejoin="round"></path>
-                                        <path d="M4 12L12 4" stroke="#8447FF" stroke-width="1.5" stroke-linecap="round"
-                                            stroke-linejoin="round"></path>
-                                    </svg>
-
-                                </a>
-                                <a href="#" class="py-2 px-4 rounded-[64px] bg-[#F8F4FF] flex items-center gap-2 ">
-                                    <span class="text-primary  font-bold text-xs">تربوي</span>
-                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M4 4L12 12" stroke="#8447FF" stroke-width="1.5" stroke-linecap="round"
-                                            stroke-linejoin="round"></path>
-                                        <path d="M4 12L12 4" stroke="#8447FF" stroke-width="1.5" stroke-linecap="round"
-                                            stroke-linejoin="round"></path>
-                                    </svg>
-
-                                </a>
-                                <a href="#" class="py-2 px-4 rounded-[64px] bg-[#F8F4FF] flex items-center gap-2 ">
-                                    <span class="text-primary  font-bold text-xs">ذوي الهمم</span>
-                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M4 4L12 12" stroke="#8447FF" stroke-width="1.5" stroke-linecap="round"
-                                            stroke-linejoin="round"></path>
-                                        <path d="M4 12L12 4" stroke="#8447FF" stroke-width="1.5" stroke-linecap="round"
-                                            stroke-linejoin="round"></path>
-                                    </svg>
-
-                                </a>
-                                <a href="#" class="py-2 px-4 rounded-[64px] bg-[#F8F4FF] flex items-center gap-2 ">
-                                    <span class="text-primary  font-bold text-xs">مايكروسوفت اوفيس</span>
-                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M4 4L12 12" stroke="#8447FF" stroke-width="1.5" stroke-linecap="round"
-                                            stroke-linejoin="round"></path>
-                                        <path d="M4 12L12 4" stroke="#8447FF" stroke-width="1.5" stroke-linecap="round"
-                                            stroke-linejoin="round"></path>
-                                    </svg>
-
-                                </a>
+                            <div class="">
+                                <input name='input-custom-dropdown'
+                                    class='select-3 flex flex-wrap items-center gap-2 border border-[#D1D5DB] rounded-2xl lg:rounded-[64px]  py-2 px-4'
+                                    placeholder='write some tags' value='الفصل التفاعلي, تربوي , ذوي الهمم, مايكروسوفت'>
                             </div>
                         </section>
                         <section class=" flex flex-col gap-[16px] ">
@@ -402,6 +362,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
         integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/@yaireo/tagify"></script>
     <script src="assets/scripts/flickty.js"></script>
     <script src="assets/scripts/script.js"></script>
 </body>
