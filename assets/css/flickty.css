@@ -153,3 +153,8 @@ https://flickity.metafizzy.co
 .dashboared .flickity-page-dots {
   display: none;
 }
+
+.recruitment-slider .flickity-page-dots {
+  display: block !important;
+  bottom: -68px;
+}

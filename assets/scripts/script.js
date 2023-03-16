@@ -95,6 +95,18 @@ let $carousel4 = $(".dashboared").flickity({
     pageDots: true, groupCells: true,
 });
 
+let $carousel5 = $(".recruitment-slider").flickity({
+    autoPlay: true,
+    wrapAround: true,
+    prevNextButtons: false,
+    imagesLoaded: true,
+    setGallerySize: true,
+    cellAlign: 'center',
+    fullscreen: true,
+    pageDots: true,
+    groupCells: true,
+});
+
 
 // filrer mobile aside 
 if ($(".open-filters")) {
@@ -188,4 +200,44 @@ if (document.querySelector('.select-1') || document.querySelector('.select-2') |
                 closeOnSelect: false    // <- do not hide the suggestions dropdown once an item has been selected
             }
         })
+}
+
+
+$('.drag-section').scrollLeft('-300');
+
+const slider = document.querySelector('.recruitment');
+let isDown = false;
+let startX;
+let scrollLeft;
+
+slider.addEventListener('mousedown', (e) => {
+    isDown = true;
+    slider.classList.add('active');
+    startX = e.pageX - slider.offsetLeft;
+    scrollLeft = slider.scrollLeft;
+});
+slider.addEventListener('mouseleave', () => {
+    isDown = false;
+    slider.classList.remove('active');
+});
+slider.addEventListener('mouseup', () => {
+    isDown = false;
+    slider.classList.remove('active');
+});
+slider.addEventListener('mousemove', (e) => {
+    if (!isDown) return;
+    e.preventDefault();
+    const x = e.pageX - slider.offsetLeft;
+    const walk = (x - startX) * 3; //scroll-fast
+    slider.scrollLeft = scrollLeft - walk;
+    console.log(walk);
+});
+// accordions 
+if ($(".accordion-item")) {
+    $(".accordion-title").on("click", function () {
+        let th = $(this);
+        th.parent().find(".accordion-content").slideToggle(400);
+        th.parent().toggleClass("border-[#856F6F]").toggleClass("border-[#D7D5D5]");
+        th.find("svg").toggleClass("open");
+    })
 }

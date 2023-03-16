@@ -7,7 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="description">
     <title>Aanaab - Single Job Page</title>
-    <link rel="stylesheet" href="https://unpkg.com/@yaireo/tagify/dist/tagify.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tagify/4.17.7/tagify.css"
+        integrity="sha512-Ft73YZFLhxI8baaoTdSPN8jKRPhYu441A8pqlqf/CvGkUOaLCLm59ZWMdls8lMBPjs1OZ31Vt3cmZsdBa3EnMw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="assets/css/tagify.css">
     <link rel="stylesheet" href="assets/css/flickty.css">
     <link rel="stylesheet" href="assets/css/styles.css">
@@ -80,7 +82,7 @@
         <div class="container flex flex-col gap-[30px]">
             <div class="">
                 <div class="flex justify-between items-center py-4 lg:py-0 px-8 lg:px-0 lg:justify-start gap-[30px]">
-                    <a href="#" class="lg:basis-3/12 lg:flex gap-4 items-center hidden ">
+                    <a href="personal-informations.html" class="lg:basis-3/12 lg:flex gap-4 items-center hidden ">
                         <svg class="mt-2 hidden lg:block" width="24" height="25" viewBox="0 0 24 25" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                             <path d="M14.43 18.5701L20.5 12.5001L14.43 6.43007M3.5 12.5001L20.33 12.5001"
@@ -100,7 +102,8 @@
                             </h1>
                         </div>
                     </div>
-                    <a href="#" class="font-bold text-16-24 text-[#0105138C] lg:hidden">رجوع</a>
+                    <a href="personal-informations.html"
+                        class="font-bold text-16-24 text-[#0105138C] lg:hidden">رجوع</a>
                 </div>
                 <div class="h-1.5 bg-[#EFEFF0] lg:hidden relative">
                     <span
@@ -232,10 +235,10 @@
                             <div class="grid grid-cols-2 items-center  gap-5">
                                 <input
                                     class="text-14-15 focus:outline-none placeholder:text-[#6B7280] placeholder:text-14-15 py-4 px-6 rounded-[64px] border border-[#D1D5DB]"
-                                    type="text" placeholder="من">
+                                    type="number" min="0" placeholder="من">
                                 <input
                                     class="text-14-15 focus:outline-none placeholder:text-[#6B7280] placeholder:text-14-15 py-4 px-6 rounded-[64px] border border-[#D1D5DB]"
-                                    type="text" placeholder="الي">
+                                    type="number" min="0" placeholder="الي">
                             </div>
                             <div class="flex items-start gap-3">
                                 <div class="flex items-center gap-3">
@@ -309,11 +312,11 @@
                     <div
                         class="lg:flex px-8 lg:justify-between lg:items-center py-3 lg:py-0 bg-white lg:bg-transparent">
                         <div class="flex lg:items-center flex-col lg:flex-row gap-4 lg:gap-12">
-                            <a href="#"
+                            <a href="learning-interests.html"
                                 class="rounded-[64px] bg-primary cursor-pointer  text-center text-white w-full lg:w-auto text-16-24 font-bold py-3 lg:px-[110px]">
                                 حفظ
                                 و متابعة</a>
-                            <a href="#"
+                            <a href="learning-interests.html"
                                 class="text-16-24 text-[#0105138C]  w-full lg:w-auto lg:border-none text-center border border-[#DADBDD] py-3 rounded-[64px]">تخطي</a>
                         </div>
                         <a href="#"
@@ -446,7 +449,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
         integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://unpkg.com/@yaireo/tagify"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tagify/4.17.7/tagify.min.js"
+        integrity="sha512-BO4lu2XUJSxHo+BD3WLBQ9QoYgmtSv/X/4XFsseeCAxK+eILeyEXtGLHFs2UMfzNN9lhtoGy8v8EMFPIl8y+0w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="assets/scripts/flickty.js"></script>
     <script src="assets/scripts/script.js"></script>
 </body>
