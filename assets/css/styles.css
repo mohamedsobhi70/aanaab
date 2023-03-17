@@ -1578,6 +1578,15 @@ video {
   border-color: rgb(132 71 255 / var(--tw-border-opacity));
 }
 
+.border-\[\]{
+  border-color: ;
+}
+
+.border-\[\#B6AFAF\]{
+  --tw-border-opacity: 1;
+  border-color: rgb(182 175 175 / var(--tw-border-opacity));
+}
+
 .border-b-\[\#D1D5DB\]{
   --tw-border-opacity: 1;
   border-bottom-color: rgb(209 213 219 / var(--tw-border-opacity));
@@ -2020,6 +2029,10 @@ video {
 
 .pt-\[30\%\]{
   padding-top: 30%;
+}
+
+.pb-32{
+  padding-bottom: 8rem;
 }
 
 .text-center{
