@@ -108,7 +108,7 @@ let $carousel5 = $(".recruitment-slider").flickity({
 });
 
 
-// filrer mobile aside 
+// filter mobile aside 
 if ($(".open-filters")) {
     let filterBtn = $(".open-filters"),
         closeFilters = $(".close-filters"),
@@ -123,7 +123,7 @@ if ($(".open-filters")) {
     })
 }
 // =============================================
-// notification clse 
+// notification close 
 if ($(".closebtn")) {
     $(".closebtn").click(function () {
         $(this).parent().css("display", "none")
@@ -205,33 +205,30 @@ if (document.querySelector('.select-1') || document.querySelector('.select-2') |
 
 $('.drag-section').scrollLeft('-300');
 
-const slider = document.querySelector('.recruitment');
-let isDown = false;
-let startX;
-let scrollLeft;
 
-slider.addEventListener('mousedown', (e) => {
-    isDown = true;
-    slider.classList.add('active');
-    startX = e.pageX - slider.offsetLeft;
-    scrollLeft = slider.scrollLeft;
+// video 
+const demo = document.querySelector("#vedio");
+demo.addEventListener('scroll', function () {
+    if (Window.scrollY * 0.0001 > 1 || Window.scrollY * 0.0001 < 0.2) { return; }
+    else { demo.setAttribute('style', 'transform: scale(' + Window.scrollY * 0.0001 + ');'); }
 });
-slider.addEventListener('mouseleave', () => {
-    isDown = false;
-    slider.classList.remove('active');
-});
-slider.addEventListener('mouseup', () => {
-    isDown = false;
-    slider.classList.remove('active');
-});
-slider.addEventListener('mousemove', (e) => {
-    if (!isDown) return;
+
+let scrollContainer = document.getElementById("recruitment");
+
+scrollContainer.addEventListener("wheel", (e) => {
     e.preventDefault();
-    const x = e.pageX - slider.offsetLeft;
-    const walk = (x - startX) * 3; //scroll-fast
-    slider.scrollLeft = scrollLeft - walk;
-    console.log(walk);
+    scrollContainer.scrollLeft -= e.deltaY/2;
 });
+
+
+// scrolling slider  ==========
+const slider = document.querySelector('.recruitment');
+
+scrollContainer.addEventListener("wheel", (e) => {
+    e.preventDefault();
+    scrollContainer.scrollLeft -= e.deltaY;
+});
+
 // accordions 
 if ($(".accordion-item")) {
     $(".accordion-title").on("click", function () {
