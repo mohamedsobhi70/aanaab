@@ -6,7 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="description">
+
     <title>Aanaab - Home Page</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <link rel="stylesheet" href="assets/css/flickty.css">
     <link rel="stylesheet" href="assets/css/styles.css">
@@ -253,55 +255,58 @@
     <!-- start Aanab main page content   -->
     <main>
         <!-- page title  -->
-        <div class="bg-[#F7FAFA]">
-            <div class="container flex items-center gap-2 pt-5 pb-4 ">
-                <a href="#" class="text-13-19 text-[#0105138C] font-bold ">الرئيسية</a>
-                <span class="text-16-24 text-[#0105138C] rotate-180">›</span>
-                <a href="#" class="text-13-19 text-[#0105138C] font-bold ">أعناب للتوظيف</a>
-            </div>
-        </div>
-        <!-- herosection  -->
-        <section class="bg-[#F7FAFA]">
-            <div class="conttainer flex flex-col gap-8 py-24 ">
-                <div class="w-[730px] mx-auto flex flex-col gap-4 items-center">
-                    <h1 class="text-[#010513E5] text-[64px] font-bold leading-[96px]">توظيف المعلمين صار أكثر سهولة
-                        ومرونة مع أعناب</h1>
-                    <p class="text-[#0105138C] text-18-27">أكثر من 150 مدرسة لأكثر من 250 معلم يبحث عن وظيفة</p>
-                </div>
-                <div class="flex items-center justify-center gap-6">
-                    <a href="#"
-                        class="px-6 py-3 text-16-24 bg-primary hover:bg-[#7841E8] active:bg-[#9D6CFF] transition-all duration-300 text-white rounded-[64px]">ابحث
-                        عن وظيفة</a>
-                    <a href="#"
-                        class="text-[#010513B2] text-16-24 hover:text-[#010513E5] active:text-[#0105138C] duration-300">ابحث
-                        عن موظفين</a>
+        <div class="overflow-hidden bg-[#F7FAFA]">
+            <div class="bg-[#F7FAFA]">
+                <div class="container flex items-center gap-2 pt-5 pb-4 ">
+                    <a href="#" class="text-13-19 text-[#0105138C] font-bold ">الرئيسية</a>
+                    <span class="text-16-24 text-[#0105138C] rotate-180">›</span>
+                    <a href="#" class="text-13-19 text-[#0105138C] font-bold ">أعناب للتوظيف</a>
                 </div>
             </div>
-        </section>
+            <!-- herosection  -->
+            <section class=" relative z-[1]">
+                <div class="conttainer flex flex-col gap-8 py-24 ">
+                    <div class="w-[730px] mx-auto flex flex-col gap-4 items-center">
+                        <h1 class="text-[#010513E5] text-[64px] font-bold leading-[96px]">توظيف المعلمين صار أكثر سهولة
+                            ومرونة مع أعناب</h1>
+                        <p class="text-[#0105138C] text-18-27">أكثر من 150 مدرسة لأكثر من 250 معلم يبحث عن وظيفة</p>
+                    </div>
+                    <div class="flex items-center justify-center gap-6">
+                        <a href="#"
+                            class="px-6 py-3 text-16-24 bg-primary hover:bg-[#7841E8] active:bg-[#9D6CFF] transition-all duration-300 text-white rounded-[64px]">ابحث
+                            عن وظيفة</a>
+                        <a href="#"
+                            class="text-[#010513B2] text-16-24 hover:text-[#010513E5] active:text-[#0105138C] duration-300">ابحث
+                            عن موظفين</a>
+                    </div>
+                </div>
+            </section>
 
-        <!-- video section  -->
-        <div class="bg-[#F7FAFA]">
-            <div class="container flex justify-center  overflow-hidden">
-                <div id="vedio-wrapper"
-                    class="flex items-center justify-center  bg-primary overflow-hidden w-[600px] h-[600px] rounded-full">
-                    <div id="vedio" class="img w-[350px] h-[350px] relative rounded-full ">
-                        <img src="assets/images/Visitor/dashboardman.png" alt="man" class="object-cover w-full h-full">
-                        <button title="play"
-                            class="absolute w-[53px] h-[53px] bg-white rounded-full flex justify-center items-center top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
-                            <svg width="14" height="16" viewBox="0 0 14 16" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M1 8.00173V5.13653C1 1.43886 3.38323 -0.0518208 6.29606 1.78733L8.55572 3.21993L10.8154 4.65254C13.7282 6.49169 13.7282 9.51177 10.8154 11.3509L8.55572 12.7835L6.29606 14.2161C3.38323 16.0553 1 14.5452 1 10.8669V8.00173Z"
-                                    stroke="#010513" stroke-opacity="0.9" stroke-width="1.5" stroke-miterlimit="10"
-                                    stroke-linecap="round" stroke-linejoin="round" />
-                            </svg>
-                        </button>
+            <!-- video section  -->
+            <div class="bg-[#F7FAFA] py-24 mb-24 relative">
+                <div id="vedio-wrapper" class="absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 w-52 h-52 bg-primary rounded-full"></div>
+                <div class="container flex justify-center  overflow-y-hidden">
+                    <div  class="flex items-center justify-center">
+                        <div id="vedio" class="img w-[350px] h-[350px] relative rounded-full ">
+                            <img src="assets/images/Visitor/dashboardman.png" alt="man"
+                                class="object-cover w-full h-full">
+                            <button title="play"
+                                class="absolute w-[53px] h-[53px] bg-white rounded-full flex justify-center items-center top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+                                <svg width="14" height="16" viewBox="0 0 14 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M1 8.00173V5.13653C1 1.43886 3.38323 -0.0518208 6.29606 1.78733L8.55572 3.21993L10.8154 4.65254C13.7282 6.49169 13.7282 9.51177 10.8154 11.3509L8.55572 12.7835L6.29606 14.2161C3.38323 16.0553 1 14.5452 1 10.8669V8.00173Z"
+                                        stroke="#010513" stroke-opacity="0.9" stroke-width="1.5" stroke-miterlimit="10"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
         <!-- partners section  -->
-        <section class="z-[1] relative -mt-8 bg-[#F7FAFA]">
+        <section class="z-[1] relative bg-[#F7FAFA]">
             <div class="rounded-t-[48px] bg-white">
                 <div class="container py-16 flex flex-col gap-10">
                     <h2 class="text-24-36 text-[#010513B2] font-bold text-center">أعناب منصة لتدريب المعلمين وتمكينهم في
@@ -457,12 +462,12 @@
                             </filter>
                             <linearGradient id="paint0_linear_1503_47714" x1="377.509" y1="551.411" x2="1295.69"
                                 y2="917.646" gradientUnits="userSpaceOnUse">
-                                <stop stop-color="#F8F4FF" />
+                                <stop offset="1" stop-color="#F8F4FF" />
                                 <stop offset="0.817523" stop-color="#E0F2F2" />
                             </linearGradient>
                         </defs>
                     </svg>
-                    <img class="w-full relative" width="" height="" src="assets/images/Visitor/maps.png"
+                    <img class="w-full relative" width="1200" height="685" src="assets/images/Visitor/maps.png"
                         alt="aanaab map">
                 </div>
             </div>
@@ -619,7 +624,7 @@
                     </div>
                 </div>
             </div>
-           
+
         </section>
         <section class="relative">
             <div class="  bg-[#97F7EF] rounded-b-[32px]">
@@ -772,7 +777,7 @@
                     </div>
                 </div>
             </div>
-           
+
         </section>
 
         <!-- slider  -->
@@ -1038,14 +1043,17 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
         integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
     <script src="assets/scripts/flickty.js"></script>
     <script src="assets/scripts/script.js"></script>
     <script>
+        AOS.init();
         function getmaxWidth() {
             let scroll = window.scrollY / 4,
                 width = Math.min(350 + scroll * 4);
-            $("#vedio-wrapper").css("border-radius", 50 - scroll + "%");
-            $("#vedio-wrapper").css("width", 600 + (scroll * 4) + "px");
+            $("#vedio-wrapper").css("width",  (scroll * 20) + "px");
+            $("#vedio-wrapper").css("height",  (scroll * 20) + "px");
         }
         window.addEventListener("scroll", function () {
             requestAnimationFrame(getmaxWidth);
