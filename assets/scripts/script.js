@@ -214,20 +214,24 @@ demo.addEventListener('scroll', function () {
 });
 
 let scrollContainer = document.getElementById("recruitment");
+if (window.innerWidth > 1024) {
 
-scrollContainer.addEventListener("wheel", (e) => {
-    e.preventDefault();
-    scrollContainer.scrollLeft -= e.deltaY/2;
-});
+    scrollContainer.addEventListener("wheel", (e) => {
+        e.preventDefault();
+        scrollContainer.scrollLeft -= e.deltaY / 2;
+    })
+};
 
 
 // scrolling slider  ==========
 const slider = document.querySelector('.recruitment');
 
-scrollContainer.addEventListener("wheel", (e) => {
-    e.preventDefault();
-    scrollContainer.scrollLeft -= e.deltaY;
-});
+if (window.innerWidth > 1024) {
+    slider.addEventListener("wheel", (e) => {
+        e.preventDefault();
+        slider.scrollLeft -= e.deltaY;
+    });
+}
 
 // accordions 
 if ($(".accordion-item")) {
