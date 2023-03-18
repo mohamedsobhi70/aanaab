@@ -245,3 +245,49 @@ if ($(".accordion-item")) {
         th.find("svg").toggleClass("open");
     })
 }
+
+
+// filter jobs by search
+
+
+let srchFilter = $(".filter-search-input");
+if (srchFilter) {
+    srchFilter.on("keyup", filt).on("blur", filt);
+}
+
+function filt() {
+    let Jobs = $(".job-card ");
+    let inptIner = srchFilter.val().toUpperCase();
+    Jobs.each(function () {
+        let th = $(this);
+        if (th.find("h2").text().toUpperCase().indexOf(inptIner) > -1) {
+            th.css("display", "flex");
+            $(".not-found").addClass("hidden").removeClass("flex");
+        } else {
+            th.css("display", "none");
+            $(".not-found").removeClass("hidden").addClass("flex");
+        }
+    })
+}
+
+
+
+if ($(".filters-section-container")) {
+    $(".filters-section-container").find("input[type='checkbox']").each(function () {
+        let th = $(this);
+        if (th.is(":checked")) {
+            th.parent().find(".filter-label").addClass("active")
+        } else {
+            th.parent().find(".filter-label").removeClass("active")
+
+        }
+        th.on("change", function () {
+            if (th.is(":checked")) {
+                th.parent().find(".filter-label").addClass("active")
+            } else {
+                th.parent().find(".filter-label").removeClass("active")
+            }
+        })
+
+    })
+}
