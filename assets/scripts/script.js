@@ -207,31 +207,34 @@ $('.drag-section').scrollLeft('-300');
 
 
 // video 
-const demo = document.querySelector("#vedio");
-demo.addEventListener('scroll', function () {
-    if (Window.scrollY * 0.0001 > 1 || Window.scrollY * 0.0001 < 0.2) { return; }
-    else { demo.setAttribute('style', 'transform: scale(' + Window.scrollY * 0.0001 + ');'); }
-});
+if (document.querySelector("#vedio")) {
 
-let scrollContainer = document.getElementById("recruitment");
-if (window.innerWidth > 1024) {
+    const demo = document.querySelector("#vedio");
+    demo.addEventListener('scroll', function () {
+        if (Window.scrollY * 0.0001 > 1 || Window.scrollY * 0.0001 < 0.2) { return; }
+        else { demo.setAttribute('style', 'transform: scale(' + Window.scrollY * 0.0001 + ');'); }
+    });
 
-    scrollContainer.addEventListener("wheel", (e) => {
-        e.preventDefault();
-        scrollContainer.scrollLeft -= e.deltaY / 2;
-    })
-};
+    let scrollContainer = document.getElementById("recruitment");
+    if (window.innerWidth > 1024) {
 
+        scrollContainer.addEventListener("wheel", (e) => {
+            e.preventDefault();
+            scrollContainer.scrollLeft -= e.deltaY / 2;
+        })
+    };
+
+}
 
 // scrolling slider  ==========
 const slider = document.querySelector('.recruitment');
-
-if (window.innerWidth > 1024) {
+if (slider && window.innerWidth > 1024) {
     slider.addEventListener("wheel", (e) => {
         e.preventDefault();
         slider.scrollLeft -= e.deltaY;
     });
 }
+
 
 // accordions 
 if ($(".accordion-item")) {
