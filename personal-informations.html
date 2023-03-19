@@ -184,19 +184,19 @@
                         <div class="grid md:grid-cols-2 items-center  gap-5">
                             <input required
                                 class="text-14-15 focus:outline-[#5FC1B4] placeholder:text-[#6B7280] placeholder:text-14-15 py-4 px-6 rounded-[64px] border border-[#D1D5DB]"
-                                type="text" placeholder="الاسم الأول" autocomplete="on">
+                                type="text"  placeholder="الاسم الأول" name="name" autocomplete="given-name" >
                             <input required
                                 class="text-14-15 focus:outline-[#5FC1B4] placeholder:text-[#6B7280] placeholder:text-14-15 py-4 px-6 rounded-[64px] border border-[#D1D5DB]"
-                                type="text" placeholder="اسم العائلة" autocomplete="on">
+                                type="text" placeholder="اسم العائلة" name="familyname" autocomplete="family-name">
                             <input required
                                 class="text-14-15 focus:outline-[#5FC1B4] placeholder:text-[#6B7280] placeholder:text-14-15 py-4 px-6 rounded-[64px] border border-[#D1D5DB]"
-                                type="email" placeholder="البريد الاكتروني" autocomplete="on">
+                                type="email" placeholder="البريد الاكتروني" name="email" autocomplete="email">
                             <input required
                                 class="text-14-15 focus:outline-[#5FC1B4] placeholder:text-[#6B7280] placeholder:text-14-15 py-4 px-6 rounded-[64px] border border-[#D1D5DB]"
-                                type="tel" placeholder="رقم الجوال" autocomplete="on">
+                                type="tel" placeholder="رقم الجوال" name="tel" autocomplete="tel">
                             <input required
                                 class="text-14-15 focus:outline-[#5FC1B4] placeholder:text-[#6B7280] placeholder:text-14-15 py-4 px-6 rounded-[64px] border border-[#D1D5DB]"
-                                type="text" placeholder="تاريخ الميلاد" autocomplete="on">
+                                type="text" onblur="(this.type = 'text')" onfocus="(this.type = 'date')" placeholder="تاريخ الميلاد" name="date" autocomplete="bday">
                             <div
                                 class="relative after:content-['▾'] after:text-[#6B7280] after:absolute rtl:after:left-4 ltr:after:right-4 after:top-[50%] after:-translate-y-1/2">
                                 <select title="gender"
