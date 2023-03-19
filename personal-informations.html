@@ -78,7 +78,7 @@
         <div class="container flex flex-col gap-[30px]">
             <div class="">
                 <div class="flex justify-between items-center py-4 lg:py-0 px-8 lg:px-0 lg:justify-start gap-[30px]">
-                    <a href="#" class="lg:basis-3/12 flex gap-4 items-center">
+                    <a href="#" onclick="window.history.back()" class="lg:basis-3/12 flex gap-4 items-center">
                         <svg class="mt-2 hidden lg:block" width="24" height="25" viewBox="0 0 24 25" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                             <path d="M14.43 18.5701L20.5 12.5001L14.43 6.43007M3.5 12.5001L20.33 12.5001"
@@ -184,7 +184,7 @@
                         <div class="grid md:grid-cols-2 items-center  gap-5">
                             <input required
                                 class="text-14-15 focus:outline-[#5FC1B4] placeholder:text-[#6B7280] placeholder:text-14-15 py-4 px-6 rounded-[64px] border border-[#D1D5DB]"
-                                type="text"  placeholder="الاسم الأول" name="name" autocomplete="given-name" >
+                                type="text" placeholder="الاسم الأول" name="name" autocomplete="given-name">
                             <input required
                                 class="text-14-15 focus:outline-[#5FC1B4] placeholder:text-[#6B7280] placeholder:text-14-15 py-4 px-6 rounded-[64px] border border-[#D1D5DB]"
                                 type="text" placeholder="اسم العائلة" name="familyname" autocomplete="family-name">
@@ -196,7 +196,8 @@
                                 type="tel" placeholder="رقم الجوال" name="tel" autocomplete="tel">
                             <input required
                                 class="text-14-15 focus:outline-[#5FC1B4] placeholder:text-[#6B7280] placeholder:text-14-15 py-4 px-6 rounded-[64px] border border-[#D1D5DB]"
-                                type="text" onblur="(this.type = 'text')" onfocus="(this.type = 'date')" placeholder="تاريخ الميلاد" name="date" autocomplete="bday">
+                                type="text" onblur="(this.type = 'text')" onfocus="(this.type = 'date')"
+                                placeholder="تاريخ الميلاد" name="date" autocomplete="bday">
                             <div
                                 class="relative after:content-['▾'] after:text-[#6B7280] after:absolute rtl:after:left-4 ltr:after:right-4 after:top-[50%] after:-translate-y-1/2">
                                 <select title="gender"
@@ -234,7 +235,7 @@
                             <a href="professional-interests.html"
                                 class="text-16-24 text-[#0105138C]  w-full lg:w-auto lg:border-none text-center border border-[#DADBDD] py-3 rounded-[64px]">تخطي</a>
                         </div>
-                        <a href="#"
+                        <a href="#" onclick="window.history.back()" 
                             class="py-3 px-8 rounded-[64px] border border-[#DADBDD] text-16-24 text-[#0105138C] font-bold hidden lg:block">رجوع</a>
                     </div>
                 </form>
