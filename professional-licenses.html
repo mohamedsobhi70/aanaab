@@ -186,9 +186,9 @@
                 </aside>
                 <div class="lg:basis-9/12 w-full lg:w-auto flex flex-col sm:gap-[30px]">
 
-                    <div
+                    <form 
                         class=" bg-white sm:rounded-2xl px-8 pt-8 pb-16 lg:py-8 flex flex-col gap-12 sm:border sm:border-[#D1D5DB]">
-                        <section class=" flex flex-col gap-6 lg:items-start">
+                        <div class=" flex flex-col gap-6 lg:items-start">
                             <h2 class="text-18-27 text-[#333745] font-bold ">هل قمت باجراء اختبار الرخصة المهنية؟
                             </h2>
                             <div class="flex  gap-4">
@@ -206,10 +206,10 @@
                                         class="rounded-[64px] text-center border block border-[#DADBDD] py-3 px-8 text-[#0105138C] text-16-24 peer-checked:text-primary peer-checked:border-primary transition-all duration-300 font-bold cursor-pointer">لا</label>
                                 </div>
                             </div>
-                        </section>
+                        </div>
 
 
-                        <section class=" flex flex-col gap-6">
+                        <div class=" flex flex-col gap-6">
                             <h2 class="text-18-27 text-[#333745] font-bold ">الرخصة المهنية</h2>
                             <div class="grid md:grid-cols-2 items-center  gap-5">
                                 <div
@@ -247,9 +247,9 @@
                                     بحد أقصى
                                     للحجم يبلغ 5 ميغابايت</p>
                             </div>
-                        </section>
+                        </div>
 
-                        <section class=" flex flex-col gap-6 lg:items-start">
+                        <div class=" flex flex-col gap-6 lg:items-start">
                             <h2 class="text-18-27 text-[#333745] font-bold ">هل قمت باجراء اختبار التخصص؟
                             </h2>
                             <div class="flex  gap-4">
@@ -267,25 +267,24 @@
                                         class="rounded-[64px] text-center border block border-[#DADBDD] py-3 px-8 text-[#0105138C] text-16-24 peer-checked:text-primary peer-checked:border-primary transition-all duration-300 font-bold cursor-pointer">لا</label>
                                 </div>
                             </div>
-                        </section>
+                        </div>
 
-                        <section class=" flex flex-col gap-6 lg:items-start">
+                        <div class=" flex flex-col gap-6 lg:items-start">
                             <h2 class="text-18-27 text-[#333745] font-bold ">هل قمت باجراء اختبار التخصص؟
                             </h2>
                             <a href="#"
                                 class="rounded-[64px] border text-center border-[#DADBDD] hover:border-primary hover:text-primary py-3 px-8 font-bold text-16-24 text-[#0105138C] transition-all duration-300 ">
                                 اجراء الاختبار
                             </a>
-                        </section>
-                    </div>
+                        </div>
+                    </form>
 
                     <div
                         class="lg:flex px-8 lg:justify-between lg:items-center py-3 lg:py-0 bg-white lg:bg-transparent">
                         <div class="flex lg:items-center flex-col lg:flex-row gap-4 lg:gap-12">
-                            <a href="#"
-                                class="rounded-[64px] bg-primary cursor-pointer  text-center text-white w-full lg:w-auto text-16-24 font-bold py-3 lg:px-[110px]">
-                                حفظ
-                                و متابعة</a>
+                            <input type="submit"
+                                class="rounded-[64px] bg-primary  text-center cursor-pointer text-white w-full lg:w-auto text-16-24 font-bold py-3 px-[110px]"
+                                value="حفظ و متابعة" />
                             <a href="#"
                                 class="text-16-24 text-[#0105138C]  w-full lg:w-auto lg:border-none text-center border border-[#DADBDD] py-3 rounded-[64px]">تخطي</a>
                         </div>

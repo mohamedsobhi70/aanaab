@@ -78,7 +78,6 @@
 
     <!-- start Aanab main page content   -->
     <main class="bg-[#F7FAFA] lg:py-16">
-
         <div class="container flex flex-col gap-[30px]">
             <div class="">
                 <div class="flex justify-between items-center py-4 lg:py-0 px-8 lg:px-0 lg:justify-start gap-[30px]">
@@ -166,7 +165,7 @@
                         </li>
                     </ul>
                 </aside>
-                <div class="lg:basis-9/12 w-full lg:w-auto flex flex-col sm:gap-[30px]">
+                <form action="learning-interests.html" class="lg:basis-9/12 w-full lg:w-auto flex flex-col sm:gap-[30px]">
                     <div class="flex flex-col gap-12  bg-white sm:rounded-2xl px-8 py-8 sm:border sm:border-[#D1D5DB]">
                         <section class="flex flex-col gap-6">
                             <h2 class="text-18-27 text-[#333745] font-bold ">ما هو مستواك الوظيفي الحالي؟</h2>
@@ -199,21 +198,34 @@
                                 <span class="text-16-28 text-[#6B7280]">يمكنك اختيار أكثر من نوع وظيفة</span>
                             </div>
                             <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
-                                <div
-                                    class="border border-[#D1D5DB] py-4 lg:py-8 hover:border-primary hover:-translate-y-0.5 hover:text-primary transition duration-300 cursor-pointer rounded-2xl text-16-28 text-center text-[#6B7280] ">
-                                    دوام جزئي
+
+                                <div class="">
+                                    <input id="item1" type="radio" value="" name="job" class="peer hidden">
+                                    <label for="item1"
+                                        class="py-4 lg:py-8 rounded-2xl text-16-28 text-center text-[#6B7280] border block border-[#DADBDD] text-[#0105138C]  peer-checked:text-primary peer-checked:border-primary transition-all duration-300 font-bold cursor-pointer">
+                                        رياضة الاطفال
+                                    </label>
                                 </div>
-                                <div
-                                    class="border border-primary py-4 lg:py-8 hover:border-primary hover:-translate-y-0.5 hover:text-primary transition duration-300 cursor-pointer rounded-2xl text-16-28 text-center text-primary">
-                                    دوام كامل
+                                <div class="">
+                                    <input id="item2" type="radio" value="" name="job" class="peer hidden">
+                                    <label for="item2"
+                                        class="py-4 lg:py-8 rounded-2xl text-16-28 text-center text-[#6B7280] border block border-[#DADBDD] text-[#0105138C]  peer-checked:text-primary peer-checked:border-primary transition-all duration-300 font-bold cursor-pointer">
+                                        رياضة الاطفال
+                                    </label>
                                 </div>
-                                <div
-                                    class="border border-[#D1D5DB] py-4 lg:py-8 hover:border-primary hover:-translate-y-0.5 hover:text-primary transition duration-300 cursor-pointer rounded-2xl text-16-28 text-center text-[#6B7280] ">
-                                    عقد محدد المدة
+                                <div class="">
+                                    <input id="item3" type="radio" value="" name="job" class="peer hidden">
+                                    <label for="item3"
+                                        class="py-4 lg:py-8 rounded-2xl text-16-28 text-center text-[#6B7280] border block border-[#DADBDD] text-[#0105138C]  peer-checked:text-primary peer-checked:border-primary transition-all duration-300 font-bold cursor-pointer">
+                                        رياضة الاطفال
+                                    </label>
                                 </div>
-                                <div
-                                    class="border border-[#D1D5DB] py-4 lg:py-8 hover:border-primary hover:-translate-y-0.5 hover:text-primary transition duration-300 cursor-pointer rounded-2xl text-16-28 text-center text-[#6B7280] ">
-                                    مستشار مستقل
+                                <div class="">
+                                    <input id="item4" type="radio" value="" name="job" class="peer hidden">
+                                    <label for="item4"
+                                        class="py-4 lg:py-8 rounded-2xl text-16-28 text-center text-[#6B7280] border block border-[#DADBDD] text-[#0105138C]  peer-checked:text-primary peer-checked:border-primary transition-all duration-300 font-bold cursor-pointer">
+                                        رياضة الاطفال
+                                    </label>
                                 </div>
                             </div>
                         </section>
@@ -233,10 +245,10 @@
                         <section class="flex flex-col gap-6">
                             <h2 class="text-18-27 text-[#333745] font-bold ">ما هو الحد نطاق الراتب الذي تقبله؟</h2>
                             <div class="grid grid-cols-2 items-center  gap-5">
-                                <input
+                                <input required
                                     class="text-14-15 focus:outline-none placeholder:text-[#6B7280] placeholder:text-14-15 py-4 px-6 rounded-[64px] border border-[#D1D5DB]"
                                     type="number" min="0" placeholder="من">
-                                <input
+                                <input required
                                     class="text-14-15 focus:outline-none placeholder:text-[#6B7280] placeholder:text-14-15 py-4 px-6 rounded-[64px] border border-[#D1D5DB]"
                                     type="number" min="0" placeholder="الي">
                             </div>
@@ -263,34 +275,55 @@
                             <h2 class="text-18-27 text-[#333745] font-bold ">ما هو المستوى التدريس الخاص بك؟
                             </h2>
                             <div class="grid grid-cols-12  gap-4">
-                                <div
-                                    class="border col-span-12 sm:col-span-6 lg:col-span-4 border-[#D1D5DB] py-4 lg:py-8 hover:border-primary hover:-translate-y-0.5 hover:text-primary transition duration-300 cursor-pointer rounded-2xl text-16-28 text-center text-[#6B7280] ">
-                                    رياضة الاطفال
-                                </div>
 
-                                <div
-                                    class="border col-span-12 sm:col-span-6 lg:col-span-4  border-[#D1D5DB] py-4 lg:py-8 hover:border-primary hover:-translate-y-0.5 hover:text-primary transition duration-300 cursor-pointer rounded-2xl text-16-28 text-center text-[#6B7280] ">
-                                    صفوف أولية
+                                <div class=" col-span-12 sm:col-span-6 lg:col-span-4 ">
+                                    <input id="item-1" type="radio" value="" name="list-radio1" class="peer hidden">
+                                    <label for="item-1"
+                                        class="py-4 lg:py-8 rounded-2xl text-16-28 text-center text-[#6B7280] border block border-[#DADBDD] text-[#0105138C]  peer-checked:text-primary peer-checked:border-primary transition-all duration-300 font-bold cursor-pointer">
+                                        رياضة الاطفال
+                                    </label>
                                 </div>
-                                <div
-                                    class="border col-span-12 sm:col-span-6 lg:col-span-4 border-[#D1D5DB] py-4 lg:py-8 hover:border-primary hover:-translate-y-0.5 hover:text-primary transition duration-300 cursor-pointer rounded-2xl text-16-28 text-center text-[#6B7280] ">
-                                    صفوف عليا
+                                <div class=" col-span-12 sm:col-span-6 lg:col-span-4 ">
+                                    <input id="item-2" type="radio" value="" name="list-radio1" class="peer hidden">
+                                    <label for="item-2"
+                                        class="py-4 lg:py-8 rounded-2xl text-16-28 text-center text-[#6B7280] border block border-[#DADBDD] text-[#0105138C]  peer-checked:text-primary peer-checked:border-primary transition-all duration-300 font-bold cursor-pointer">
+                                        صفوف أولية
+                                    </label>
                                 </div>
-                                <div
-                                    class="border col-span-12 sm:col-span-6 lg:col-span-3 border-[#D1D5DB] py-4 lg:py-8 hover:border-primary hover:-translate-y-0.5 hover:text-primary transition duration-300 cursor-pointer rounded-2xl text-16-28 text-center text-[#6B7280] ">
-                                    المرحلة المتوسطة
+                                <div class=" col-span-12 sm:col-span-6 lg:col-span-4 ">
+                                    <input id="item-3" type="radio" value="" name="list-radio1" class="peer hidden">
+                                    <label for="item-3"
+                                        class="py-4 lg:py-8 rounded-2xl text-16-28 text-center text-[#6B7280] border block border-[#DADBDD] text-[#0105138C]  peer-checked:text-primary peer-checked:border-primary transition-all duration-300 font-bold cursor-pointer">
+                                        صفوف عليا
+                                    </label>
                                 </div>
-                                <div
-                                    class="border col-span-12 sm:col-span-6 lg:col-span-3 border-primary py-4 lg:py-8 hover:border-primary hover:-translate-y-0.5 hover:text-primary transition duration-300 cursor-pointer rounded-2xl text-16-28 text-center text-primary">
-                                    المرحلة الثانوية
+                                <div class=" col-span-12 sm:col-span-6 lg:col-span-3 ">
+                                    <input id="item-4" type="radio" value="" name="list-radio1" class="peer hidden">
+                                    <label for="item-4"
+                                        class="py-4 lg:py-8 rounded-2xl text-16-28 text-center text-[#6B7280] border block border-[#DADBDD] text-[#0105138C]  peer-checked:text-primary peer-checked:border-primary transition-all duration-300 font-bold cursor-pointer">
+                                        المرحلة المتوسطة
+                                    </label>
                                 </div>
-                                <div
-                                    class="border col-span-12 sm:col-span-6 lg:col-span-3 border-[#D1D5DB] py-4 lg:py-8 hover:border-primary hover:-translate-y-0.5 hover:text-primary transition duration-300 cursor-pointer rounded-2xl text-16-28 text-center text-[#6B7280] ">
-                                    المرحلة الجامعية
+                                <div class=" col-span-12 sm:col-span-6 lg:col-span-3 ">
+                                    <input id="item-5" type="radio" value="" name="list-radio1" class="peer hidden">
+                                    <label for="item-5"
+                                        class="py-4 lg:py-8 rounded-2xl text-16-28 text-center text-[#6B7280] border block border-[#DADBDD] text-[#0105138C]  peer-checked:text-primary peer-checked:border-primary transition-all duration-300 font-bold cursor-pointer">
+                                        المرحلة الثانوية
+                                    </label>
                                 </div>
-                                <div
-                                    class="border col-span-12 sm:col-span-6 lg:col-span-3 border-[#D1D5DB] py-4 lg:py-8 hover:border-primary hover:-translate-y-0.5 hover:text-primary transition duration-300 cursor-pointer rounded-2xl text-16-28 text-center text-[#6B7280] ">
-                                    اشراف
+                                <div class=" col-span-12 sm:col-span-6 lg:col-span-3 ">
+                                    <input id="item-6" type="radio" value="" name="list-radio1" class="peer hidden">
+                                    <label for="item-6"
+                                        class="py-4 lg:py-8 rounded-2xl text-16-28 text-center text-[#6B7280] border block border-[#DADBDD] text-[#0105138C]  peer-checked:text-primary peer-checked:border-primary transition-all duration-300 font-bold cursor-pointer">
+                                        المرحلة الجامعية
+                                    </label>
+                                </div>
+                                <div class=" col-span-12 sm:col-span-6 lg:col-span-3 ">
+                                    <input id="item-7" type="radio" value="" name="list-radio1" class="peer hidden">
+                                    <label for="item-7"
+                                        class="py-4 lg:py-8 rounded-2xl text-16-28 text-center text-[#6B7280] border block border-[#DADBDD] text-[#0105138C]  peer-checked:text-primary peer-checked:border-primary transition-all duration-300 font-bold cursor-pointer">
+                                        اشراف
+                                    </label>
                                 </div>
                             </div>
                         </section>
@@ -312,17 +345,16 @@
                     <div
                         class="lg:flex px-8 lg:justify-between lg:items-center py-3 lg:py-0 bg-white lg:bg-transparent">
                         <div class="flex lg:items-center flex-col lg:flex-row gap-4 lg:gap-12">
-                            <a href="learning-interests.html"
-                                class="rounded-[64px] bg-primary cursor-pointer  text-center text-white w-full lg:w-auto text-16-24 font-bold py-3 lg:px-[110px]">
-                                حفظ
-                                و متابعة</a>
+                            <input type="submit"
+                            class="rounded-[64px] bg-primary  text-center cursor-pointer text-white w-full lg:w-auto text-16-24 font-bold py-3 px-[110px]"
+                            value="حفظ و متابعة" />
                             <a href="learning-interests.html"
                                 class="text-16-24 text-[#0105138C]  w-full lg:w-auto lg:border-none text-center border border-[#DADBDD] py-3 rounded-[64px]">تخطي</a>
                         </div>
                         <a href="#"
                             class="py-3 px-8 rounded-[64px] border border-[#DADBDD] text-16-24 text-[#0105138C] font-bold hidden lg:block">رجوع</a>
                     </div>
-                </div>
+                </form>
             </div>
         </div>
     </main>
@@ -369,8 +401,8 @@
                     <div class="flex gap-4">
                         <a href="#" aria-label="youtube"
                             class="border border-[#D1D5DB] rounded-full w-[30px] h-[30px] flex items-center justify-center transition duration-300 hover:bg-[#c4302b] hover:border-[#c4302b] group">
-                            <svg class="group-hover:fill-[#fff]" width="20" height="14" viewBox="0 0 20 14"
-                                fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <svg class="group-hover:fill-[#fff]" width="20" height="14" viewBox="0 0 20 14" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
                                 <path class="group-hover:stroke-none  transition duration-300"
                                     d="M18.6654 3.99067C18.6654 2.33867 17.3267 1 15.676 1H4.32003C2.6707 1 1.33203 2.33867 1.33203 3.99067V10.008C1.33203 11.6613 2.6707 13 4.32003 13H15.676C17.3267 13 18.6654 11.6613 18.6654 10.008V3.99067ZM7.9987 10.208V3.66667L13.7094 7L7.9987 10.208Z"
                                     stroke="#6B7280" stroke-linejoin="round" />
@@ -378,8 +410,8 @@
                         </a>
                         <a href="#" aria-label="fb"
                             class="border border-[#D1D5DB] rounded-full w-[30px] h-[30px] flex items-center justify-center transition duration-300 hover:bg-[#3b5998] hover:border-[#3b5998] group">
-                            <svg class="group-hover:fill-[#fff]" width="12" height="20" viewBox="0 0 12 20"
-                                fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <svg class="group-hover:fill-[#fff]" width="12" height="20" viewBox="0 0 12 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
                                 <path class="group-hover:stroke-none  transition duration-300"
                                     d="M11.1174 6.66662H7.9987V5.30396C7.9987 4.60529 8.4627 4.44129 8.78803 4.44129C9.1147 4.44129 10.6654 4.44129 10.6654 4.44129V1.36529L7.5307 1.35596C4.4667 1.35596 3.9987 3.64796 3.9987 5.11462V6.66662H1.33203V9.33329H3.9987C3.9987 13.3986 3.9987 18.6666 3.9987 18.6666H7.9987C7.9987 18.6666 7.9987 13.3506 7.9987 9.33329H10.792L11.1174 6.66662Z"
                                     stroke="#6B7280" stroke-linejoin="round" />
@@ -387,10 +419,9 @@
                         </a>
                         <a href="#" aria-label="Twitter"
                             class="border border-[#D1D5DB] rounded-full w-[30px] h-[30px] flex items-center justify-center transition duration-300 hover:bg-[#1da1f2] hover:border-[#1da1f2] group ">
-                            <svg class="group-hover:fill-[#fff]" width="18" height="14" viewBox="0 0 18 14"
-                                fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    class="group-hover:stroke-none  transition duration-300 group-hover:fill-[#fff]"
+                            <svg class="group-hover:fill-[#fff]" width="18" height="14" viewBox="0 0 18 14" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path class="group-hover:stroke-none  transition duration-300 group-hover:fill-[#fff]"
                                     d="M17.6681 0.805204C17.6681 0.805204 15.8667 0.99987 15.0681 1.15987C14.4281 0.47587 13.5161 0.0505371 12.5067 0.0505371C10.5681 0.0505371 8.99606 1.62254 8.99606 3.55987C8.99606 3.8332 9.02673 4.10387 9.08673 4.35854C6.17073 4.21454 3.5854 2.81587 1.85473 0.69187C1.55206 1.21187 1.37873 1.8132 1.37873 2.4572C1.37873 3.67587 1.99873 4.74787 2.94006 5.3772C2.3654 5.35854 1.82406 5.2012 1.35073 4.9372C1.35073 4.9532 1.35073 4.9692 1.35073 4.98387C1.35073 6.68254 2.56006 8.1012 4.1654 8.42254C3.65073 8.56387 3.1094 8.58387 2.5814 8.48387C3.02806 9.8772 4.32406 10.8919 5.85873 10.9225C4.35873 12.0985 2.49606 12.5892 0.664062 12.3745C2.2174 13.3705 4.06273 13.9532 6.04406 13.9532C12.4987 13.9532 16.0281 8.60387 16.0281 3.96787C16.0281 3.81587 16.0254 3.66387 16.0174 3.51454C16.7027 3.0172 17.1974 1.5092 17.6681 0.805204Z"
                                     fill="none" stroke="#6B7280" />
                             </svg>
@@ -398,8 +429,8 @@
                         </a>
                         <a href="#" aria-label="insta"
                             class="border border-[#D1D5DB] rounded-full w-[30px] h-[30px] flex items-center justify-center transition duration-300 hover:bg-[#c13584] hover:border-[#c13584] group">
-                            <svg class="group-hover:fill-[#fff]" width="32" height="32" viewBox="0 0 32 32"
-                                fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <svg class="group-hover:fill-[#fff]" width="32" height="32" viewBox="0 0 32 32" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
                                 <path
                                     d="M24.6693 21.5543C24.6693 23.273 23.2759 24.6663 21.5586 24.6663H10.4466C8.72927 24.6663 7.33594 23.273 7.33594 21.5543V10.4423C7.33594 8.72501 8.72927 7.33301 10.4466 7.33301H21.5586C23.2759 7.33301 24.6693 8.72501 24.6693 10.4423V21.5543Z"
                                     stroke="#6B7280" stroke-miterlimit="10" stroke-linejoin="round" />
@@ -410,8 +441,7 @@
                                 <path
                                     d="M16 19.333C18.2091 19.333 20 17.5421 20 15.333C20 13.1239 18.2091 11.333 16 11.333C13.7909 11.333 12 13.1239 12 15.333C12 17.5421 13.7909 19.333 16 19.333Z"
                                     stroke="#6B7280" stroke-miterlimit="10" stroke-linejoin="round" />
-                                <path d="M22.6693 9.33301H21.3359V10.6663H22.6693V9.33301Z"
-                                    fill="#6B7280" />
+                                <path d="M22.6693 9.33301H21.3359V10.6663H22.6693V9.33301Z" fill="#6B7280" />
                                 <path d="M10 7.33301V12.6663" stroke="#6B7280" stroke-miterlimit="10"
                                     stroke-linejoin="round" />
                                 <path d="M12.668 7.33325V12.6666" stroke="#6B7280" stroke-miterlimit="10"
@@ -422,20 +452,18 @@
                     </div>
                     <div
                         class="hidden lg:flex items-center gap-3 px-[18px] py-[10px] rounded-[48px] border bordder-[#D1D5DB] ">
-                        <svg width="23" height="16" viewBox="0 0 23 16" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
+                        <svg width="23" height="16" viewBox="0 0 23 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
                                 d="M22 13.3261C22 14.0821 21.3864 14.6957 20.6304 14.6957H2.36957C1.61357 14.6957 1 14.0821 1 13.3261V2.36957C1 1.61265 1.61357 1 2.36957 1H20.6304C21.3864 1 22 1.61265 22 2.36957V13.3261Z"
                                 stroke="#6B7280" stroke-linecap="round" stroke-linejoin="round" />
                             <path d="M19.261 4.6521L11.5001 9.67384L3.73926 4.6521" stroke="#6B7280"
                                 stroke-linecap="round" stroke-linejoin="round" />
-                            <path d="M3.73926 11.4999L6.93491 9.67383" stroke="#6B7280"
-                                stroke-linecap="round" stroke-linejoin="round" />
-                            <path d="M19.2621 11.4999L16.0664 9.67383" stroke="#6B7280"
-                                stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M3.73926 11.4999L6.93491 9.67383" stroke="#6B7280" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path d="M19.2621 11.4999L16.0664 9.67383" stroke="#6B7280" stroke-linecap="round"
+                                stroke-linejoin="round" />
                         </svg>
-                        <input
-                            class=" text-[#333745] text-14-15 w-full focus-visible:outline-none bg-transparent"
+                        <input class=" text-[#333745] text-14-15 w-full focus-visible:outline-none bg-transparent"
                             type="text" placeholder="او تواصل عبر البريد">
                     </div>
                 </div>
@@ -444,10 +472,8 @@
         <div class="py-8 flex flex-col gap-2 lg:flex-row items-center justify-between">
             <p class="text-[#6B7280] text-14-27">جميع الحقوق محفوظة © منصة أعناب</p>
             <nav class="flex leading-[8px] ">
-                <a href="#"
-                    class="text-[#6B7280]  text-13-19 lg:text-sm border-l  border-[#D1D5DB] px-4">الرئيسية</a>
-                <a href="#"
-                    class="text-[#6B7280]  text-13-19 lg:text-sm border-l  border-[#D1D5DB] px-4">تصفح
+                <a href="#" class="text-[#6B7280]  text-13-19 lg:text-sm border-l  border-[#D1D5DB] px-4">الرئيسية</a>
+                <a href="#" class="text-[#6B7280]  text-13-19 lg:text-sm border-l  border-[#D1D5DB] px-4">تصفح
                     الدورات</a>
                 <a href="#"
                     class="text-[#6B7280]  text-13-19 lg:text-sm border-l  border-[#D1D5DB] px-4 hidden sm:block">عن

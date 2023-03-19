@@ -2733,6 +2733,10 @@ video {
   outline-offset: 2px;
 }
 
+.focus\:outline-\[\#5FC1B4\]:focus{
+  outline-color: #5FC1B4;
+}
+
 .focus-visible\:outline-none:focus-visible{
   outline: 2px solid transparent;
   outline-offset: 2px;
