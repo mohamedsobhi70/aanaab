@@ -657,6 +657,16 @@ video {
   color: #010513E5;
 }
 
+.form-control.typ:valid{
+  --tw-border-opacity: 1;
+  border-color: rgb(16 185 129 / var(--tw-border-opacity));
+}
+
+.form-control.typ:invalid{
+  --tw-border-opacity: 1;
+  border-color: rgb(220 38 38 / var(--tw-border-opacity));
+}
+
 .invisible{
   visibility: hidden;
 }
@@ -759,6 +769,18 @@ video {
 
 .top-\[90px\]{
   top: 90px;
+}
+
+.left-\[\]{
+  left: ;
+}
+
+.left-4{
+  left: 1rem;
+}
+
+.left-6{
+  left: 1.5rem;
 }
 
 .-z-\[1\]{
@@ -1239,12 +1261,20 @@ video {
   flex: 1 1 0%;
 }
 
+.basis-1\/12{
+  flex-basis: 8.333333%;
+}
+
 .basis-1\/2{
   flex-basis: 50%;
 }
 
 .basis-1\/4{
   flex-basis: 25%;
+}
+
+.basis-11\/12{
+  flex-basis: 91.666667%;
 }
 
 .basis-2\/4{
@@ -1396,6 +1426,10 @@ video {
 
 .items-center{
   align-items: center;
+}
+
+.justify-start{
+  justify-content: flex-start;
 }
 
 .justify-end{
@@ -2025,6 +2059,11 @@ video {
   padding-bottom: 0.75rem;
 }
 
+.py-3\.5{
+  padding-top: 0.875rem;
+  padding-bottom: 0.875rem;
+}
+
 .py-32{
   padding-top: 8rem;
   padding-bottom: 8rem;
@@ -2629,6 +2668,16 @@ video {
   content: var(--tw-content);
 }
 
+.required\:border-\[\#DC2626\]:required{
+  --tw-border-opacity: 1;
+  border-color: rgb(220 38 38 / var(--tw-border-opacity));
+}
+
+.invalid\:border-\[\#DC2626\]:invalid{
+  --tw-border-opacity: 1;
+  border-color: rgb(220 38 38 / var(--tw-border-opacity));
+}
+
 .hover\:-translate-y-0:hover{
   --tw-translate-y: -0px;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -2728,13 +2777,14 @@ video {
   color: rgb(132 71 255 / var(--tw-text-opacity));
 }
 
+.focus\:border-\[\#5FC1B4\]:focus{
+  --tw-border-opacity: 1;
+  border-color: rgb(95 193 180 / var(--tw-border-opacity));
+}
+
 .focus\:outline-none:focus{
   outline: 2px solid transparent;
   outline-offset: 2px;
-}
-
-.focus\:outline-\[\#5FC1B4\]:focus{
-  outline-color: #5FC1B4;
 }
 
 .focus-visible\:outline-none:focus-visible{

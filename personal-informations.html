@@ -154,8 +154,8 @@
                         </li>
                     </ul>
                 </aside>
-                <form action="professional-interests.html"
-                    class="lg:basis-9/12 w-full lg:w-auto flex flex-col sm:gap-[30px]">
+                <form action="professional-interests.html "
+                    class="lg:basis-9/12 w-full lg:w-auto flex flex-col sm:gap-[30px] ">
                     <div class=" sm:bg-white sm:rounded-2xl px-8 py-8  sm:border sm:border-[#D1D5DB]">
                         <div class="flex items-center flex-col lg:flex-row gap-6 lg:gap-8">
                             <div
@@ -183,25 +183,36 @@
                         <h2 class="text-18-27 text-[#333745] font-bold ">المعلومات الشخصية</h2>
                         <div class="grid md:grid-cols-2 items-center  gap-5">
                             <input required
-                                class="text-14-15 focus:outline-[#5FC1B4] placeholder:text-[#6B7280] placeholder:text-14-15 py-4 px-6 rounded-[64px] border border-[#D1D5DB]"
+                                class="form-control text-14-15 focus:outline-none placeholder:text-[#6B7280] placeholder:text-14-15 py-4 px-6 rounded-[64px] border border-[#D1D5DB]"
                                 type="text" placeholder="الاسم الأول" name="name" autocomplete="given-name">
                             <input required
-                                class="text-14-15 focus:outline-[#5FC1B4] placeholder:text-[#6B7280] placeholder:text-14-15 py-4 px-6 rounded-[64px] border border-[#D1D5DB]"
+                                class="form-control text-14-15 focus:outline-none placeholder:text-[#6B7280] placeholder:text-14-15 py-4 px-6 rounded-[64px] border border-[#D1D5DB]"
                                 type="text" placeholder="اسم العائلة" name="familyname" autocomplete="family-name">
                             <input required
-                                class="text-14-15 focus:outline-[#5FC1B4] placeholder:text-[#6B7280] placeholder:text-14-15 py-4 px-6 rounded-[64px] border border-[#D1D5DB]"
+                                class="form-control text-14-15 focus:outline-none placeholder:text-[#6B7280] placeholder:text-14-15 py-4 px-6 rounded-[64px] border border-[#D1D5DB]"
                                 type="email" placeholder="البريد الاكتروني" name="email" autocomplete="email">
                             <input required
-                                class="text-14-15 focus:outline-[#5FC1B4] placeholder:text-[#6B7280] placeholder:text-14-15 py-4 px-6 rounded-[64px] border border-[#D1D5DB]"
+                                class="form-control text-14-15 focus:outline-none placeholder:text-[#6B7280] placeholder:text-14-15 py-4 px-6 rounded-[64px] border border-[#D1D5DB]"
                                 type="tel" placeholder="رقم الجوال" name="tel" autocomplete="tel">
-                            <input required
-                                class="text-14-15 focus:outline-[#5FC1B4] placeholder:text-[#6B7280] placeholder:text-14-15 py-4 px-6 rounded-[64px] border border-[#D1D5DB]"
-                                type="text" onblur="(this.type = 'text')" onfocus="(this.type = 'date')"
-                                placeholder="تاريخ الميلاد" name="date" autocomplete="bday">
+                            <div class="relative">
+                                <input required id="date-control"
+                                    class="date-control w-full form-control text-14-15 focus:outline-none placeholder:text-[#6B7280] placeholder:text-14-15 py-4 px-6 rounded-[64px] border border-[#D1D5DB]"
+                                    type="text" onblur="(this.type = 'text')" onfocus="(this.type = 'date')"
+                                    placeholder="تاريخ الميلاد" name="date" autocomplete="bday">
+                                <label for="date-control" class="absolute top-1/2 -translate-y-1/2 left-6">
+                                    <svg width="17" height="19" viewBox="0 0 17 19" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M14.8125 2.5H13.125V0.671875C13.125 0.460938 12.9141 0.25 12.7031 0.25H11.2969C11.0508 0.25 10.875 0.460938 10.875 0.671875V2.5H6.375V0.671875C6.375 0.460938 6.16406 0.25 5.95312 0.25H4.54688C4.30078 0.25 4.125 0.460938 4.125 0.671875V2.5H2.4375C1.48828 2.5 0.75 3.27344 0.75 4.1875V16.5625C0.75 17.5117 1.48828 18.25 2.4375 18.25H14.8125C15.7266 18.25 16.5 17.5117 16.5 16.5625V4.1875C16.5 3.27344 15.7266 2.5 14.8125 2.5ZM14.6016 16.5625H2.64844C2.50781 16.5625 2.4375 16.4922 2.4375 16.3516V5.875H14.8125V16.3516C14.8125 16.4922 14.707 16.5625 14.6016 16.5625Z"
+                                            fill="#6B7280" />
+                                    </svg>
+
+                                </label>
+                            </div>
                             <div
                                 class="relative after:content-['▾'] after:text-[#6B7280] after:absolute rtl:after:left-4 ltr:after:right-4 after:top-[50%] after:-translate-y-1/2">
                                 <select title="gender"
-                                    class="text-14-15 focus:outline-[#5FC1B4] w-full relative appearance-none  text-[#6B7280] py-4 px-6 rounded-[64px] border border-[#D1D5DB]">
+                                    class="text-14-15 focus:outline-none w-full relative appearance-none  text-[#6B7280] py-4 px-6 rounded-[64px] border border-[#D1D5DB]">
                                     <option class="" disabled selected> الجنس </option>
                                 </select>
 
@@ -209,7 +220,7 @@
                             <div
                                 class="relative after:content-['▾'] after:text-[#6B7280] after:absolute rtl:after:left-4 ltr:after:right-4 after:top-[50%] after:-translate-y-1/2">
                                 <select title="country"
-                                    class="text-14-15 focus:outline-[#5FC1B4] w-full relative appearance-none  text-[#6B7280] py-4 px-6 rounded-[64px] border border-[#D1D5DB]">
+                                    class="text-14-15 focus:outline-none w-full relative appearance-none  text-[#6B7280] py-4 px-6 rounded-[64px] border border-[#D1D5DB]">
                                     <option class="" disabled selected> الدولة </option>
                                 </select>
 
@@ -217,7 +228,7 @@
                             <div
                                 class="relative after:content-['▾'] after:text-[#6B7280] after:absolute rtl:after:left-4 ltr:after:right-4 after:top-[50%] after:-translate-y-1/2">
                                 <select title="country"
-                                    class="text-14-15 focus:outline-[#5FC1B4]  w-full relative appearance-none  text-[#6B7280] py-4 px-6 rounded-[64px] border border-[#D1D5DB]">
+                                    class="text-14-15 focus:outline-none  w-full relative appearance-none  text-[#6B7280] py-4 px-6 rounded-[64px] border border-[#D1D5DB]">
                                     <option class="" disabled selected> المدينة </option>
                                 </select>
 
@@ -235,7 +246,7 @@
                             <a href="professional-interests.html"
                                 class="text-16-24 text-[#0105138C]  w-full lg:w-auto lg:border-none text-center border border-[#DADBDD] py-3 rounded-[64px]">تخطي</a>
                         </div>
-                        <a href="#" onclick="window.history.back()" 
+                        <a href="#" onclick="window.history.back()"
                             class="py-3 px-8 rounded-[64px] border border-[#DADBDD] text-16-24 text-[#0105138C] font-bold hidden lg:block">رجوع</a>
                     </div>
                 </form>
@@ -372,8 +383,14 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
         integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"
+        integrity="sha512-rstIgDs0xPgmG6RX1Aba4KV5cWJbAMcvRCVmglpam9SoHZiUCyQVDdH2LPlxoHtrv17XWblE/V/PP+Tr04hbtA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="assets/scripts/flickty.js"></script>
     <script src="assets/scripts/script.js"></script>
+    <script>
+
+    </script>
 </body>
 
 </html>

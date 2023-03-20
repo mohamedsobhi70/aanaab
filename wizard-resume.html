@@ -392,14 +392,18 @@
                                         <span class="text-[#0105138C] text-16-28">تم الرفع يوم ${days[day]} ${dat} ${months[month]} ${year}.</span>
                                     </div>
                                     <div class="flex flex-col lg:flex-row items-center gap-1 lg:gap-6">
-                                        <button class="text-16-28 text-primary">معاينة السيرة الذاتية</button>
-                                        <button id="delet-resume" class="text-16-28 text-[#6B7280]">حذف السيرة الذاتية</button>
+                                        <button id="show-resume" class="text-16-28 text-primary">معاينة السيرة الذاتية</button>
+                                        <button onclick="delet($(this))" id="delet-resume" class="text-16-28 text-[#6B7280]">حذف السيرة الذاتية</button>
                                     </div>
                                 </div>`)
+        });
+
+        $(".show-resume").on("click", function (e) {
+            e.preventDefault();
         })
-        $("#delet-resume").on("click", function () {
-            $(this).parent().parent().css("display", "none")
-        })
+        function delet(item) {
+            item.parent().parent().removeClass("flex").addClass("hidden");
+        }
     </script>
 </body>
 

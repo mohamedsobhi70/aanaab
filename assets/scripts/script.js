@@ -270,8 +270,6 @@ function filt() {
     })
 }
 
-
-
 if ($(".filters-section-container")) {
     $(".filters-section-container").find("input[type='checkbox']").each(function () {
         let th = $(this);
@@ -279,7 +277,6 @@ if ($(".filters-section-container")) {
             th.parent().find(".filter-label").addClass("active")
         } else {
             th.parent().find(".filter-label").removeClass("active")
-
         }
         th.on("change", function () {
             if (th.is(":checked")) {
@@ -288,6 +285,23 @@ if ($(".filters-section-container")) {
                 th.parent().find(".filter-label").removeClass("active")
             }
         })
+    })
+}
 
+if ($(".form-control")) {
+    let contr = $(".form-control");
+    contr.each(function () {
+        let th = $(this);
+        th.on("keyup", function () {
+            th.addClass("typ");
+        })
+    })
+}
+
+if ($(".date-control")) {
+    $(".date-control").on("focus", function () {
+        $(this).next("label").css("display", "none")
+    }).on("blur", function () {
+        $(this).next("label").css("display", "block")
     })
 }
