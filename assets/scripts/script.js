@@ -201,6 +201,14 @@ if (document.querySelector('.select-1') || document.querySelector('.select-2') |
                 closeOnSelect: false    // <- do not hide the suggestions dropdown once an item has been selected
             }
         })
+    $(".suggested-tag").each(function () {
+        let th = $(this);
+        th.on("click", function () {
+            let it = $(this).find("span").text();
+            tagify3.addTags([it])
+            $(this).addClass("hidden");
+        })
+    })
 }
 
 $('.drag-section').scrollLeft('-300');
