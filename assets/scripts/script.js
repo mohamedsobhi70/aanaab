@@ -14,9 +14,11 @@ if ($(".jobs-btn")) {
 if ($(".mobile-menu-btn")) {
     $(".mobile-menu-btn").on("click", function () {
         $(".aannab-mobile-menu").toggleClass("active");
+        $("body").toggleClass("overflow-hidden")
     })
     $(".close-mobile-menu").on("click", function () {
         $(".aannab-mobile-menu").removeClass("active");
+        $("body").toggleClass("overflow-hidden")
     })
 }
 
@@ -163,7 +165,6 @@ $('.tab-item').click(function () {
     $(activeTab).fadeIn();
     return false;
 });
-
 // tagyfy 
 
 if (document.querySelector('.select-1') || document.querySelector('.select-2') || document.querySelector('.select-3')) {
@@ -202,28 +203,23 @@ if (document.querySelector('.select-1') || document.querySelector('.select-2') |
         })
 }
 
-
 $('.drag-section').scrollLeft('-300');
 
 
 // video 
 if (document.querySelector("#vedio")) {
-
     const demo = document.querySelector("#vedio");
     demo.addEventListener('scroll', function () {
         if (Window.scrollY * 0.0001 > 1 || Window.scrollY * 0.0001 < 0.2) { return; }
         else { demo.setAttribute('style', 'transform: scale(' + Window.scrollY * 0.0001 + ');'); }
     });
-
     let scrollContainer = document.getElementById("recruitment");
     if (window.innerWidth > 1024) {
-
         scrollContainer.addEventListener("wheel", (e) => {
             e.preventDefault();
             scrollContainer.scrollLeft -= e.deltaY / 2;
         })
     };
-
 }
 
 // scrolling slider  ==========
@@ -248,8 +244,6 @@ if ($(".accordion-item")) {
 
 
 // filter jobs by search
-
-
 let srchFilter = $(".filter-search-input");
 if (srchFilter) {
     srchFilter.on("keyup", filt).on("blur", filt);
@@ -270,6 +264,7 @@ function filt() {
     })
 }
 
+// CHANGE THE STYLE OF THE LABEL AFTER THE CHECKBO IN FILTER SIDEBAR
 if ($(".filters-section-container")) {
     $(".filters-section-container").find("input[type='checkbox']").each(function () {
         let th = $(this);
@@ -287,6 +282,7 @@ if ($(".filters-section-container")) {
         })
     })
 }
+// VALIDATION => INPUT FORM 
 
 if ($(".form-control")) {
     let contr = $(".form-control");
@@ -294,10 +290,13 @@ if ($(".form-control")) {
         let th = $(this);
         th.on("keyup", function () {
             th.addClass("typ");
-        })
+        }).on("focus", function () {
+            th.addClass("typ");
+        });
     })
 }
 
+// DATE INPUT FORM 
 if ($(".date-control")) {
     $(".date-control").on("focus", function () {
         $(this).next("label").css("display", "none")
