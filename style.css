@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer components {
+  ::-webkit-scrollbar {
+    width: 5px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #8447ff;
+    border-radius: 20px;
+  }
+  .scrollbar-hide {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+  .aanaab-jobs-menu.active {
+    @apply top-[34px] opacity-100 visible;
+  }
+  .aannab-mobile-menu.active {
+    @apply top-[80px] sm:top-[58px] opacity-100 visible;
+  }
+  .drop-down-icon.open {
+    @apply rotate-180;
+  }
+  .dashboared {
+    @apply ml-[-30px] md:ml-0 mr-0;
+  }
+  .tab-item.active {
+    @apply text-primary border-b lg:border-none border-b-primary font-bold;
+  }
+  .drag-section::-webkit-scrollbar-thumb,
+  .drag-section::-webkit-scrollbar-track,
+  .recruitment::-webkit-scrollbar-thumb,
+  .recruitment::-webkit-scrollbar-track {
+    @apply h-0 opacity-0 hidden;
+  }
+  .recruitment-slider .carousel-cell:not(.is-selected) {
+    @apply opacity-50;
+  }
+  .accordion-item svg.open {
+    @apply rotate-180;
+  }
+  .filter-label.active span:first-child {
+    @apply text-[#010513E5];
+  }
+  .filter-label.active span:last-child {
+    @apply text-[#010513E5] bg-[#F3EDFF];
+  }
+  .form-control.typ {
+    @apply valid:border-[#10B981] invalid:border-[#DC2626];
+  }
+  
+}
