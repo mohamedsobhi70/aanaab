@@ -292,21 +292,21 @@ if ($(".filters-section-container")) {
 }
 // VALIDATION => INPUT FORM 
 
-if ($(".form-control")) {
-    let contr = $(".form-control");
-    contr.each(function () {
-        let th = $(this);
-        th.on("blur", function () {
-            if (th.val().trim() === "") {
-                th.css("border-color", "#DC2626")
-            } else {
-                th.css("border-color", "#10B981")
-            }
-        }).on("focus", function () {
-            th.css("border-color", "#5FC1B4")
-        });
-    })
-}
+// if ($(".form-control")) {
+//     let contr = $(".form-control");
+//     contr.each(function () {
+//         let th = $(this);
+//         th.on("blur", function () {
+//             if (th.val().trim() === "") {
+//                 th.css("border-color", "#DC2626")
+//             } else {
+//                 th.css("border-color", "#10B981")
+//             }
+//         }).on("focus", function () {
+//             th.css("border-color", "#5FC1B4")
+//         });
+//     })
+// }
 
 // DATE INPUT FORM 
 if ($(".date-control")) {
