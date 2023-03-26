@@ -272,7 +272,8 @@
                 </a>
             </div>
             <div class="grid grid-cols-12 gap-[30px] items-start">
-                <div class="col-span-4 rounded-2xl border border-[#D7D5D5] overflow-hidden sticky top-24">
+                <div
+                    class="col-span-4 rounded-2xl border border-[#D7D5D5] overflow-hidden sticky top-24 hidden lg:block">
                     <div class="p-4 flex items-center justify-between border-b border-[#D7D5D5] bg-white ">
                         <h2>المتقدمين</h2>
                         <button title="applicants">
@@ -451,11 +452,12 @@
                             </div>
                         </li>
                     </ul>
-                    <button class="p-4 text-center w-full text-16-24 text-[#0105138C] bg-white">كل المتقدمين</button>
+                    <button class="all-applicant-show p-4 text-center w-full text-16-24 text-[#0105138C] bg-white">كل
+                        المتقدمين</button>
                 </div>
-                <div class="col-span-8 flex flex-col gap-[30px]">
-                    <div class="">
-                        <div class="px-6 flex justify-between">
+                <div class="col-span-12 lg:col-span-8 flex flex-col gap-[30px]">
+                    <div class=" flex flex-col px-[30px] lg:px-0">
+                        <div class="order-2 lg:order-1  px-6 flex justify-between">
                             <h3
                                 class="flex gap-2 items-center bg-[#1086B9] rounded-t-xl py-3 px-6 text-white text-14-17 font-bold">
                                 <span class="w-2 h-2 rounded bg-white"></span>
@@ -480,9 +482,10 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="p-6 border border-[#D7D5D5] rounded-2xl bg-white flex gap-3 flex-col">
+                        <div
+                            class="order-1 lg:order-2 p-6 border border-[#D7D5D5] rounded-2xl bg-white flex gap-3 flex-col ">
                             <div class="py-3 flex items-center justify-between">
-                                <h2 class="flex gap-4 items-center text-30-45 t-[#010513E5] font-bold ">
+                                <h2 class="flex gap-4 items-center text-18-27 lg:text-30-45 text-[#010513E5] font-bold ">
                                     مساعد اداري تربوي لمدرسة دولية
                                     <svg width="18" height="11" viewBox="0 0 18 11" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
@@ -491,7 +494,7 @@
                                             fill="black" />
                                     </svg>
                                 </h2>
-                                <a href="#" class="flex items-center gap-1 text-16-24 text-[#0105138C]">
+                                <a href="#" class="lg:flex items-center gap-1 text-16-24 text-[#0105138C] hidden">
                                     تعديل
                                     <svg width="16" height="15" viewBox="0 0 16 15" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
@@ -511,23 +514,27 @@
                         </div>
                     </div>
 
-                    <div class="grid grid-cols-4 gap-4">
-                        <div class="py-5 px-4 rounded-2xl bg-white flex flex-col gap-2 border border-[#D7D5D5]">
+                    <div class="grid grid-cols-4 gap-4 px-[28px] lg:px-0">
+                        <div
+                            class="py-5 px-4 col-span-2 lg:col-span-1 rounded-2xl bg-white flex flex-col gap-2 border border-[#D7D5D5]">
                             <h4 class="text-14-21 text-[#0105138C]">عدد المتقدمين</h4>
                             <p class="text-18-27 text-[#010513E5] font-bold">88 متقدم</p>
                         </div>
 
-                        <div class="py-5 px-4 rounded-2xl bg-white flex flex-col gap-2 border border-[#D7D5D5]">
+                        <div
+                            class="py-5 px-4 col-span-2 lg:col-span-1 rounded-2xl bg-white flex flex-col gap-2 border border-[#D7D5D5]">
                             <h4 class="text-14-21 text-[#0105138C]">مفضل</h4>
                             <p class="text-18-27 text-[#010513E5] font-bold"> 12 متقدم</p>
                         </div>
 
-                        <div class="py-5 px-4 rounded-2xl bg-white flex flex-col gap-2 border border-[#D7D5D5]">
+                        <div
+                            class="py-5 px-4 col-span-2 lg:col-span-1 rounded-2xl bg-white flex flex-col gap-2 border border-[#D7D5D5]">
                             <h4 class="text-14-21 text-[#0105138C]">مرفوض</h4>
                             <p class="text-18-27 text-[#010513E5] font-bold">88 متقدم </p>
                         </div>
 
-                        <div class="py-5 px-4 rounded-2xl bg-white flex flex-col gap-2 border border-[#D7D5D5]">
+                        <div
+                            class="py-5 px-4 col-span-2 lg:col-span-1 rounded-2xl bg-white flex flex-col gap-2 border border-[#D7D5D5]">
                             <h4 class="text-14-21 text-[#0105138C]">غير مقروء</h4>
                             <p class="text-18-27 text-[#010513E5] font-bold"> غير مقروء</p>
                         </div>
@@ -724,10 +731,13 @@
                 </div>
             </div>
         </div>
-        <div class="fixed top-0 left-0 w-full h-full backdrop-blur-sm z-50 flex justify-center items-center">
-                <div class="col-span-4 rounded-2xl border border-[#D7D5D5] overflow-hidden sticky top-24 w-[586px] max-h-[750px] bg-white">
-                    <div class="p-4 flex items-center justify-between border-b border-[#D7D5D5] bg-white ">
-                        <h2>المتقدمين</h2>
+        <div
+            class="all-applicant fixed top-0 left-0 w-full h-full backdrop-blur-sm z-50 flex justify-center items-center transition-all duration-500 invisible opacity-0 translate-y-10">
+            <div
+                class="col-span-4 rounded-2xl border border-[#D7D5D5] overflow-hidden sticky top-24 w-[586px] bg-white">
+                <div class="p-4 flex items-center justify-between border-b border-[#D7D5D5] bg-white ">
+                    <h2>المتقدمين</h2>
+                    <div class="flex items-center gap-4">
                         <button title="applicants">
                             <svg width="15" height="13" viewBox="0 0 15 13" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
@@ -736,176 +746,183 @@
                                     fill="#010513" fill-opacity="0.9" />
                             </svg>
                         </button>
+                        <button title="close" class="close-all-applicant"><svg width="10" height="11"
+                                viewBox="0 0 10 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M6.80469 5.75L9.53906 3.01562C9.89453 2.6875 9.89453 2.14062 9.53906 1.8125L8.9375 1.21094C8.60938 0.855469 8.0625 0.855469 7.73438 1.21094L5 3.94531L2.23828 1.21094C1.91016 0.855469 1.36328 0.855469 1.03516 1.21094L0.433594 1.8125C0.078125 2.14062 0.078125 2.6875 0.433594 3.01562L3.16797 5.75L0.433594 8.51172C0.078125 8.83984 0.078125 9.38672 0.433594 9.71484L1.03516 10.3164C1.36328 10.6719 1.91016 10.6719 2.23828 10.3164L5 7.58203L7.73438 10.3164C8.0625 10.6719 8.60938 10.6719 8.9375 10.3164L9.53906 9.71484C9.89453 9.38672 9.89453 8.83984 9.53906 8.51172L6.80469 5.75Z"
+                                    fill="#010513" fill-opacity="0.9" />
+                            </svg>
+                        </button>
                     </div>
-                    <div class="p-6 border-b border-[#D7D5D5] bg-white">
-                        <div class="py-[14px] px-4 flex items-center gap-2 rounded-[64px] border border-[#D7D5D5]">
-                            <a href="#" class="">
-                                <img src="assets/images/Visitor/search-icon.svg" width="16" height="16" alt="search">
-                            </a>
-                            <input type="search" name="searchapplicant" id="searchapplicant" placeholder="كلمة البحث"
-                                class="text-[#0105138C] text-14-21 bg-transparent w-full focus:outline-none">
-                        </div>
-                    </div>
-                    <ul class="applicants overflow-y-scroll grow">
-                        <!-- item  -->
-                        <li
-                            class="applicant-item transition-all duration-300 cursor-pointer unread bg-white flex gap-4 p-4 border-b border-[#E9E8E8]">
-                            <div class="w-12 h-12 rounded-full overflow-hidden">
-                                <img src="assets/images/Visitor/applicant-1.png" class="object-cover w-full h-full"
-                                    width="48" height="48" alt="account">
-                            </div>
-                            <div class="flex flex-col gap-1 grow">
-                                <div class="flex gap-4 justify-between">
-                                    <h3 class="text-16-24 text-[#010513E5]">هند ياسر</h3>
-                                    <span class="py-1 px-2 rounded-[64px] bg-[#F3EDFF] text-xs text-[#8447FF]">غير
-                                        مقروء</span>
-                                </div>
-                                <p class="text-14-21 text-[#0105138C]">مدرسة مرحلة الابتدائية</p>
-                            </div>
-                        </li>
-                        <!-- item  -->
-                        <li
-                            class="applicant-item transition-all duration-300 cursor-pointer unread bg-white flex gap-4 p-4 border-b border-[#E9E8E8]">
-                            <div class="w-12 h-12 rounded-full overflow-hidden">
-                                <img src="assets/images/Visitor/applicant-2.png" class="object-cover w-full h-full"
-                                    width="48" height="48" alt="account">
-                            </div>
-                            <div class="flex flex-col gap-1 grow">
-                                <div class="flex gap-4 justify-between">
-                                    <h3 class="text-16-24 text-[#010513E5]"> ادم جلال</h3>
-                                    <span class="py-1 px-2 rounded-[64px] bg-[#F3EDFF] text-xs text-[#8447FF]">غير
-                                        مقروء</span>
-                                </div>
-                                <p class="text-14-21 text-[#0105138C]">مدرسة مرحلة الابتدائية</p>
-                            </div>
-                        </li>
-                        <!-- item  -->
-                        <li
-                            class="applicant-item transition-all duration-300 cursor-pointer unread bg-white flex gap-4 p-4 border-b border-[#C9C5C5]">
-                            <div class="w-12 h-12 rounded-full overflow-hidden">
-                                <img src="assets/images/Visitor/applicant-3.png" class="object-cover w-full h-full"
-                                    width="48" height="48" alt="account">
-                            </div>
-                            <div class="flex flex-col gap-1 grow">
-                                <div class="flex gap-4 justify-between">
-                                    <h3 class="text-16-24 text-[#010513E5]">ياسر الدالي </h3>
-                                    <span class="py-1 px-2 rounded-[64px] bg-[#F3EDFF] text-xs text-[#8447FF]">غير
-                                        مقروء</span>
-                                </div>
-                                <p class="text-14-21 text-[#0105138C]">مدرسة مرحلة الابتدائية</p>
-                            </div>
-                        </li>
-                        <!-- item  -->
-                        <li
-                            class="applicant-item transition-all duration-300 cursor-pointer active flex gap-4 p-4 border-b border-[#E9E8E8] bg-[#F8F4FF]">
-                            <div class="w-12 h-12 rounded-full overflow-hidden">
-                                <img src="assets/images/Visitor/applicant-4.png" class="object-cover w-full h-full"
-                                    width="48" height="48" alt="account">
-                            </div>
-                            <div class="flex flex-col gap-1 grow">
-                                <div class="flex gap-4 justify-between">
-                                    <h3 class="text-16-24 text-[#010513E5]">فؤاد الفرحان </h3>
-
-                                </div>
-                                <p class="text-14-21 text-[#0105138C]">مدرسة مرحلة الابتدائية</p>
-                            </div>
-                        </li>
-                        <!-- item  -->
-                        <li
-                            class="applicant-item transition-all duration-300 cursor-pointer flex gap-4 p-4 border-b border-[#E9E8E8]">
-                            <div class="w-12 h-12 rounded-full overflow-hidden">
-                                <img src="assets/images/Visitor/applicant-2.png" class="object-cover w-full h-full"
-                                    width="48" height="48" alt="account">
-                            </div>
-                            <div class="flex flex-col gap-1 grow">
-                                <div class="flex gap-4 justify-between">
-                                    <h3 class="text-16-24 text-[#010513B2]">ادم جلال</h3>
-                                    <span class="">
-                                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M8.09375 1.5625L6.0625 5.71875L1.46875 6.375C0.65625 6.5 0.34375 7.5 0.9375 8.09375L4.21875 11.3125L3.4375 15.8438C3.3125 16.6562 4.1875 17.2812 4.90625 16.9062L9 14.75L13.0625 16.9062C13.7812 17.2812 14.6562 16.6562 14.5312 15.8438L13.75 11.3125L17.0312 8.09375C17.625 7.5 17.3125 6.5 16.5 6.375L11.9375 5.71875L9.875 1.5625C9.53125 0.84375 8.46875 0.8125 8.09375 1.5625Z"
-                                                fill="#FFCF5C" />
-                                        </svg>
-
-                                    </span>
-                                </div>
-                                <p class="text-14-21 text-[#0105138C]">مدرسة مرحلة الابتدائية</p>
-                            </div>
-                        </li>
-                        <!-- item  -->
-                        <li
-                            class="applicant-item transition-all duration-300 cursor-pointer flex gap-4 p-4 border-b border-[#E9E8E8]">
-                            <div class="w-12 h-12 rounded-full overflow-hidden">
-                                <img src="assets/images/Visitor/applicant-5.png" class="object-cover w-full h-full"
-                                    width="48" height="48" alt="account">
-                            </div>
-                            <div class="flex flex-col gap-1 grow">
-                                <div class="flex gap-4 justify-between">
-                                    <h3 class="text-16-24 text-[#010513B2]">روان السيد</h3>
-                                </div>
-                                <p class="text-14-21 text-[#0105138C]">مدرسة مرحلة الابتدائية</p>
-                            </div>
-                        </li>
-                        <!-- item  -->
-                        <li
-                            class="applicant-item transition-all duration-300 cursor-pointer flex gap-4 p-4 border-b border-[#E9E8E8]">
-                            <div class="w-12 h-12 rounded-full overflow-hidden">
-                                <img src="assets/images/Visitor/applicant-3.png" class="object-cover w-full h-full"
-                                    width="48" height="48" alt="account">
-                            </div>
-                            <div class="flex flex-col gap-1 grow">
-                                <div class="flex gap-4 justify-between">
-                                    <h3 class="text-16-24 text-[#010513B2]">ياسر الدالي</h3>
-                                    <span class="">
-                                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M8.09375 1.5625L6.0625 5.71875L1.46875 6.375C0.65625 6.5 0.34375 7.5 0.9375 8.09375L4.21875 11.3125L3.4375 15.8438C3.3125 16.6562 4.1875 17.2812 4.90625 16.9062L9 14.75L13.0625 16.9062C13.7812 17.2812 14.6562 16.6562 14.5312 15.8438L13.75 11.3125L17.0312 8.09375C17.625 7.5 17.3125 6.5 16.5 6.375L11.9375 5.71875L9.875 1.5625C9.53125 0.84375 8.46875 0.8125 8.09375 1.5625Z"
-                                                fill="#FFCF5C" />
-                                        </svg>
-
-                                    </span>
-                                </div>
-                                <p class="text-14-21 text-[#0105138C]">مدرسة مرحلة الابتدائية</p>
-                            </div>
-                        </li>
-                        <!-- item  -->
-                        <li
-                            class="applicant-item transition-all duration-300 cursor-pointer flex gap-4 p-4 border-b border-[#E9E8E8]">
-                            <div class="w-12 h-12 rounded-full overflow-hidden">
-                                <img src="assets/images/Visitor/applicant-5.png" class="object-cover w-full h-full"
-                                    width="48" height="48" alt="account">
-                            </div>
-                            <div class="flex flex-col gap-1 grow">
-                                <div class="flex gap-4 justify-between">
-                                    <h3 class="text-16-24 text-[#010513B2]">ياسر الدالي</h3>
-                                    <span class="py-1 px-2 rounded-[64px] bg-[#FDF2F2] text-xs text-[#FF4747]">غير
-                                        مؤهل</span>
-
-                                </div>
-                                <p class="text-14-21 text-[#0105138C]">مدرسة مرحلة الابتدائية</p>
-                            </div>
-                        </li>
-                        <!-- item  -->
-                        <li
-                            class="applicant-item transition-all duration-300 cursor-pointer flex gap-4 p-4 border-b border-[#E9E8E8">
-                            <div class="w-12 h-12 rounded-full overflow-hidden">
-                                <img src="assets/images/Visitor/applicant-1.png" class="object-cover w-full h-full"
-                                    width="48" height="48" alt="account">
-                            </div>
-                            <div class="flex flex-col gap-1 grow">
-                                <div class="flex gap-4 justify-between">
-                                    <h3 class="text-16-24 text-[#010513B2]">هند ياسر</h3>
-                                    <span class="py-1 px-2 rounded-[64px] bg-[#FDF2F2] text-xs text-[#FF4747]">غير
-                                        مؤهل</span>
-                                </div>
-                                <p class="text-14-21 text-[#0105138C]">مدرسة مرحلة الابتدائية</p>
-                            </div>
-                        </li>
-                    </ul>
-                    <button class="p-4 text-center w-full text-16-24 text-[#0105138C] bg-white">كل المتقدمين</button>
                 </div>
+                <div class="p-6 border-b border-[#D7D5D5] bg-white">
+                    <div class="py-[14px] px-4 flex items-center gap-2 rounded-[64px] border border-[#D7D5D5]">
+                        <a href="#" class="">
+                            <img src="assets/images/Visitor/search-icon.svg" width="16" height="16" alt="search">
+                        </a>
+                        <input type="search" name="searchapplicant" id="searchapplicant" placeholder="كلمة البحث"
+                            class="text-[#0105138C] text-14-21 bg-transparent w-full focus:outline-none">
+                    </div>
+                </div>
+                <ul class="applicants overflow-y-scroll h-[580px]">
+                    <!-- item  -->
+                    <li
+                        class="applicant-item transition-all duration-300 cursor-pointer unread bg-white flex gap-4 p-4 border-b border-[#E9E8E8]">
+                        <div class="w-12 h-12 rounded-full overflow-hidden">
+                            <img src="assets/images/Visitor/applicant-1.png" class="object-cover w-full h-full"
+                                width="48" height="48" alt="account">
+                        </div>
+                        <div class="flex flex-col gap-1 grow">
+                            <div class="flex gap-4 justify-between">
+                                <h3 class="text-16-24 text-[#010513E5]">هند ياسر</h3>
+                                <span class="py-1 px-2 rounded-[64px] bg-[#F3EDFF] text-xs text-[#8447FF]">غير
+                                    مقروء</span>
+                            </div>
+                            <p class="text-14-21 text-[#0105138C]">مدرسة مرحلة الابتدائية</p>
+                        </div>
+                    </li>
+                    <!-- item  -->
+                    <li
+                        class="applicant-item transition-all duration-300 cursor-pointer unread bg-white flex gap-4 p-4 border-b border-[#E9E8E8]">
+                        <div class="w-12 h-12 rounded-full overflow-hidden">
+                            <img src="assets/images/Visitor/applicant-2.png" class="object-cover w-full h-full"
+                                width="48" height="48" alt="account">
+                        </div>
+                        <div class="flex flex-col gap-1 grow">
+                            <div class="flex gap-4 justify-between">
+                                <h3 class="text-16-24 text-[#010513E5]"> ادم جلال</h3>
+                                <span class="py-1 px-2 rounded-[64px] bg-[#F3EDFF] text-xs text-[#8447FF]">غير
+                                    مقروء</span>
+                            </div>
+                            <p class="text-14-21 text-[#0105138C]">مدرسة مرحلة الابتدائية</p>
+                        </div>
+                    </li>
+                    <!-- item  -->
+                    <li
+                        class="applicant-item transition-all duration-300 cursor-pointer unread bg-white flex gap-4 p-4 border-b border-[#C9C5C5]">
+                        <div class="w-12 h-12 rounded-full overflow-hidden">
+                            <img src="assets/images/Visitor/applicant-3.png" class="object-cover w-full h-full"
+                                width="48" height="48" alt="account">
+                        </div>
+                        <div class="flex flex-col gap-1 grow">
+                            <div class="flex gap-4 justify-between">
+                                <h3 class="text-16-24 text-[#010513E5]">ياسر الدالي </h3>
+                                <span class="py-1 px-2 rounded-[64px] bg-[#F3EDFF] text-xs text-[#8447FF]">غير
+                                    مقروء</span>
+                            </div>
+                            <p class="text-14-21 text-[#0105138C]">مدرسة مرحلة الابتدائية</p>
+                        </div>
+                    </li>
+                    <!-- item  -->
+                    <li
+                        class="applicant-item transition-all duration-300 cursor-pointer active flex gap-4 p-4 border-b border-[#E9E8E8] bg-[#F8F4FF]">
+                        <div class="w-12 h-12 rounded-full overflow-hidden">
+                            <img src="assets/images/Visitor/applicant-4.png" class="object-cover w-full h-full"
+                                width="48" height="48" alt="account">
+                        </div>
+                        <div class="flex flex-col gap-1 grow">
+                            <div class="flex gap-4 justify-between">
+                                <h3 class="text-16-24 text-[#010513E5]">فؤاد الفرحان </h3>
+
+                            </div>
+                            <p class="text-14-21 text-[#0105138C]">مدرسة مرحلة الابتدائية</p>
+                        </div>
+                    </li>
+                    <!-- item  -->
+                    <li
+                        class="applicant-item transition-all duration-300 cursor-pointer flex gap-4 p-4 border-b border-[#E9E8E8]">
+                        <div class="w-12 h-12 rounded-full overflow-hidden">
+                            <img src="assets/images/Visitor/applicant-2.png" class="object-cover w-full h-full"
+                                width="48" height="48" alt="account">
+                        </div>
+                        <div class="flex flex-col gap-1 grow">
+                            <div class="flex gap-4 justify-between">
+                                <h3 class="text-16-24 text-[#010513B2]">ادم جلال</h3>
+                                <span class="">
+                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M8.09375 1.5625L6.0625 5.71875L1.46875 6.375C0.65625 6.5 0.34375 7.5 0.9375 8.09375L4.21875 11.3125L3.4375 15.8438C3.3125 16.6562 4.1875 17.2812 4.90625 16.9062L9 14.75L13.0625 16.9062C13.7812 17.2812 14.6562 16.6562 14.5312 15.8438L13.75 11.3125L17.0312 8.09375C17.625 7.5 17.3125 6.5 16.5 6.375L11.9375 5.71875L9.875 1.5625C9.53125 0.84375 8.46875 0.8125 8.09375 1.5625Z"
+                                            fill="#FFCF5C" />
+                                    </svg>
+
+                                </span>
+                            </div>
+                            <p class="text-14-21 text-[#0105138C]">مدرسة مرحلة الابتدائية</p>
+                        </div>
+                    </li>
+                    <!-- item  -->
+                    <li
+                        class="applicant-item transition-all duration-300 cursor-pointer flex gap-4 p-4 border-b border-[#E9E8E8]">
+                        <div class="w-12 h-12 rounded-full overflow-hidden">
+                            <img src="assets/images/Visitor/applicant-5.png" class="object-cover w-full h-full"
+                                width="48" height="48" alt="account">
+                        </div>
+                        <div class="flex flex-col gap-1 grow">
+                            <div class="flex gap-4 justify-between">
+                                <h3 class="text-16-24 text-[#010513B2]">روان السيد</h3>
+                            </div>
+                            <p class="text-14-21 text-[#0105138C]">مدرسة مرحلة الابتدائية</p>
+                        </div>
+                    </li>
+                    <!-- item  -->
+                    <li
+                        class="applicant-item transition-all duration-300 cursor-pointer flex gap-4 p-4 border-b border-[#E9E8E8]">
+                        <div class="w-12 h-12 rounded-full overflow-hidden">
+                            <img src="assets/images/Visitor/applicant-3.png" class="object-cover w-full h-full"
+                                width="48" height="48" alt="account">
+                        </div>
+                        <div class="flex flex-col gap-1 grow">
+                            <div class="flex gap-4 justify-between">
+                                <h3 class="text-16-24 text-[#010513B2]">ياسر الدالي</h3>
+                                <span class="">
+                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M8.09375 1.5625L6.0625 5.71875L1.46875 6.375C0.65625 6.5 0.34375 7.5 0.9375 8.09375L4.21875 11.3125L3.4375 15.8438C3.3125 16.6562 4.1875 17.2812 4.90625 16.9062L9 14.75L13.0625 16.9062C13.7812 17.2812 14.6562 16.6562 14.5312 15.8438L13.75 11.3125L17.0312 8.09375C17.625 7.5 17.3125 6.5 16.5 6.375L11.9375 5.71875L9.875 1.5625C9.53125 0.84375 8.46875 0.8125 8.09375 1.5625Z"
+                                            fill="#FFCF5C" />
+                                    </svg>
+
+                                </span>
+                            </div>
+                            <p class="text-14-21 text-[#0105138C]">مدرسة مرحلة الابتدائية</p>
+                        </div>
+                    </li>
+                    <!-- item  -->
+                    <li
+                        class="applicant-item transition-all duration-300 cursor-pointer flex gap-4 p-4 border-b border-[#E9E8E8]">
+                        <div class="w-12 h-12 rounded-full overflow-hidden">
+                            <img src="assets/images/Visitor/applicant-5.png" class="object-cover w-full h-full"
+                                width="48" height="48" alt="account">
+                        </div>
+                        <div class="flex flex-col gap-1 grow">
+                            <div class="flex gap-4 justify-between">
+                                <h3 class="text-16-24 text-[#010513B2]">ياسر الدالي</h3>
+                                <span class="py-1 px-2 rounded-[64px] bg-[#FDF2F2] text-xs text-[#FF4747]">غير
+                                    مؤهل</span>
+
+                            </div>
+                            <p class="text-14-21 text-[#0105138C]">مدرسة مرحلة الابتدائية</p>
+                        </div>
+                    </li>
+                    <!-- item  -->
+                    <li
+                        class="applicant-item transition-all duration-300 cursor-pointer flex gap-4 p-4 border-b border-[#E9E8E8">
+                        <div class="w-12 h-12 rounded-full overflow-hidden">
+                            <img src="assets/images/Visitor/applicant-1.png" class="object-cover w-full h-full"
+                                width="48" height="48" alt="account">
+                        </div>
+                        <div class="flex flex-col gap-1 grow">
+                            <div class="flex gap-4 justify-between">
+                                <h3 class="text-16-24 text-[#010513B2]">هند ياسر</h3>
+                                <span class="py-1 px-2 rounded-[64px] bg-[#FDF2F2] text-xs text-[#FF4747]">غير
+                                    مؤهل</span>
+                            </div>
+                            <p class="text-14-21 text-[#0105138C]">مدرسة مرحلة الابتدائية</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
         </div>
     </main>
     <!-- end Aanab main page content  -->
@@ -1040,6 +1057,17 @@
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="assets/scripts/flickty.js"></script>
     <script src="assets/scripts/script.js"></script>
+    <script>
+        $(".all-applicant-show").on("click", function () {
+            $(".all-applicant").toggleClass("active");
+            $("body").addClass("overflow-hidden")
+
+        });
+        $(".close-all-applicant").on("click", function () {
+            $(".all-applicant").toggleClass("active");
+            $("body").removeClass("overflow-hidden")
+        })
+    </script>
 </body>
 
 </html>
