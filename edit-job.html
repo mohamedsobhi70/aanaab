@@ -8,7 +8,7 @@
     <meta name="description" content="description">
     <title>Aanaab - Home Page</title>
     <link href="node_modules/froala-editor/css/froala_editor.pkgd.min.css" rel="stylesheet" type="text/css" />
-    <link rel="stylesheet" href="assets/css/flickty.css">
+    <link rel="stylesheet" href="assets/css/text-editor.css">
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 
@@ -274,17 +274,152 @@
                     <h1 class="text-30-45 text-[#010513E5] font-bold">تعديل الوظيفة</h1>
                 </div>
             </div>
-            <div class="flex">
-                <div class="basis-10/12 flex gap-12 mx-auto">
-                    <div class="flex flex-col gap-6">
+            <div class="flex ">
+                <div class="basis-10/12 flex flex-col gap-12 mx-auto p-8 border border-[#D7D5D5] bg-white rounded-2xl">
+                    <div class="flex flex-col gap-6 w-full">
+                        <h3 class="text-18-27 text-[#010513E5] font-bold">اسم الوظيفة</h3>
+                        <div
+                            class="text-[#010513E5] text-14-15 border border-[#D7D5D5] rounded-[64px] py-4 px-6 focus:outline-none">
+                            معلم رياضيات <span class="text-[#0105138C]">مرحلة متوسطة</span>
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-6 w-full">
+                        <h3 class="text-18-27 text-[#010513E5] font-bold">مكان الوظيفة</h3>
+                        <div class="grid md:grid-cols-2 items-center  gap-5">
+
+                            <div
+                                class="relative after:content-['▾'] after:text-[#6B7280] after:absolute rtl:after:left-4 ltr:after:right-4 after:top-[50%] after:-translate-y-1/2">
+                                <select title="job name" required=""
+                                    class="form-control text-14-15 focus:outline-none w-full relative appearance-none  text-[#6B7280] py-4 px-6 rounded-[64px] border border-[#D1D5DB]">
+                                    <option class="" disabled="" selected=""> الدولة </option>
+                                    <option class=""> 1 الدولة </option>
+                                    <option class=""> 2 الدولة </option>
+                                    <option class=""> 3 الدولة </option>
+                                </select>
+
+                            </div>
+                            <div
+                                class="relative after:content-['▾'] after:text-[#6B7280] after:absolute rtl:after:left-4 ltr:after:right-4 after:top-[50%] after:-translate-y-1/2">
+                                <select title="job" required=""
+                                    class="form-control text-14-15 focus:outline-none w-full relative appearance-none  text-[#6B7280] py-4 px-6 rounded-[64px] border border-[#D1D5DB]">
+                                    <option class="" disabled="" selected=""> المدينة </option>
+                                    <option class=""> 1المدينة </option>
+                                    <option class=""> 2المدينة </option>
+                                    <option class=""> 3المدينة </option>
+                                </select>
+
+                            </div>
+
+
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-6 w-full">
                         <h3 class="text-18-27 text-[#010513E5] font-bold">وصف الوظيفة</h3>
-                        <div id="job-description-editor"></div>
+                        <div id="job-description-editor" class=""></div>
+                    </div>
+                    <div class="flex flex-col gap-6 w-full">
+                        <h3 class="text-18-27 text-[#010513E5] font-bold">متطلبات الوظيفة</h3>
+                        <div id="job-description-editor2" class=""></div>
                     </div>
                 </div>
+
             </div>
             <div class="flex">
-                <div class="basis-10/12 flex flex-col gap-12 mx-auto">
+                <div class="basis-10/12 flex flex-col gap-12 mx-auto p-8 border border-[#D7D5D5] bg-white rounded-2xl">
+                    <section class="flex flex-col gap-6">
+                        <h2 class="text-18-27 text-[#333745] font-bold ">سنوات الخبرة</h2>
+                        <div class="grid md:grid-cols-2 items-center  gap-5">
+                            <div
+                                class="relative after:content-['▾'] after:text-[#6B7280] after:absolute rtl:after:left-4 ltr:after:right-4 after:top-[50%] after:-translate-y-1/2">
+                                <select title="job name" required=""
+                                    class="form-control text-14-15 focus:outline-none w-full relative appearance-none  text-[#6B7280] py-4 px-6 rounded-[64px] border border-[#D1D5DB]">
+                                    <option class="" disabled="" selected=""> المستوي الوظيفي </option>
+                                    <option class=""> المستوي الوظيفي </option>
+                                </select>
 
+                            </div>
+                            <div
+                                class="relative after:content-['▾'] after:text-[#6B7280] after:absolute rtl:after:left-4 ltr:after:right-4 after:top-[50%] after:-translate-y-1/2">
+                                <select title="job" required=""
+                                    class="form-control text-14-15 focus:outline-none w-full relative appearance-none  text-[#6B7280] py-4 px-6 rounded-[64px] border border-[#D1D5DB]">
+                                    <option class="" disabled="" selected=""> سنوات الخبرة </option>
+                                    <option class=""> سنوات الخبرة رقم 1 </option>
+                                </select>
+                            </div>
+                        </div>
+                    </section>
+                    <div class=" flex gap-4">
+                        <div class="flex flex-col gap-6 grow">
+                            <h2 class="text-18-27 text-[#333745] font-bold ">نوع الوظيفة</h2>
+                            <div
+                                class="relative after:content-['▾'] after:text-[#6B7280] after:absolute rtl:after:left-4 ltr:after:right-4 after:top-[50%] after:-translate-y-1/2">
+                                <select title="job name" required=""
+                                    class="form-control text-14-15 focus:outline-none w-full relative appearance-none  text-[#6B7280] py-4 px-6 rounded-[64px] border border-[#D1D5DB]">
+                                    <option class="" disabled="" selected=""> دوام كامل ,دوام جزئي </option>
+                                    <option class=""> دوام كامل ,دوام جزئي </option>
+                                </select>
+
+                            </div>
+                        </div>
+                        <div class="flex flex-col gap-6 grow">
+                            <h2 class="text-18-27 text-[#333745] font-bold ">المرحلة التعليمية</h2>
+                            <div
+                                class="relative after:content-['▾'] after:text-[#6B7280] after:absolute rtl:after:left-4 ltr:after:right-4 after:top-[50%] after:-translate-y-1/2">
+                                <select title="job" required=""
+                                    class="form-control text-14-15 focus:outline-none w-full relative appearance-none  text-[#6B7280] py-4 px-6 rounded-[64px] border border-[#D1D5DB]">
+                                    <option class="" disabled="" selected=""> المرحلة الثانوية ,المرحلة المتوسطة
+                                    </option>
+                                    <option class=""> المرحلة الثانوية </option>
+                                    <option class=""> ,المرحلة المتوسطة </option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class=" flex gap-4">
+                        <div class="flex flex-col gap-6 grow">
+                            <h2 class="text-18-27 text-[#333745] font-bold ">المستوي التعليمي</h2>
+                            <div
+                                class="relative after:content-['▾'] after:text-[#6B7280] after:absolute rtl:after:left-4 ltr:after:right-4 after:top-[50%] after:-translate-y-1/2">
+                                <select title="job name" required=""
+                                    class="form-control text-14-15 focus:outline-none w-full relative appearance-none  text-[#6B7280] py-4 px-6 rounded-[64px] border border-[#D1D5DB]">
+                                    <option class="" disabled="" selected="">ماجيستير ,درجة البكالريوس</option>
+                                    <option>ماجيستير ,درجة البكالريوس</option>
+                                </select>
+
+                            </div>
+                        </div>
+                        <div class=" flex flex-col gap-6 lg:items-start grow">
+                            <h2 class="text-18-27 text-[#333745] font-bold ">التحقق من وثيقة التخرج؟
+                            </h2>
+                            <div class="flex  gap-4">
+                                <div class="w-full sm:w-auto">
+                                    <input id="degree-yes" type="radio" checked="" value="" name="degree-test"
+                                        class="peer hidden">
+                                    <label for="degree-yes"
+                                        class="rounded-[64px] text-center border block border-[#DADBDD] py-3 px-8 text-[#0105138C] text-16-24 peer-checked:text-primary peer-checked:border-primary transition-all duration-300 font-bold cursor-pointer">
+                                        نعم
+                                    </label>
+                                </div>
+                                <div class="w-full sm:w-auto">
+                                    <input id="degree-no" type="radio" value="" name="degree-test" class="peer hidden">
+                                    <label for="degree-no"
+                                        class="rounded-[64px] text-center border block border-[#DADBDD] py-3 px-8 text-[#0105138C] text-16-24 peer-checked:text-primary peer-checked:border-primary transition-all duration-300 font-bold cursor-pointer">لا</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-6">
+                        <h2 class="text-18-27 text-[#333745] font-bold ">متوسط الراتب شهريا</h2>
+                        <div class="grid grid-cols-2 items-center  gap-4">
+                            <input required=""
+                                class="form-control text-14-15 focus:outline-none placeholder:text-[#6B7280] placeholder:text-14-15 py-4 px-6 rounded-[64px] border border-[#D1D5DB]"
+                                type="number" name="exsalaryfrom" min="0" placeholder="من">
+                            <input required=""
+                                class="form-control text-14-15 focus:outline-none placeholder:text-[#6B7280] placeholder:text-14-15 py-4 px-6 rounded-[64px] border border-[#D1D5DB]"
+                                type="number" name="exsalaryto" min="0" placeholder="الي">
+                        </div>
+
+                    </div>
                 </div>
             </div>
         </div>
@@ -315,12 +450,24 @@
     <script src="assets/scripts/flickty.js"></script>
     <script src="assets/scripts/script.js"></script>
     <script>
-        var editor = new FroalaEditor('#job-description-editor', {
-            toolbarButtons: ['bold', 'italic', 'underline', 'strikeThrough', 'fontSize', 'emoticons', '|',
-                'paragraphFormat', 'align', 'formatOL', 'formatUL', 'outdent', 'indent', '|', 'insertImage', 'insertLink',
-                'insertFile', 'insertVideo', 'undo', 'redo'
-            ]
-        });
+        let editor = new FroalaEditor('#job-description-editor', {
+            toolbarButtons: ['redo', 'undo', 'insertVideo', 'insertFile', 'insertLink', 'insertImage', '|',
+                'indent', 'outdent', 'formatUL', 'formatOL', 'align', 'paragraphFormat'
+                , '|', 'emoticons', 'fontSize', 'strikeThrough', 'underline', 'italic', 'bold'
+            ],
+            placeholderText: 'الوصف',
+            language: 'ar',
+            direction: 'rtl'
+        })
+        let editor2 = new FroalaEditor('#job-description-editor2', {
+            toolbarButtons: ['redo', 'undo', 'insertVideo', 'insertFile', 'insertLink', 'insertImage', '|',
+                'indent', 'outdent', 'formatUL', 'formatOL', 'align', 'paragraphFormat'
+                , '|', 'emoticons', 'fontSize', 'strikeThrough', 'underline', 'italic', 'bold'
+            ],
+            placeholderText: 'الوصف',
+            language: 'ar',
+            direction: 'rtl'
+        })
     </script>
 </body>
 

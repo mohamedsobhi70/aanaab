@@ -6,7 +6,7 @@
   border-radius: 64px;
   background: #f8f4ff;
   font-size: 12px;
-    margin: 0;
+  margin: 0;
 }
 .tagify__tag-text {
   color: rgb(132, 71, 255);
@@ -19,4 +19,6 @@
   display: none;
 }
 .tagify__tag__removeBtn:hover {
-  background: none}
+  background: none;
+}
+

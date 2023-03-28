@@ -1,0 +1,20 @@
+.fr-second-toolbar {
+  display: none;
+}
+.fr-toolbar {
+  background: #ffffff;
+  border: 1px solid #d7d5d5 !important;
+  border-radius: 32px !important;
+  margin-bottom: 8px;
+}
+.fr-box.fr-basic.fr-top .fr-wrapper {
+  background: #ffffff;
+  border: 1px solid #d7d5d5 !important;
+  border-radius: 32px !important;
+  border-bottom: 1px solid #d7d5d5 !important;
+  height:200px !important
+
+}
+.fr-toolbar .fr-newline{
+  height:0 !important
+}
