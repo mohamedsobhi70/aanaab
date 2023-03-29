@@ -12,7 +12,7 @@
   border: 1px solid #d7d5d5 !important;
   border-radius: 32px !important;
   border-bottom: 1px solid #d7d5d5 !important;
-  height:200px !important
+  min-height:200px !important
 
 }
 .fr-toolbar .fr-newline{
