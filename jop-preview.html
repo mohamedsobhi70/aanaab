@@ -260,38 +260,45 @@
 
     <!-- start Aanab main page content   -->
     <main class="bg-[#F7FAFA]">
-        <div class="container flex flex-col py-16 gap-12">
-            <div class=" flex items-center">
-                <a href="#" title="back" class="basis-1/12">
-                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <div class="container flex flex-col lg:py-16 lg:gap-12">
+            <div
+                class=" grid grid-cols-3 lg:flex items-center px-[30px] sm:px-[38px] lg-px-0 py-6 lg:py-0 bg-white lg:bg-transparent">
+                <a href="#" title="back" class="col-span-1 lg:basis-1/12">
+                    <svg class="hidden lg:block" width="18" height="18" viewBox="0 0 18 18" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
                         <path
                             d="M7.67188 1.61719C7.28125 2.00781 7.32031 2.59375 7.67188 2.98438L12.3984 7.4375H1.1875C0.640625 7.4375 0.25 7.86719 0.25 8.375V9.625C0.25 10.1719 0.640625 10.5625 1.1875 10.5625H12.3984L7.67188 15.0547C7.32031 15.4453 7.32031 16.0312 7.67188 16.4219L8.53125 17.2812C8.92188 17.6328 9.50781 17.6328 9.85938 17.2812L17.4766 9.66406C17.8281 9.3125 17.8281 8.72656 17.4766 8.33594L9.85938 0.757812C9.50781 0.40625 8.92188 0.40625 8.53125 0.757812L7.67188 1.61719Z"
                             fill="#010513" fill-opacity="0.9" />
                     </svg>
+                    <span class="text-16-24 text-[#0105138C] lg:hidden">رجوع</span>
                 </a>
-                <div class="flex justify-between basis-10/12">
-                    <h1 class="text-30-45 text-[#010513E5] font-bold">معاينة الوظيفة</h1>
+                <div class="flex justify-between col-span-2 lg:basis-10/12 ">
+                    <h1 class="text-16-24 lg:text-30-45 text-[#010513E5] font-bold">معاينة الوظيفة</h1>
                     <div class="flex items-center gap-4">
-                        <a href="job-published.html" class="py-3 px-16 bg-primary rounded-[64px] text-16-24 text-white">نشر</a>
+                        <a href="job-published.html"
+                            class="lg:py-3 lg:px-16 lg:bg-primary rounded-[64px] text-16-24 text-primary lg:text-white">نشر</a>
                         <a href="#"
-                            class="py-3 px-8 border border-[#D7D5D5] rounded-[64px] text-16-24 text-[#0105138C]">الغاء</a>
+                            class="hidden lg:block py-3 px-8 border border-[#D7D5D5] rounded-[64px] text-16-24 text-[#0105138C]">الغاء</a>
                     </div>
                 </div>
             </div>
             <div class="flex">
-                <section class="basis-10/12 flex gap-6 mx-auto">
-                    <div class="img-container w-40 h-40 border border-[#D7D5D5] rounded-full overflow-hidden">
+                <section class="px-[30px] sm:px-[38px] lg:px-0 py-6 lg:py-0 basis-full lg:basis-10/12 flex gap-6 lg:mx-auto">
+                    <div
+                        class="hidden sm:block  img-container w-20 h-20 lg:w-40 lg:h-40 border border-[#D7D5D5] rounded-full overflow-hidden">
                         <img src="assets/images/Visitor/Ellipse-6.png" class="w-full h-full object-cover" width="160"
                             height="160" alt="MIS School">
                     </div>
-                    <div class="flex flex-col gap-3">
-                        <h2 class="text-36-54 text-[#333745] font-bold">مساعد اداري تربوي لمدرسة دولية</h2>
-                        <p class="text-18-27 text-[#010513B2] ">مدارس المكتشف العالمية</p>
+                    <div class="flex flex-col gap-4 lg:gap-3 flex-1">
+                        <h2 class="text-18-27 sm:text-21-31 lg:text-36-54 text-[#333745] font-bold">مساعد اداري تربوي لمدرسة دولية
+                        </h2>
+                        <p class="text-18-27 text-[#010513B2] hidden sm:block ">مدارس المكتشف العالمية</p>
                         <div class="flex gap-6">
-                            <span class="text-[#004C3F] text-14-21 py-2 px-3 bg-[#E0F2F2] rounded-[5px]">
+                            <span
+                                class="text-[#004C3F] text-xs lg:text-14-21 py-1 px-2 lg:py-2 lg:px-3 bg-[#E9E8E8] lg:bg-[#E0F2F2] rounded-[5px]">
                                 دوام كامل
                             </span>
-                            <span class="flex gap-2 items-center text-16-24 text-[#6B7280]">
+                            <span class=" hidden lg:flex gap-2 items-center text-16-24 text-[#6B7280]">
                                 <svg width="12" height="17" viewBox="0 0 12 17" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path
@@ -299,6 +306,9 @@
                                         fill="#6B7280" />
                                 </svg>
                                 العزيزية، جدة
+                            </span>
+                            <span class="text-14-15 lg:text-16-24 text-[#6B7280] lg:hidden flex items-center">
+                                142 متقدمًا
                             </span>
                             <span class="flex gap-2 items-center text-14-25 text-[#6B7280]">
                                 <svg width="14" height="15" viewBox="0 0 14 15" fill="none"
@@ -314,7 +324,7 @@
                 </section>
             </div>
             <div class="flex">
-                <div class="basis-10/12 flex flex-col gap-6 mx-auto">
+                <div class="lg:basis-10/12 flex flex-col sm:gap-6 mx-auto sm:px-[38px]">
                     <!-- Job details -->
                     <div
                         class="bg-white px-[30px] py-8 sm:px-[38px] lg:px-6 lg:py-6 md:rounded-2xl flex flex-col gap-6 sm:shadow-featuredJob border border-[#D9DADC]">
@@ -322,32 +332,32 @@
                         <ul class="flex flex-col gap-4 ">
                             <li class="flex gap-4 items-center ">
                                 <span class="w-2 h-2 rounded bg-primary hidden lg:block"></span>
-                                <p class="w-[116px] lg:w-40 text-14-21 text-[#010513B2] font-bold">
+                                <p class="w-[116px] lg:w-40 text-14-21 text-[#0105138C] lg:text-[#010513B2] font-bold">
                                     الخبرة</p>
                                 <p class=" text-14-21 text-[#010513B2] lg:text-[#010513E5] font-bold">٣ - ٥ سنوات
                                 </p>
                             </li>
                             <li class="flex gap-4 items-start">
                                 <span class="w-2 h-2 rounded bg-primary mt-1.5 hidden lg:block"></span>
-                                <p class="w-[116px] lg:w-40 text-14-21 text-[#010513B2] font-bold">
+                                <p class="w-[116px] lg:w-40 text-14-21 text-[#0105138C] lg:text-[#010513B2] font-bold">
                                     المستوي الوظيفي</p>
                                 <p class=" text-14-21 text-[#010513E5] font-bold">خبير</p>
                             </li>
                             <li class="flex gap-4 items-start">
                                 <span class="w-2 h-2 rounded bg-primary mt-1.5 hidden lg:block"></span>
-                                <p class="w-[116px] lg:w-40 text-14-21 text-[#010513B2] font-bold">
+                                <p class="w-[116px] lg:w-40 text-14-21 text-[#0105138C] lg:text-[#010513B2] font-bold">
                                     المستوي التعليمي</p>
                                 <p class=" text-14-21 text-[#010513B2] lg:text-[#010513E5] font-bold">بكالوريوس</p>
                             </li>
                             <li class="flex gap-4 items-start">
                                 <span class="w-2 h-2 rounded bg-primary mt-1.5 hidden lg:block"></span>
-                                <p class="w-[116px] lg:w-40 text-14-21 text-[#010513B2] font-bold">
+                                <p class="w-[116px] lg:w-40 text-14-21 text-[#0105138C] lg:text-[#010513B2] font-bold">
                                     المرتب</p>
                                 <p class=" text-14-21 text-[#010513B2] lg:text-[#010513E5] font-bold">غير محدد</p>
                             </li>
                             <li class="flex gap-4 items-start">
                                 <span class="w-2 h-2 rounded bg-primary mt-1.5 hidden lg:block"></span>
-                                <p class="w-[116px] lg:w-40 text-14-21 text-[#010513B2] font-bold">
+                                <p class="w-[116px] lg:w-40 text-14-21 text-[#0105138C] lg:text-[#010513B2] font-bold">
                                     المهارات</p>
                                 <p class=" text-14-21 text-[#010513B2] lg:text-[#010513E5] font-bold flex-1">الفصل
                                     التفاعلي، تربوي، ذوي
@@ -504,6 +514,11 @@
                         </ul>
                     </div>
                 </div>
+            </div>
+            <div class="py-6 px-[30px]">
+                <a href="#"
+                    class="lg:hidden text-white font-bold text-16-24 text-center bg-primary rounded-[64px] py-3 block">نشر
+                    الوظيفة</a>
             </div>
         </div>
     </main>
