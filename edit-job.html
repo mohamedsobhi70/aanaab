@@ -7,7 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="description">
     <title>Aanaab - Home Page</title>
-    <link href="node_modules/froala-editor/css/froala_editor.pkgd.min.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tagify/4.17.7/tagify.css"
+        integrity="sha512-Ft73YZFLhxI8baaoTdSPN8jKRPhYu441A8pqlqf/CvGkUOaLCLm59ZWMdls8lMBPjs1OZ31Vt3cmZsdBa3EnMw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/froala-editor@latest/css/froala_editor.pkgd.min.css" rel="stylesheet"
+        type="text/css" />
+    <link rel="stylesheet" href="assets/css/tagify.css">
     <link rel="stylesheet" href="assets/css/text-editor.css">
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
@@ -274,6 +279,20 @@
                     <h1 class="text-30-45 text-[#010513E5] font-bold">تعديل الوظيفة</h1>
                 </div>
             </div>
+            <div class="job-error-message hidden">
+                <div
+                    class="basis-10/12 mx-auto p-6 border border-[#FF4747] bg-[#FFEBEB] rounded-2xl flex items-center gap-3">
+                    <span class="w-6 h-6 rounded-full bg-[#DC2626] flex justify-center items-center">
+                        <svg width="10" height="11" viewBox="0 0 10 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M6.80469 5.75L9.53906 3.01562C9.89453 2.6875 9.89453 2.14062 9.53906 1.8125L8.9375 1.21094C8.60938 0.855469 8.0625 0.855469 7.73438 1.21094L5 3.94531L2.23828 1.21094C1.91016 0.855469 1.36328 0.855469 1.03516 1.21094L0.433594 1.8125C0.078125 2.14062 0.078125 2.6875 0.433594 3.01562L3.16797 5.75L0.433594 8.51172C0.078125 8.83984 0.078125 9.38672 0.433594 9.71484L1.03516 10.3164C1.36328 10.6719 1.91016 10.6719 2.23828 10.3164L5 7.58203L7.73438 10.3164C8.0625 10.6719 8.60938 10.6719 8.9375 10.3164L9.53906 9.71484C9.89453 9.38672 9.89453 8.83984 9.53906 8.51172L6.80469 5.75Z"
+                                fill="#fff" />
+                        </svg>
+
+                    </span>
+                    <p class="text-16-24 text-[#010513E5] font-bold">حدث خطاء في نشر الوظيفة يرجي المحاولة مجددا</p>
+                </div>
+            </div>
             <div class="flex ">
                 <div class="basis-10/12 flex flex-col gap-12 mx-auto p-8 border border-[#D7D5D5] bg-white rounded-2xl">
                     <div class="flex flex-col gap-6 w-full">
@@ -311,6 +330,13 @@
                             </div>
 
 
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-6 w-full">
+                        <h3 class="text-18-27 text-[#010513E5] font-bold">حالة الوظيفة</h3>
+                        <div
+                            class="text-[#010513E5] text-14-15 border border-[#D7D5D5] rounded-[64px] py-4 px-6 focus:outline-none">
+                            حصري لن يتمكن من فتح الوظيفة إلّا الأشخاص الذين لديهم إذن بالوصول إلى الرابط.
                         </div>
                     </div>
                     <div class="flex flex-col gap-6 w-full">
@@ -408,6 +434,32 @@
                             </div>
                         </div>
                     </div>
+                    <section class=" flex flex-col gap-6 ">
+                        <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-1">
+                            <h2 class="text-18-27 text-[#333745] font-bold ">
+                                التخصص
+                            </h2>
+                            <span class="text-16-28 text-[#6B7280]">أضف ما يصل إلى 5</span>
+                        </div>
+                        <div class="">
+                            <input required name='input-custom-dropdown'
+                                class='form-control specialty flex flex-wrap items-center gap-2 border border-[#D1D5DB] rounded-2xl lg:rounded-[64px]  py-2 px-4'
+                                placeholder='التخصصات' value='الجغرافيا, التاريخ , الرياضيات'>
+                        </div>
+                    </section>
+                    <section class=" flex flex-col gap-6 ">
+                        <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-1">
+                            <h2 class="text-18-27 text-[#333745] font-bold ">
+                                التخصص
+                            </h2>
+                            <span class="text-16-28 text-[#6B7280]">أضف ما يصل إلى 20</span>
+                        </div>
+                        <div class="">
+                            <input required name='input-custom-dropdown'
+                                class='form-control skills flex flex-wrap items-center gap-2 border border-[#D1D5DB] rounded-2xl lg:rounded-[64px]  py-2 px-4'
+                                placeholder='التخصصات' value='الفصل التفاعلي, تربوي, ذوي الهمم, مايكروسوفت اوفيس, '>
+                        </div>
+                    </section>
                     <div class="flex flex-col gap-6">
                         <h2 class="text-18-27 text-[#333745] font-bold ">متوسط الراتب شهريا</h2>
                         <div class="grid grid-cols-2 items-center  gap-4">
@@ -418,7 +470,136 @@
                                 class="form-control text-14-15 focus:outline-none placeholder:text-[#6B7280] placeholder:text-14-15 py-4 px-6 rounded-[64px] border border-[#D1D5DB]"
                                 type="number" name="exsalaryto" min="0" placeholder="الي">
                         </div>
+                    </div>
+                    <div class=" flex gap-4">
+                        <div class=" flex flex-col gap-6 lg:items-start grow">
+                            <h2 class="text-18-27 text-[#333745] font-bold ">
+                                التحقق من اختبار التخصص؟
+                            </h2>
+                            <div class="flex  gap-4">
+                                <div class="w-full sm:w-auto">
+                                    <input id="specialty-yes" type="radio" checked="" value="" name="specialty-test"
+                                        class="peer hidden">
+                                    <label for="specialty-yes"
+                                        class="rounded-[64px] text-center border block border-[#DADBDD] py-3 px-8 text-[#0105138C] text-16-24 peer-checked:text-primary peer-checked:border-primary transition-all duration-300 font-bold cursor-pointer">
+                                        نعم
+                                    </label>
+                                </div>
+                                <div class="w-full sm:w-auto">
+                                    <input id="specialty-no" type="radio" value="" name="specialty-test"
+                                        class="peer hidden">
+                                    <label for="specialty-no"
+                                        class="rounded-[64px] text-center border block border-[#DADBDD] py-3 px-8 text-[#0105138C] text-16-24 peer-checked:text-primary peer-checked:border-primary transition-all duration-300 font-bold cursor-pointer">لا</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" flex flex-col gap-6 lg:items-start grow">
+                            <h2 class="text-18-27 text-[#333745] font-bold ">
+                                التحقق من الرخصة المهنية
+                            </h2>
+                            <div class="flex  gap-4">
+                                <div class="w-full sm:w-auto">
+                                    <input id="licence-yes" type="radio" checked="" value="" name="licence-test"
+                                        class="peer hidden">
+                                    <label for="licence-yes"
+                                        class="rounded-[64px] text-center border block border-[#DADBDD] py-3 px-8 text-[#0105138C] text-16-24 peer-checked:text-primary peer-checked:border-primary transition-all duration-300 font-bold cursor-pointer">
+                                        نعم
+                                    </label>
+                                </div>
+                                <div class="w-full sm:w-auto">
+                                    <input id="licence-no" type="radio" value="" name="licence-test"
+                                        class="peer hidden">
+                                    <label for="licence-no"
+                                        class="rounded-[64px] text-center border block border-[#DADBDD] py-3 px-8 text-[#0105138C] text-16-24 peer-checked:text-primary peer-checked:border-primary transition-all duration-300 font-bold cursor-pointer">لا</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex">
+                <div class="basis-10/12 flex flex-col gap-12 mx-auto p-8 border border-[#D7D5D5] bg-white rounded-2xl">
+                    <div class="flex flex-col gap-6">
+                        <h2 class="text-18-27 text-[#333745] font-bold ">أسئلة الفرز</h2>
+                        <div class="flex items-center  gap-4">
+                            <button class="flex items-center gap-1 bg-[#F4F4F5] rounded-[64px] py-3 px-6">
+                                <svg width="14" height="13" viewBox="0 0 14 13" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M12.25 5.4375H8.3125V1.5C8.3125 1.03516 7.90234 0.625 7.4375 0.625H6.5625C6.07031 0.625 5.6875 1.03516 5.6875 1.5V5.4375H1.75C1.25781 5.4375 0.875 5.84766 0.875 6.3125V7.1875C0.875 7.67969 1.25781 8.0625 1.75 8.0625H5.6875V12C5.6875 12.4922 6.07031 12.875 6.5625 12.875H7.4375C7.90234 12.875 8.3125 12.4922 8.3125 12V8.0625H12.25C12.7148 8.0625 13.125 7.67969 13.125 7.1875V6.3125C13.125 5.84766 12.7148 5.4375 12.25 5.4375Z"
+                                        fill="#010513" fill-opacity="0.55" />
+                                </svg>
+                                <span class="text-16-24 text-[#0105138C] font-bold">سؤال مخصص</span>
+                            </button>
+                            <button class="flex items-center gap-1 bg-[#F4F4F5] rounded-[64px] py-3 px-6">
+                                <svg width="14" height="13" viewBox="0 0 14 13" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M12.25 5.4375H8.3125V1.5C8.3125 1.03516 7.90234 0.625 7.4375 0.625H6.5625C6.07031 0.625 5.6875 1.03516 5.6875 1.5V5.4375H1.75C1.25781 5.4375 0.875 5.84766 0.875 6.3125V7.1875C0.875 7.67969 1.25781 8.0625 1.75 8.0625H5.6875V12C5.6875 12.4922 6.07031 12.875 6.5625 12.875H7.4375C7.90234 12.875 8.3125 12.4922 8.3125 12V8.0625H12.25C12.7148 8.0625 13.125 7.67969 13.125 7.1875V6.3125C13.125 5.84766 12.7148 5.4375 12.25 5.4375Z"
+                                        fill="#010513" fill-opacity="0.55" />
+                                </svg>
+                                <span class="text-16-24 text-[#0105138C] font-bold">حالة التأشيرة</span>
+                            </button>
+                            <button class="flex items-center gap-1 bg-[#272A35] rounded-[64px] py-3 px-6">
+                                <svg class="rotate-45" width="14" height="13" viewBox="0 0 14 13" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M12.25 5.4375H8.3125V1.5C8.3125 1.03516 7.90234 0.625 7.4375 0.625H6.5625C6.07031 0.625 5.6875 1.03516 5.6875 1.5V5.4375H1.75C1.25781 5.4375 0.875 5.84766 0.875 6.3125V7.1875C0.875 7.67969 1.25781 8.0625 1.75 8.0625H5.6875V12C5.6875 12.4922 6.07031 12.875 6.5625 12.875H7.4375C7.90234 12.875 8.3125 12.4922 8.3125 12V8.0625H12.25C12.7148 8.0625 13.125 7.67969 13.125 7.1875V6.3125C13.125 5.84766 12.7148 5.4375 12.25 5.4375Z"
+                                        fill="#fff" />
+                                </svg>
+                                <span class="text-16-24 text-white font-bold">الحاجة الملحة للتوظيف</span>
+                            </button>
+                            <button class="flex items-center gap-1 bg-[#F4F4F5] rounded-[64px] py-3 px-6">
+                                <svg width="14" height="13" viewBox="0 0 14 13" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M12.25 5.4375H8.3125V1.5C8.3125 1.03516 7.90234 0.625 7.4375 0.625H6.5625C6.07031 0.625 5.6875 1.03516 5.6875 1.5V5.4375H1.75C1.25781 5.4375 0.875 5.84766 0.875 6.3125V7.1875C0.875 7.67969 1.25781 8.0625 1.75 8.0625H5.6875V12C5.6875 12.4922 6.07031 12.875 6.5625 12.875H7.4375C7.90234 12.875 8.3125 12.4922 8.3125 12V8.0625H12.25C12.7148 8.0625 13.125 7.67969 13.125 7.1875V6.3125C13.125 5.84766 12.7148 5.4375 12.25 5.4375Z"
+                                        fill="#010513" fill-opacity="0.55" />
+                                </svg>
+                                <span class="text-16-24 text-[#0105138C] font-bold">لغة</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-8">
+                        <div class="flex flex-col gap-4">
+                            <div class="flex items-center justify-between">
+                                <h2 class="text-18-27 text-[#010513E5] font-bold ">يجب علينا ملء هذا المنصب على وجه
+                                    السرعة.
+                                    هل يمكنك أن تبدأ على الفور؟</h2>
+                                <button title="close">
+                                    <svg width="10" height="11" viewBox="0 0 10 11" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M6.80469 5.75L9.53906 3.01562C9.89453 2.6875 9.89453 2.14062 9.53906 1.8125L8.9375 1.21094C8.60938 0.855469 8.0625 0.855469 7.73438 1.21094L5 3.94531L2.23828 1.21094C1.91016 0.855469 1.36328 0.855469 1.03516 1.21094L0.433594 1.8125C0.078125 2.14062 0.078125 2.6875 0.433594 3.01562L3.16797 5.75L0.433594 8.51172C0.078125 8.83984 0.078125 9.38672 0.433594 9.71484L1.03516 10.3164C1.36328 10.6719 1.91016 10.6719 2.23828 10.3164L5 7.58203L7.73438 10.3164C8.0625 10.6719 8.60938 10.6719 8.9375 10.3164L9.53906 9.71484C9.89453 9.38672 9.89453 8.83984 9.53906 8.51172L6.80469 5.75Z"
+                                            fill="#010513" fill-opacity="0.55" />
+                                    </svg>
 
+                                </button>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <span class="basis-1/6 text-14-17 text-[#0105138C]">الجواب المثالي:</span>
+                                <span class="text-14-17 text-[#010513B2]">نعم</span>
+                            </div>
+                        </div>
+                        <div class="flex flex-col gap-4">
+                            <div class="flex items-center justify-between">
+                                <h2 class="text-18-27 text-[#010513E5] font-bold ">
+                                    اكتب سؤال مخصص
+                                </h2>
+                                <button title="close">
+                                    <svg width="10" height="11" viewBox="0 0 10 11" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M6.80469 5.75L9.53906 3.01562C9.89453 2.6875 9.89453 2.14062 9.53906 1.8125L8.9375 1.21094C8.60938 0.855469 8.0625 0.855469 7.73438 1.21094L5 3.94531L2.23828 1.21094C1.91016 0.855469 1.36328 0.855469 1.03516 1.21094L0.433594 1.8125C0.078125 2.14062 0.078125 2.6875 0.433594 3.01562L3.16797 5.75L0.433594 8.51172C0.078125 8.83984 0.078125 9.38672 0.433594 9.71484L1.03516 10.3164C1.36328 10.6719 1.91016 10.6719 2.23828 10.3164L5 7.58203L7.73438 10.3164C8.0625 10.6719 8.60938 10.6719 8.9375 10.3164L9.53906 9.71484C9.89453 9.38672 9.89453 8.83984 9.53906 8.51172L6.80469 5.75Z"
+                                            fill="#010513" fill-opacity="0.55" />
+                                    </svg>
+
+                                </button>
+                            </div>
+                            <input type="text"
+                                class="py-3 px-6 rounded-[64px] border border-[#D7D5D5] text-14-17 placeholder:text-14-17 placeholder:text-[#0105138C]"
+                                placeholder='جرب طرح سؤال مثل ، "ما الذي يجعلك المرشح المثالي لهذا المنصب؟"'>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -446,13 +627,17 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
         integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script type="text/javascript" src="node_modules/froala-editor/js/froala_editor.pkgd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tagify/4.17.7/tagify.min.js"
+        integrity="sha512-BO4lu2XUJSxHo+BD3WLBQ9QoYgmtSv/X/4XFsseeCAxK+eILeyEXtGLHFs2UMfzNN9lhtoGy8v8EMFPIl8y+0w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/froala-editor@latest/js/froala_editor.pkgd.min.js"></script>
     <script src="assets/scripts/flickty.js"></script>
     <script src="assets/scripts/script.js"></script>
     <script>
         let editor = new FroalaEditor('#job-description-editor', {
             toolbarButtons: ['redo', 'undo', 'insertVideo', 'insertFile', 'insertLink', 'insertImage', '|',
-                'indent', 'outdent', 'formatUL', 'formatOL', 'align', 'paragraphFormat'
+                'indent', 'outdent', 'formatUL', 'formatOL', 'paragraphFormat'
                 , '|', 'emoticons', 'fontSize', 'strikeThrough', 'underline', 'italic', 'bold'
             ],
             placeholderText: 'الوصف',
@@ -461,13 +646,34 @@
         })
         let editor2 = new FroalaEditor('#job-description-editor2', {
             toolbarButtons: ['redo', 'undo', 'insertVideo', 'insertFile', 'insertLink', 'insertImage', '|',
-                'indent', 'outdent', 'formatUL', 'formatOL', 'align', 'paragraphFormat'
+                'indent', 'outdent', 'formatUL', 'formatOL', 'paragraphFormat'
                 , '|', 'emoticons', 'fontSize', 'strikeThrough', 'underline', 'italic', 'bold'
             ],
             placeholderText: 'الوصف',
             language: 'ar',
             direction: 'rtl'
         })
+
+        let tagify = new Tagify(document.querySelector('.specialty'), {
+            whitelist: ['الجغرافيا', 'التاريخ', 'الرياضيات', "الفيزياء", "اللغه العربية", "الاحصاء"],
+            maxTags: 15,
+            dropdown: {
+                maxItems: 5,           // <- mixumum allowed rendered suggestions
+                classname: "tags-look", // <- custom classname for this dropdown, so it could be targeted
+                enabled: 0,             // <- show suggestions on focus
+                closeOnSelect: false    // <- do not hide the suggestions dropdown once an item has been selected
+            }
+        }),
+            tagify2 = new Tagify(document.querySelector('.skills'), {
+                whitelist: ['الفصل التفاعلي', 'تربوي', 'ذوي الهمم', "الفيزياء", "ذوي الهمم"],
+                maxTags: 15,
+                dropdown: {
+                    maxItems: 20,           // <- mixumum allowed rendered suggestions
+                    classname: "tags-look", // <- custom classname for this dropdown, so it could be targeted
+                    enabled: 0,             // <- show suggestions on focus
+                    closeOnSelect: false    // <- do not hide the suggestions dropdown once an item has been selected
+                }
+            })
     </script>
 </body>
 
