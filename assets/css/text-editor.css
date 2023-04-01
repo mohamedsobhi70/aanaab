@@ -18,3 +18,12 @@
 .fr-toolbar .fr-newline{
   height:0 !important
 }
+@media (max-width: 575px) {
+  .fr-toolbar {
+  border-radius: 16px !important;
+  margin-bottom: 16px;
+}
+.fr-box.fr-basic.fr-top .fr-wrapper {
+  border-radius: 16px !important;
+}
+}

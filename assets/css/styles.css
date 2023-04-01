@@ -1253,6 +1253,10 @@ video {
   margin-top: 30px;
 }
 
+.mt-6{
+  margin-top: 1.5rem;
+}
+
 .block{
   display: block;
 }
@@ -1677,6 +1681,10 @@ video {
   flex-basis: 100%;
 }
 
+.basis-2\/5{
+  flex-basis: 40%;
+}
+
 .-translate-x-1\/2{
   --tw-translate-x: -50%;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -1972,6 +1980,14 @@ video {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+}
+
+.break-words{
+  overflow-wrap: break-word;
+}
+
+.break-all{
+  word-break: break-all;
 }
 
 .rounded{
@@ -2397,6 +2413,10 @@ video {
   padding: 2rem;
 }
 
+.p-2{
+  padding: 0.5rem;
+}
+
 .px-1{
   padding-left: 0.25rem;
   padding-right: 0.25rem;
@@ -2662,6 +2682,10 @@ video {
 
 .text-center{
   text-align: center;
+}
+
+.text-end{
+  text-align: end;
 }
 
 .font-Almarai{
@@ -4149,6 +4173,10 @@ video {
     width: 100%;
   }
 
+  .lg\:w-\[420px\]{
+    width: 420px;
+  }
+
   .lg\:min-w-min{
     min-width: -moz-min-content;
     min-width: min-content;
@@ -4208,6 +4236,10 @@ video {
 
   .lg\:basis-auto{
     flex-basis: auto;
+  }
+
+  .lg\:basis-1\/6{
+    flex-basis: 16.666667%;
   }
 
   .lg\:translate-x-0{
@@ -4420,6 +4452,12 @@ video {
   .lg\:from-primary{
     --tw-gradient-from: #8447FF;
     --tw-gradient-to: rgb(132 71 255 / 0);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+  }
+
+  .lg\:from-white{
+    --tw-gradient-from: #fff;
+    --tw-gradient-to: rgb(255 255 255 / 0);
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
   }
 
