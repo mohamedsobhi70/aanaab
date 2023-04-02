@@ -242,11 +242,12 @@ if (slider && window.innerWidth > 1024) {
 
 // accordions 
 if ($(".accordion-item")) {
-    $(".accordion-title").on("click", function () {
+    $(".accordion-title:not(.edit-btn):not(.save-btn)").on("click", function () {
         let th = $(this);
+        th.parent().toggleClass("active");
         th.parent().find(".accordion-content").slideToggle(400);
         th.parent().toggleClass("border-[#856F6F]").toggleClass("border-[#D7D5D5]");
-        th.find("svg").toggleClass("open");
+        th.find("svg.arrow").toggleClass("open");
     })
 }
 
@@ -314,5 +315,16 @@ if ($(".date-control")) {
         $(this).next("label").css("display", "none")
     }).on("blur", function () {
         $(this).next("label").css("display", "block")
+    })
+}
+
+if ($(".form-input")) {
+    $(".form-input").on("focus", function () {
+        $(this).addClass("validation")
+    })
+}
+if ($(".form-textarea")) {
+    $(".form-textarea").on("focus", function () {
+        $(this).addClass("validation")
     })
 }
