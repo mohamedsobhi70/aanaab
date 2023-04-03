@@ -349,19 +349,41 @@
                     </div>
                     <div class=" bg-white sm:rounded-2xl px-8 py-8 flex flex-col gap-6 sm:border sm:border-[#D1D5DB]">
                         <h2 class="text-18-27 text-[#333745] font-bold ">المعلومات الشخصية</h2>
-                        <div class="grid md:grid-cols-2 items-center  gap-5">
-                            <input required
-                                class="form-control  text-14-15 focus:outline-none placeholder:text-[#6B7280] placeholder:text-14-15 py-4 px-6 rounded-[64px] border border-[#D1D5DB]"
-                                type="text" placeholder="الاسم الأول" name="name" autocomplete="given-name">
-                            <input required
-                                class="form-control  text-14-15 focus:outline-none placeholder:text-[#6B7280] placeholder:text-14-15 py-4 px-6 rounded-[64px] border border-[#D1D5DB]"
-                                type="text" placeholder="اسم العائلة" name="familyname" autocomplete="family-name">
-                            <input required
-                                class="form-control  text-14-15 focus:outline-none placeholder:text-[#6B7280] placeholder:text-14-15 py-4 px-6 rounded-[64px] border border-[#D1D5DB]"
-                                type="email" placeholder="البريد الاكتروني" name="email" autocomplete="email">
-                            <input required
-                                class="form-control  text-14-15 focus:outline-none placeholder:text-[#6B7280] placeholder:text-14-15 py-4 px-6 rounded-[64px] border border-[#D1D5DB]"
-                                type="tel" placeholder="رقم الجوال" name="tel" autocomplete="tel">
+                        <div class="grid md:grid-cols-2 items-center gap-5">
+                            <div class="relative">
+                                <input required
+                                    class="form-input  text-14-15 focus:outline-none placeholder:text-[#6B7280] placeholder:text-14-15 py-4 px-6 rounded-[64px] border border-[#D1D5DB]"
+                                    type="text" placeholder="الاسم الأول" name="name" autocomplete="given-name">
+                                <label for="name" class="validation-img absolute left-4 top-1/2 -translate-y-1/2">
+                                </label>
+                            </div>
+                            <div class="relative">
+
+                                <input required
+                                    class="form-input  text-14-15 focus:outline-none placeholder:text-[#6B7280] placeholder:text-14-15 py-4 px-6 rounded-[64px] border border-[#D1D5DB]"
+                                    type="text" placeholder="اسم العائلة" name="familyname" autocomplete="family-name">
+                                <label for="familyname" class="validation-img absolute left-4 top-1/2 -translate-y-1/2">
+
+                                </label>
+                            </div>
+                            <div class="relative">
+
+                                <input required
+                                    class="form-input  text-14-15 focus:outline-none placeholder:text-[#6B7280] placeholder:text-14-15 py-4 px-6 rounded-[64px] border border-[#D1D5DB]"
+                                    type="email" placeholder="البريد الاكتروني" name="email" autocomplete="email">
+                                    <label for="email" class="validation-img absolute left-4 top-1/2 -translate-y-1/2">
+
+                                    </label>
+                            </div>
+                            <div class="relative">
+
+                                <input required
+                                    class="form-input  text-14-15 focus:outline-none placeholder:text-[#6B7280] placeholder:text-14-15 py-4 px-6 rounded-[64px] border border-[#D1D5DB]"
+                                    type="tel" placeholder="رقم الجوال" name="tel" autocomplete="tel">
+                                    <label for="tel" class="validation-img absolute left-4 top-1/2 -translate-y-1/2">
+
+                                    </label>
+                            </div>
                             <div class="relative">
                                 <input required id="date-control"
                                     class="date-control w-full form-control  text-14-15 focus:outline-none placeholder:text-[#6B7280] placeholder:text-14-15 py-4 px-6 rounded-[64px] border border-[#D1D5DB]"
@@ -374,7 +396,6 @@
                                             d="M14.8125 2.5H13.125V0.671875C13.125 0.460938 12.9141 0.25 12.7031 0.25H11.2969C11.0508 0.25 10.875 0.460938 10.875 0.671875V2.5H6.375V0.671875C6.375 0.460938 6.16406 0.25 5.95312 0.25H4.54688C4.30078 0.25 4.125 0.460938 4.125 0.671875V2.5H2.4375C1.48828 2.5 0.75 3.27344 0.75 4.1875V16.5625C0.75 17.5117 1.48828 18.25 2.4375 18.25H14.8125C15.7266 18.25 16.5 17.5117 16.5 16.5625V4.1875C16.5 3.27344 15.7266 2.5 14.8125 2.5ZM14.6016 16.5625H2.64844C2.50781 16.5625 2.4375 16.4922 2.4375 16.3516V5.875H14.8125V16.3516C14.8125 16.4922 14.707 16.5625 14.6016 16.5625Z"
                                             fill="#6B7280" />
                                     </svg>
-
                                 </label>
                             </div>
                             <div
