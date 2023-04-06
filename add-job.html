@@ -13,7 +13,6 @@
     <link href="https://cdn.jsdelivr.net/npm/froala-editor@latest/css/froala_editor.pkgd.min.css" rel="stylesheet"
         type="text/css" />
     <link rel="stylesheet" href="assets/css/tagify.css">
-    <link rel="stylesheet" href="assets/css/froala_editor.css">
     <link rel="stylesheet" href="assets/css/text-editor.css">
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
@@ -283,8 +282,7 @@
                 </div>
                 <h2
                     class="text-16-24 sm:text-18-21 lg:text-30-45 text-[#010513E5] font-bold basis-2/4 text-center lg:text-start lg:basis-10/12 mx-auto">
-                    تعديل الوظيفة
-                </h2>
+                    وظيفة جديدة                </h2>
                 <a href="jop-preview.html" class="text-end basis-1/4 lg:basis-auto text-[#8447FF] lg:hidden">معاينة</a>
             </div>
             <div class="job-error-message hidden">
@@ -700,8 +698,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tagify/4.17.7/tagify.min.js"
         integrity="sha512-BO4lu2XUJSxHo+BD3WLBQ9QoYgmtSv/X/4XFsseeCAxK+eILeyEXtGLHFs2UMfzNN9lhtoGy8v8EMFPIl8y+0w=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="assets/vend/froala/js/froala_editor.min.js"></script>
-    <script src="assets/vend/froala/js/froala_editor.pkgd.min.js"></script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/froala-editor@latest/js/froala_editor.pkgd.min.js"></script>
     <script src="assets/scripts/flickty.js"></script>
     <script src="assets/scripts/script.js"></script>
     <script>
@@ -712,7 +710,9 @@
             ],
             toolbarButtonsXS: ['outdent', 'emoticons', 'fontSize', 'strikeThrough', 'underline', 'italic', 'bold', 'redo', 'undo', 'insertVideo', 'insertFile', 'insertLink', 'insertImage', 'indent',
             ],
+            align: 'center',
             placeholderText: 'الوصف',
+            language: 'ar',
             direction: 'rtl'
         })
         let editor2 = new FroalaEditor('#job-description-editor2', {
